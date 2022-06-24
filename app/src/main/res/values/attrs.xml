@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonTextField">
+        <attr name="hint" format="string" localization="suggested" />
+        <attr name="drawableStart" format="reference" />
+        <attr name="android:inputType" format="reference" />
+        <attr name="titleText" format="reference" />
+        <attr name="maxLength" format="integer" />
+        <attr name="myDigits" format="string" />
+        <attr name="enabled" format="boolean" />
+        <attr name="focusable" format="boolean" />
+        <attr name="hideUnderLine" format="boolean" />
+        <attr name="android:imeOptions" />
+        <attr name="android:singleLine" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="StepsViewIndicator">
+        <attr name="numOfSteps" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomIndicator">
+        <attr name="ti_lineWidth" format="dimension" />
+        <attr name="ti_lineWidthSelected" format="dimension" />
+        <attr name="ti_lineHeight" format="dimension" />
+        <attr name="ti_lineMargin" format="dimension" />
+
+        <attr name="ti_tooltipWidth" format="dimension" />
+        <attr name="ti_tooltipHeight" format="dimension" />
+
+        <attr name="ti_selectedLineDrawable" format="reference" />
+        <attr name="ti_unselectedLineDrawable" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="RangeSeekBar">
+        <!--RangeSeekBar common attrs-->
+
+        <!--The maximum-->
+        <attr name="rsb_max" format="float" />
+
+        <!--The minimum-->
+        <attr name="rsb_min" format="float" />
+
+        <!--RangeSeekBar mode, single is normal seekBar, range is RangeSeekBar-->
+        <attr name="rsb_mode" format="enum">
+            <enum name="single" value="1" />
+            <enum name="range" value="2" />
+        </attr>
+
+        <!--RangeSeekBar gravity-->
+        <attr name="rsb_gravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="center" value="2" />
+        </attr>
+
+        <!--The min interval of the thumbs -->
+        <attr name="rsb_min_interval" format="float" />
+
+        <!-- 0 for the normal mode, greater than 1 to switch to scale mode-->
+        <attr name="rsb_tick_mark_number" format="integer" />
+
+        <!--Scale mode
+        Number according to the scale of the actual proportion of the distribution of the location (markTextArray must be bottom_line number)
+        Other bisects the current layout (markTextArray can be any character)
+        -->
+        <attr name="rsb_tick_mark_mode" format="enum">
+            <enum name="number" value="0" />
+            <enum name="other" value="1" />
+        </attr>
+
+        <!--The tick mark text gravity -->
+        <attr name="rsb_tick_mark_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <!--The tick mark text layout gravity -->
+        <attr name="rsb_tick_mark_layout_gravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+
+        <!--The tick mark text array -->
+        <attr name="rsb_tick_mark_text_array" format="reference" />
+
+        <!--The tick mark text margin bottom to progress -->
+        <attr name="rsb_tick_mark_text_margin" format="dimension" />
+
+        <attr name="rsb_tick_mark_text_size" format="dimension" />
+
+        <attr name="rsb_tick_mark_text_color" format="color" />
+
+        <!--it just work in range && number mode now-->
+        <attr name="rsb_tick_mark_in_range_text_color" format="color" />
+
+        <attr name="rsb_progress_height" format="dimension" />
+
+        <attr name="rsb_progress_radius" format="dimension" />
+
+        <!--the color of progress bar when in progress-->
+        <attr name="rsb_progress_color" format="color" />
+        <!--the default color of the progress bar-->
+        <attr name="rsb_progress_default_color" format="color" />
+
+        <attr name="rsb_progress_drawable" format="reference" />
+
+        <attr name="rsb_progress_drawable_default" format="reference" />
+
+        <!--SeekBar attrs-->
+        <attr name="rsb_indicator_show_mode" format="enum">
+            <enum name="showWhenTouch" value="0" />
+            <enum name="alwaysHide" value="1" />
+            <enum name="alwaysShowAfterTouch" value="2" />
+            <enum name="alwaysShow" value="3" />
+        </attr>
+        <attr name="rsb_indicator_height" format="dimension">
+            <enum name="wrap_content" value="-1" />
+        </attr>
+        <attr name="rsb_indicator_width" format="dimension">
+            <enum name="wrap_content" value="-1" />
+        </attr>
+        <!--indicator margin bottom to progress bar-->
+        <attr name="rsb_indicator_margin" format="dimension" />
+        <attr name="rsb_indicator_text_size" format="dimension" />
+        <attr name="rsb_indicator_text_color" format="color" />
+        <!--indicator arrow size, it just work when you not use rsb_indicator_drawable -->
+        <attr name="rsb_indicator_arrow_size" format="dimension" />
+        <!-- must use 9 path ！！！-->
+        <attr name="rsb_indicator_drawable" format="reference" />
+        <attr name="rsb_indicator_background_color" format="color" />
+        <attr name="rsb_indicator_padding_left" format="dimension" />
+        <attr name="rsb_indicator_padding_right" format="dimension" />
+        <attr name="rsb_indicator_padding_top" format="dimension" />
+        <attr name="rsb_indicator_padding_bottom" format="dimension" />
+        <attr name="rsb_indicator_radius" format="dimension" />
+        <attr name="rsb_thumb_drawable" format="reference" />
+        <!--the thumb inactivated is when you don't touch the thumb button-->
+        <attr name="rsb_thumb_inactivated_drawable" format="reference" />
+        <attr name="rsb_thumb_width" format="dimension" />
+        <attr name="rsb_thumb_height" format="dimension" />
+        <attr name="rsb_thumb_scale_ratio" format="float" />
+
+        <!--steps SeekBar-->
+        <attr name="rsb_steps" format="integer" />
+        <attr name="rsb_step_color" format="color" />
+        <attr name="rsb_step_width" format="dimension" />
+        <attr name="rsb_step_height" format="dimension" />
+        <attr name="rsb_step_radius" format="dimension" />
+        <attr name="rsb_step_auto_bonding" format="boolean" />
+        <attr name="rsb_step_drawable" format="reference" />
+
+        <attr name="rsb_thumb_size" format="dimension" />
+        <attr name="rsb_range_interval" format="float" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSpinner">
+        <attr name="ms_arrow_tint" format="color" />
+        <attr name="ms_hide_arrow" format="boolean" />
+        <attr name="ms_background_color" format="color" />
+        <attr name="ms_text_color" format="color" />
+        <attr name="ms_text_select_color" format="color" />
+        <attr name="ms_dropdown_max_height" format="dimension" />
+        <attr name="ms_dropdown_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="ms_background_selector" format="integer" />
+        <attr name="ms_padding_top" format="dimension" />
+        <attr name="ms_padding_left" format="dimension" />
+        <attr name="ms_padding_bottom" format="dimension" />
+        <attr name="ms_padding_right" format="dimension" />
+        <attr name="ms_popup_padding_top" format="dimension" />
+        <attr name="ms_popup_padding_left" format="dimension" />
+        <attr name="ms_popup_padding_bottom" format="dimension" />
+        <attr name="ms_popup_padding_right" format="dimension" />
+        <attr name="ms_hint" format="string" />
+        <attr name="ms_hint_color" format="color" />
+        <attr name="ms_popup_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonTitleViewer">
+        <attr name="myTitle" format="string" localization="suggested" />
+        <attr name="myDescription" format="string" localization="suggested" />
+        <attr name="imgSrc" format="reference|color" />/>
+    </declare-styleable>
+
+    <declare-styleable name="SpaceNavigationView">
+        <attr name="space_item_icon_size" format="dimension" />
+        <attr name="space_item_icon_only_size" format="dimension" />
+        <attr name="space_item_text_size" format="dimension" />
+        <attr name="space_background_color" format="color" />
+        <attr name="centre_button_color" format="color" />
+        <attr name="active_item_color" format="color" />
+        <attr name="inactive_item_color" format="color" />
+        <attr name="centre_button_icon" format="reference" />
+        <attr name="active_centre_button_icon_color" format="color" />
+        <attr name="inactive_centre_button_icon_color" format="color" />
+        <attr name="active_centre_button_background_color" format="color" />
+        <attr name="centre_part_linear" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekArc">
+        <attr name="seek_arc_thumb" format="reference" />
+        <attr name="seek_arc_thumbOffset" format="dimension" />
+        <attr name="seek_arc_max" format="integer" />
+        <attr name="seek_arc_progressWidth" format="dimension" />
+        <attr name="seek_arc_arcWidth" format="dimension" />
+        <attr name="seek_arc_progress" format="integer" />
+        <attr name="seek_arc_rotation" format="integer" />
+        <attr name="seek_arc_startAngle" format="integer" />
+        <attr name="seek_arc_sweepAngle" format="integer" />
+        <attr name="seek_arc_arcColor" format="color" />
+        <attr name="seek_arc_progressColor" format="color" />
+        <attr name="seek_arc_roundEdges" format="boolean" />
+        <attr name="seek_arc_touchInside" format="boolean" />
+        <attr name="seek_arc_clockwise" format="boolean" />
+        <attr name="seek_arc_enabled" format="boolean" />
+        <attr name="seek_arc_hideThumb" format="boolean" />
+    </declare-styleable>
+</resources>

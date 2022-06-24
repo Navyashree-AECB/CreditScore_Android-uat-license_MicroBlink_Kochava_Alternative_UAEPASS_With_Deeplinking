@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_30sdp">
+
+        <Button
+            style="@style/SmallFont"
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/ic_platter"
+            android:text="@string/txt_update"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@color/lineColor"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnMakeDefault"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/ic_platter"
+            android:text="@string/make_default"
+            android:textAllCaps="false"
+            style="@style/SmallFont"
+            android:textColor="@color/updateDeleteButtonColor" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/SmallFont"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@color/lineColor" />
+
+        <Button
+
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/ic_platter_bottom"
+            android:text="@string/txt_delete"
+            android:textAllCaps="false"
+            style="@style/SmallFont"
+            android:textColor="@color/updateDeleteButtonColor" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/cancel_ic_platter"
+            android:text="@string/txt_cancel"
+            android:textColor="@color/updateDeleteButtonColor" />
+    </LinearLayout>
+</layout>

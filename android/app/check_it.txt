@@ -1,0 +1,5 @@
+https://projects.invisionapp.com/share/WARFEEMFE8C#/screens/356845738
+
+dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.aecb-2/base.apk"],nativeLibraryDirectories=[/data/app/com.aecb-2/lib/arm64, /data/app/com.aecb-2/base.apk!/lib/arm64-v8a, /system/lib64, /vendor/lib64]]] couldn't find "libsmart_cropper.so"
+
+/storage/emulated/0/Android/data/com.aecb/Files/MI_09052019_1829.jpg

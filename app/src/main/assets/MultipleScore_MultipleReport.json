@@ -1,0 +1,65 @@
+{
+    "status": "200",
+    "success": true,
+    "message": "Successfully received purchase history",
+    "refId": "d30fd465-ea8b-4efa-acfe-de784cd0f5b6",
+    "data": {
+        "history": [
+            {
+                "reportTypeId": "edd6ac3b-5d69-e811-9449-00155db7a21e",
+                "reportNumber": "CR-00008067",
+                "reportName": "Credit Report 2/11/2020 1:28:09 PM",
+                "createdon": "2020-01-11T09:28:09Z",
+                "reportId": "07b233d0-b04c-ea11-9450-005056010318",
+                "isPdfAvailable": true,
+                "score": 456,
+                "noScore": false,
+                "scoreRange": null
+            },
+            {
+                "reportTypeId": "edd6ac3b-5d69-e811-9449-00155db7a21e",
+                "reportNumber": "CR-00008066",
+                "reportName": "Credit Report 2/11/2020 1:27:37 PM",
+                "createdon": "2019-07-11T09:27:37Z",
+                "reportId": "e7cc39bd-b04c-ea11-9450-005056010318",
+                "isPdfAvailable": true,
+                "score": 389,
+                "noScore": true,
+                "scoreRange": null
+            },
+            {
+                "reportTypeId": "c3bcb9aa-7969-e811-9449-00155db7a21e",
+                "reportNumber": "CR-00008065",
+                "reportName": "Credit Report 2/11/2020 1:26:10 PM",
+                "createdon": "2019-01-11T09:26:10Z",
+                "reportId": "f24a4689-b04c-ea11-9450-005056010318",
+                "isPdfAvailable": true,
+                "score": 567,
+                "noScore": false,
+                "scoreRange": null
+            },
+            {
+                "reportTypeId": "c3bcb9aa-7969-e811-9449-00155db7a21e",
+                "reportNumber": "CR-00008064",
+                "reportName": "Credit Report 2/11/2020 1:13:30 PM",
+                "createdon": "2018-12-11T09:13:30Z",
+                "reportId": "cbed6ec4-ae4c-ea11-9450-005056010318",
+                "isPdfAvailable": true,
+                "score": 876,
+                "noScore": false,
+                "scoreRange": null
+            },
+            {
+                "reportTypeId": "d7d6ac3b-5d69-e811-9449-00155db7a21e",
+                "reportNumber": "CR-00008063",
+                "reportName": "Credit Report 2/11/2020 12:59:56 PM",
+                "createdon": "2018-02-06T12:38:31Z",
+                "reportId": "bf2b8c94-dd48-ea11-944f-005056010318",
+                "isPdfAvailable": true,
+                "score": 744,
+                "noScore": true,
+                "scoreRange": null
+            }
+        ]
+    }
+}

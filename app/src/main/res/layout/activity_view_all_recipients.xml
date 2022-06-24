@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/loutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:orientation="horizontal">
+
+                <com.aecb.presentation.dialogs.RippleLayout
+                    android:id="@+id/layoutBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:mrl_rippleColor="@color/border_color"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleDuration="@string/ripple_duration"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_6sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_back_white" />
+                </com.aecb.presentation.dialogs.RippleLayout>
+
+                <Button
+                    style="@style/SmallFont"
+                    android:id="@+id/btnAddEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/bg_round_corner_blue"
+                    android:text="@string/add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/border_color" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_topcurv_white"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEmailRecipients"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btnContinueAndSave"
+                    style="@style/SmallFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@drawable/bg_blue_button"
+                    android:text="@string/save_and_continue"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

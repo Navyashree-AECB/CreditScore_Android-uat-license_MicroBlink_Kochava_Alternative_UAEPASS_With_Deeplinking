@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <com.aecb.presentation.customviews.ToolbarView
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SmallFont"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:text="@string/step_one"
+                android:textColor="@color/gray_light"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/SmallFont"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:text="@string/step_two"
+                android:textColor="@color/step_text_progress_color"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <include layout="@layout/bg_step_two" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLoutMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:hint="@string/txt_mobile_number"
+                    android:theme="@style/TextLabel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtMobile"
+                        style="@style/SmallFont.TextAlineStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="14"
+                        android:nextFocusForward="@+id/edtEmail"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/viewLineMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/gray_light" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLoutEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:hint="@string/email_address"
+                    android:theme="@style/TextLabel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        style="@style/SmallFont.TextAlineStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="320"
+                        android:nextFocusForward="@+id/edtConfirmEmail"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/viewLineEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/gray_light" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLoutConfirmEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:hint="@string/confirm_email"
+                    android:theme="@style/TextLabel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtConfirmEmail"
+                        style="@style/SmallFont.TextAlineStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="320"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/viewLineConfirmEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/gray_light" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/SmallFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_45sdp"
+                android:background="@drawable/btn_disable_state"
+                android:enabled="false"
+                android:text="@string/txt_continue"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,220 @@
+{
+  "message": [
+    {
+      "use_case": "registration",
+      "status": "rr_06",
+      "message_en": "A profile with this Emirates ID has already been created. Please proceed to login to continue.",
+      "message_ar": "لقد تم انشاء حساب مسبقا بنفس رقم الهوية. الرجاء تسجيل الدخول."
+    },
+    {
+      "use_case": "registration",
+      "status": "rr_12",
+      "message_en": "A profile with this Emirates ID has already been created. Please proceed to login to continue.",
+      "message_ar": "لقد تم انشاء حساب مسبقا بنفس رقم الهوية. الرجاء تسجيل الدخول."
+    },
+    {
+      "use_case": "registration",
+      "status": "rr_05",
+      "message_en": "We were unable to verify your information. Please make sure the details entered are correct.",
+      "message_ar": "عذرا، لم نتمكن من تدقيق معلوماتك. الرجاء التأكد من ان البيانات التي ادخلتها صحيحة."
+    },
+    {
+      "use_case": "login",
+      "status": "E01-0004",
+      "message_en": "Please ensure the login details are entered correctly",
+      "message_ar": " الرجاء التأكد من ان البيانات التي ادخلتها صحيحة."
+    },
+    {
+      "use_case": "login",
+      "status": "E01-0006",
+      "message_en": "You have exceeded the number of attempts, to contact us please call 800-Bureau (800 287 328)",
+      "message_ar": " لقد تجاوزت  الوقت الأقصى لادخال الرمز، للتواصل معنا يرجى الاتصال على (328 287 800)"
+    },
+    {
+      "use_case": "verify_amount",
+      "status": "209",
+      "message_en": "Card Authentication has been declined. Please try again",
+      "message_ar": "لم تنجح عملية  التحقق من البطاقة. الرجاء إعادة المحاولة."
+    },
+    {
+      "use_case": "verify_amount",
+      "status": "200",
+      "message_en": "User selected card activated successfully",
+      "message_ar": "تم تفعيل البطاقة المحددة من قبل المستخدم بنجاح"
+    },
+    {
+      "use_case": "using_incorrect_password",
+      "status": "E01-0004",
+      "message_en": "Please enter a valid password",
+      "message_ar": "يرجى إدخال كلمة السر  الصحيحة"
+    },
+    {
+      "use_case": "exceptional_cases",
+      "status": "ss_09",
+      "message_en": "We’re currently experiencing a technical problem. Our systems will be available shortly. We apologies for any inconvenience",
+      "message_ar": "نواجه خلل فني . أنظمتنا ستكون متاحة قريبا. نعتذر عن أي ازعاج"
+    },
+    {
+      "use_case": "verify_otp",
+      "status": "E02-0004",
+      "message_en": "Please enter the right code or request another One Time Password ( OTP) password and try again. You have 2 attempts remaining.",
+      "message_ar": "الرجاء إدخال رمز التعريف الصحيح أو طلب رمز تعريف جديد و إعادة المحاولة. عدد المحاولات المتبقي 2"
+    },
+    {
+      "use_case": "verify_otp",
+      "status": "201",
+      "message_en": "Please enter the right code or request another One Time Password ( OTP) and try again. You have 1 attempt remaining.",
+      "message_ar": "الرجاء إدخال رمز التعريف الصحيح أو طلب رمز تعريف جديد و إعادة المحاولة.\n عدد المحاولات المتبقي 1"
+    },
+    {
+      "use_case": "verify_otp",
+      "status": "202",
+      "message_en": "You have exceeded the number of attempts, to contact us please call 800-Bureau (800 287 328)",
+      "message_ar": " لقد تجاوزت  الوقت الأقصى لادخال الرمز، للتواصل معنا يرجى الاتصال على (328 287 800)"
+    },
+    {
+      "use_case": "user_exceed_the_time_limit",
+      "status": "203",
+      "message_en": "You have exceeded the time limit to enter the One Time Password (OTP), kindly request another OTP and try again",
+      "message_ar": "لقد تجاوزت عدد المحاولات المسموح بها، للتواصل مع خدمة العملاء انقر هنا"
+    },
+    {
+      "use_case": "user_information_not_found_in_crm_or_crif_1st_attempt",
+      "status": "",
+      "message_en": "We were unable to verify your information. Please make sure the details entered are correct.",
+      "message_ar": "عذرا، لم نتمكن من تدقيق معلوماتك. الرجاء التأكد من ان البيانات التي ادخلتها صحيحة."
+    },
+    {
+      "use_case": "user_information_not_found_in_crm_or_crif_2nd_attempt",
+      "status": "",
+      "message_en": "We were unable to verify your information. Please make sure the details entered are correct.",
+      "message_ar": "عذرا، لم نتمكن تدقيق معلوماتك. الرجاء التأكد من ان البيانات التي ادخلتها صحيحة."
+    },
+    {
+      "use_case": "security_questions",
+      "status": "rr_05",
+      "message_en": "Unsuccessful authentication. Please click proceed to go back to the registration else click contact us to contact our Customer Experience Team",
+      "message_ar": "عذرا، لم تتمكن من تجاوز الأسئلة الأمنية.  الرجاء اختيار المتابعة للعودة الى التسجيل أو اختيار اتصل بنا   للتواصل مع خدمة العملاء ."
+    },
+    {
+      "use_case": "security_questions_two",
+      "status": "rr_05",
+      "message_en": "We were unable to verify your information. You need to answer few more security questions.",
+      "message_ar": "عذرا، لم يتم تدقيق معلوماتك. نرجو الإجابة عن أسئلة إضافية للتعريف"
+    },
+    {
+      "use_case": "edt_profile",
+      "status": "uu_06",
+      "message_en": "Email address is already used. Please add a new address.",
+      "message_ar": "عنوان البريد الإلكتروني مستخدم حاليا. يرجى إدخال عنوان جديد."
+    },
+    {
+      "use_case": "edt_profile",
+      "status": "uu_09",
+      "message_en": "Passport number is successfully updated",
+      "message_ar": "لقد تم تغيير رقم جواز السفر"
+    },
+    {
+      "use_case": "edt_profile",
+      "status": "uu_05",
+      "message_en": "Mobile Number is successfully updated ",
+      "message_ar": "لقد تم تغيير رقم الهاتف المتحرك"
+    },
+    {
+      "use_case": "edt_profile",
+      "status": "uu_07",
+      "message_en": "Nationality is successfully updated",
+      "message_ar": "لقد تم تغيير الجنسية"
+    },
+    {
+      "use_case": "edt_profile",
+      "status": "uu_04",
+      "message_en": "لقد تم تغيير اللغة المفضلة",
+      "message_ar": "Preferred Language is successfully updated "
+    },
+    {
+      "use_case": "edt_profile",
+      "status": "uu_03",
+      "message_en": "Email address was successfully updated",
+      "message_ar": "تمّ تغيير عنوان البريد الإلكتروني بنجاح"
+    },
+    {
+      "use_case": "forget_password_screen",
+      "status": "209",
+      "message_en": "Please ensure the login details are entered correctly",
+      "message_ar": " الرجاء التأكد من ان البيانات التي ادخلتها صحيحة."
+    },
+    {
+      "use_case": "change_password_screen",
+      "status": "209",
+      "message_en": "Password can not be the same as the last 3 passwords",
+      "message_ar": "يجب أن تختلف  كلمة السر عن اخر 3 كلمات سر"
+    },
+    {
+      "use_case": "add_card",
+      "status": "209",
+      "message_en": "Card was  previously added",
+      "message_ar": "لقد تم إضافة البطاقة سابقا"
+    },
+    {
+      "use_case": "authentication_failed",
+      "status": "209",
+      "message_en": "Authentication Failed",
+      "message_ar": "المصادقة فشلت"
+    },
+    {
+      "use_case": "payment_declined",
+      "status": "209",
+      "message_en": "Payment declined",
+      "message_ar": "تم رفض الدفع"
+    },
+    {
+      "use_case": "otp_generate",
+      "status": "rr_02",
+      "message_en": "OTP generated successfully",
+      "message_ar": "تم إنشاء OTP بنجاح"
+    },
+    {
+      "use_case": "add_card",
+      "status": "200",
+      "message_en": "Payment was successfully processed",
+      "message_ar": " تم الدفع بنجاح"
+    },
+    {
+      "use_case": "add_card_from_http",
+      "status": "209",
+      "message_en": "Payment was declined",
+      "message_ar": " تم رفض الدفعة "
+    },
+    {
+      "use_case": "delete_card",
+      "status": "200",
+      "message_en": "The card was successfully deleted ",
+      "message_ar": "لقد تم حذف البطاقة"
+    },
+    {
+      "use_case": "change_password_screen",
+      "status": "201",
+      "message_en": "The password was successfully updated. Please logout and login with the new password",
+      "message_ar": "لقد تم تغيير كلمة  السر بنجاح. الرجاء تسجيل الخروج ثم الدخول بكلمة السر الجديدة"
+    },
+    {
+      "use_case": "contact_us",
+      "status": "200",
+      "message_en": "Thank you for contacting us. Our Customer Experience Team will get back to you shortly",
+      "message_ar": "نشكرك على تواصلك.   سوف يقوم   قسم خدمة العملاء بالرد قريبا"
+    },
+    {
+      "use_case": "change_password_screen",
+      "status": "142",
+      "message_en": "Password can not be the same as the last 3 passwords",
+      "message_ar": "يجب أن تختلف  كلمة السر عن اخر 3 كلمات سر"
+    },
+    {
+      "use_case": "verify_amount",
+      "status": "E1-009",
+      "message_en": "We are experiencing system issues. Please try again",
+      "message_ar": "We are experiencing system issues. Please try again"
+    }
+  ]
+}

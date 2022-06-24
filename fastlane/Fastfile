@@ -1,0 +1,86 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+update_fastlane
+
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Submit a new Beta Build to Crashlytics Beta"
+  lane :beta do |options|
+
+    if(options[:versionChange]=='minor')
+            gradle(task: "doBuildNumberIncrement")
+            gradle(task: "doMinorVersionIncrement")
+            gradle(task: "clean assembleDebug")
+    elsif(options[:versionChange]=='major')
+            gradle(task: "doBuildNumberIncrement")
+            gradle(task: "doMajorVersionIncrement")
+            gradle(task: "clean assembleDebug")
+    else
+            gradle(task: "doBuildNumberIncrement")
+            gradle(task: "clean assembleDebug")
+    end
+
+      sh("cd .. && touch changelog.txt")
+      message = last_git_commit[:message]
+      File.write("./changelog.txt", message)
+
+
+      crashlytics(
+                notes_path: "fastlane/changelog.txt",
+                api_token: "", # todo change this
+                build_secret: "", # todo change this
+                groups: ["client-group], # todo change this
+                notifications: true
+              )
+
+  end
+
+    desc "Build for client testing"
+    lane :client_beta do |options|
+
+      if(options[:versionChange]=='minor')
+              gradle(task: "doBuildNumberIncrement")
+              gradle(task: "doMinorVersionIncrement")
+              gradle(task: "clean assembleDebug")
+      elsif(options[:versionChange]=='major')
+              gradle(task: "doBuildNumberIncrement")
+              gradle(task: "doMajorVersionIncrement")
+              gradle(task: "clean assembleDebug")
+      else
+              gradle(task: "doBuildNumberIncrement")
+              gradle(task: "clean assembleDebug")
+      end
+
+      sh("cd .. && touch changelog.txt")
+      message = last_git_commit[:message]
+      File.write("./changelog.txt", message)
+
+      crashlytics(
+                notes_path: "fastlane/changelog.txt",
+                api_token: "", # todo change this
+                build_secret: "", # todo change this
+                groups: ["client-group], # todo change this
+                notifications: true
+              )
+
+    end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+end

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/lnScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SmallFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:text="@string/contact_us_regi_desc" />
+
+                <TextView
+                    style="@style/MediumFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/contact_center"
+                    android:textColor="@color/dark_blue"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/llCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_call" />
+
+                    <TextView
+                        style="@style/MediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/contact_center_number"
+                        android:textColor="@color/light_black" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/SmallFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:visibility="gone"
+                    android:text="@string/contact_us_desc"
+                    android:textColor="@color/color_edittext_hint" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLoutSubjectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="@string/lbl_subject"
+                    android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtSubjectName"
+                    style="@style/SmallFont.TextAlineStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="120"
+                    android:nextFocusForward="@+id/spinnerReason"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/VerySmallFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/reason_for_contact"
+                    android:visibility="gone"
+                    android:textColor="@color/text_color" />
+
+                <RelativeLayout
+                    android:id="@+id/routGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                <com.aecb.presentation.customspinner.MaterialSpinner
+                    android:id="@+id/spinnerReason"
+                    style="@style/SmallFont.TextAlineStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@+id/edtMessage"
+                    app:ms_background_color="@color/transparent"
+                    app:ms_dropdown_height="wrap_content"
+                    app:ms_dropdown_max_height="@dimen/_160sdp"
+                    app:ms_hide_arrow="true"
+                    app:ms_hint="@string/reason_for_contact"
+                    app:ms_hint_color="@color/color_edittext_hint"
+                    app:ms_padding_bottom="@dimen/_8sdp"
+                    app:ms_padding_top="@dimen/_2sdp"
+                    app:ms_popup_drawable="@drawable/ms__drawable"
+                    app:ms_text_color="@color/contract_text_color"
+                    app:ms_text_select_color="@color/contract_text_color" />
+
+                    <ImageView
+                        android:id="@+id/imageDropDownPaymentMethod"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@mipmap/ic_down_gray" />
+
+                    <View
+                        android:id="@+id/viewLineFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/spinnerReason"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@color/gray_light" />
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLoutMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:hint="@string/your_message"
+                    android:visibility="gone"
+                    android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtMessage"
+                    style="@style/SmallFont.TextAlineStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textColor="@color/text_color" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/routUploadFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <ImageView
+                        android:id="@+id/ivUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        app:srcCompat="@drawable/ic_upload_blue" />
+
+                <TextView
+                    android:id="@+id/tvUpload"
+                    style="@style/VerySmallFont"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivUpload"
+                    android:text="@string/upload_file"
+                    android:textColor="@color/border_color" />
+
+                <ImageView
+                    android:id="@+id/selectedImage"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_below="@+id/tvUpload"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:visibility="gone"
+                    style="@style/SmallFont"
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:background="@drawable/btn_disable_state"
+                    android:enabled="false"
+                    android:text="@string/send_message"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

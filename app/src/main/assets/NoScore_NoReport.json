@@ -1,0 +1,9 @@
+{
+  "status": "200",
+  "success": true,
+  "message": "Successfully received purchase history",
+  "refId": "d30fd465-ea8b-4efa-acfe-de784cd0f5b6",
+  "data": {
+    "history": []
+  }
+}

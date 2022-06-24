@@ -1,0 +1,307 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+
+    def rootProject = rootProject.ext
+    compileSdkVersion rootProject.compileSdkV
+    signingConfigs {
+        stagingConfig {
+            storeFile file("../certificates/staging/aecb_tenantscore_staging.jks")
+            storePassword "android"
+            keyAlias "aecb_tenant_staging"
+            keyPassword "android"
+        }
+        releaseConfig {
+            storeFile file("../certificates/prod/aecb-prod-key.keystore")
+            storePassword "aecb@2018"
+            keyAlias "aecb-prod-key"
+            keyPassword "aecb@2018"
+        }
+    }
+    ndkVersion "21.3.6528147"
+    defaultConfig {
+        applicationId rootProject.applicationId
+        minSdkVersion rootProject.minSdkV
+        targetSdkVersion rootProject.targetSdkV
+        testInstrumentationRunner rootProject.testInstrumentationRunner
+        vectorDrawables.useSupportLibrary true
+        versionName "2.7.3"
+        versionCode 137
+        multiDexEnabled true
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+        proguardFiles fileTree('./proguard').asList().toArray()
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+                includeCompileClasspath false
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a', "arm64-v8a", 'x86', 'x86_64'
+        }
+
+        //UAE PASS START -- Adding Custom Scheme Variables
+        buildConfigField "String", "URI_SCHEME", "\"aecb\"" // Change to your app name or any custom scheme. Donot use uaepasssample
+        buildConfigField "String", "URI_HOST_SUCCESS", "\"success\""
+        buildConfigField "String", "URI_HOST_FAILURE", "\"failure\""
+
+        manifestPlaceholders = [
+                host_success: "success",
+                host_failure: "failure",
+                scheme      : "aecb" // Change to your app name or any custom scheme. Donot use uaepasssample
+        ]
+        //UAE PASS END -- Adding Custom Scheme Variables
+    }
+    dataBinding {
+        enabled = true
+    }
+    buildTypes {
+        dev {
+            applicationIdSuffix ".dev"
+            minifyEnabled false
+            resValue "string", "app_name", "CreditReport Dev"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_BASE_URL", "\"https://onlineuat.aecb.gov.ae:8000/api/v1/\""
+            buildConfigField "String", "EDIRHAM_BASE_URL", "\"https://pga-pit.edirham.ae/checkout-portal-core/\""
+            buildConfigField "String", "API_MICROSOFT_AZURE", "\"https://northcentralus.api.cognitive.microsoft.com/\""
+            buildConfigField "String", "MAKE_PAYMENT_URL", "\"payments/makepayment4\""
+            resValue "string", "facebook_app_id", "397638128478755"
+            debuggable = false
+            signingConfig signingConfigs.stagingConfig
+        }
+        uat {
+            applicationIdSuffix ".uat"
+            resValue "string", "app_name", "CreditReport UAT"
+            buildConfigField "String", "API_BASE_URL", "\"https://onlineuat.aecb.gov.ae:8000/api/v1/\""
+            buildConfigField "String", "EDIRHAM_BASE_URL", "\"https://pga-pit.edirham.ae/checkout-portal-core/\""
+            buildConfigField "String", "API_MICROSOFT_AZURE", "\"https://northcentralus.api.cognitive.microsoft.com/\""
+            buildConfigField "String", "MAKE_PAYMENT_URL", "\"payments/makepayment4\""
+            resValue "string", "facebook_app_id", "397638128478755"
+            jniDebuggable false
+            signingConfig signingConfigs.stagingConfig
+            renderscriptDebuggable false
+            zipAlignEnabled true
+            minifyEnabled true
+           // useProguard true
+            debuggable = false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        prod {
+            applicationIdSuffix ".app"
+            resValue "string", "app_name", "CreditReport"
+            minifyEnabled true
+            useProguard true
+            buildConfigField "String", "API_BASE_URL", "\"https://online.aecb.gov.ae:8000/api/v1/\""
+            buildConfigField "String", "EDIRHAM_BASE_URL", "\"https://pga.edirham.ae/checkout-portal-core/\""
+            buildConfigField "String", "API_MICROSOFT_AZURE", "\"https://northcentralus.api.cognitive.microsoft.com/\""
+            buildConfigField "String", "MAKE_PAYMENT_URL", "\"payments/makepayment5\""
+            resValue "string", "facebook_app_id", "926376241371866"
+            signingConfig signingConfigs.releaseConfig
+            renderscriptDebuggable false
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // support library
+    implementation "com.android.support:appcompat-v7:$supportLibV"
+    implementation "com.android.support:design:$supportLibV"
+    implementation "com.android.support:support-v4:$supportLibV"
+    implementation "com.android.support:cardview-v7:$supportLibV"
+    implementation "com.android.support:multidex:$multidexV"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitV"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitV"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitV"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofitV"
+
+    // gson
+    implementation "com.google.code.gson:gson:$gsonV"
+
+    // rx
+    implementation "io.reactivex.rxjava2:rxjava:$rxV"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroidV"
+
+    // okHttp
+    implementation "com.squareup.okhttp3:okhttp:$okhttpV"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpV"
+
+    //fb events
+    implementation 'com.facebook.android:facebook-android-sdk:13.0.0'
+    //implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.facebook.business.sdk:facebook-java-business-sdk:12.0.1'
+
+    // timber
+    implementation "com.jakewharton.timber:timber:$timberV"
+
+    //blurry
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+
+    // stetho
+    implementation "com.facebook.stetho:stetho:$stethoV"
+    implementation "com.facebook.stetho:stetho-okhttp3:$stethoV"
+
+    // image loader
+    implementation "com.github.bumptech.glide:glide:$glideV"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideV"
+
+    // dagger
+    implementation "org.glassfish:javax.annotation:$javaxannotationV"
+    implementation "com.google.dagger:dagger:$daggerV"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerV"
+    implementation "com.google.dagger:dagger-android-support:$daggerV"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerV"
+
+    //uaepass ion
+    implementation 'com.koushikdutta.ion:ion:3.1.0'
+
+    // remember
+    implementation 'com.tumblr:remember:1.0.0@aar'
+
+    //Seek arc
+    implementation 'com.github.Triggertrap:SeekArc:v1.1'
+
+    // Rating bar
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+
+    // Loading dot view
+    implementation 'com.wang.avi:library:2.1.3'
+
+    // Room dependencies
+    implementation "android.arch.persistence.room:runtime:$roomV"
+    annotationProcessor "android.arch.persistence.room:compiler:$roomV"
+
+    // Live Data
+    implementation "android.arch.lifecycle:livedata:$liveDataV"
+    annotationProcessor "android.arch.lifecycle:compiler:$liveDataV"
+
+    //Eventbus
+    implementation "org.greenrobot:eventbus:$eventbusV"
+
+    // Responsive screen
+    api "com.intuit.sdp:sdp-android:$sdplibV"
+    api "com.intuit.ssp:ssp-android:$ssplipV"
+
+    // font style
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+
+    // mvp
+    implementation "com.hannesdorfmann.mosby3:mvp:$mosbyV"
+    implementation "com.hannesdorfmann.mosby3:mvp-lce:$mosbyV"
+
+    //permission dispatcher
+    implementation("com.github.hotchemi:permissionsdispatcher:${permissionDispatcherV}") {
+        exclude module: "support-v13"
+    }
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:${permissionDispatcherV}"
+
+    //joda-time
+    implementation "net.danlew:android.joda:$jodatimeV"
+
+    //jsoup
+    implementation 'org.jsoup:jsoup:1.11.3'
+
+    //root-beer
+    implementation 'com.scottyab:rootbeer-lib:0.0.7'
+
+    //micro-blink
+    /*dependencies {
+        implementation('com.microblink:blinkid:5.2.0@aar') {
+            transitive = true
+        }
+    }*/
+    dependencies {
+        implementation('com.microblink:blinkid:5.15.2@aar') {
+            transitive = true
+        }
+    }
+
+    implementation "androidx.percentlayout:percentlayout:1.0.0"
+
+    //firebase auth
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+    implementation "com.google.firebase:firebase-auth"
+    implementation "com.google.firebase:firebase-messaging"
+    implementation 'com.google.firebase:firebase-core'
+    implementation "com.google.android.gms:play-services-analytics:$goodleAnalicysV"
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation "com.google.android.gms:play-services-base:$gmsVersion"
+    implementation "com.google.android.gms:play-services-auth:$gmsVersionService"
+    implementation "com.google.android.gms:play-services-auth-api-phone:$gmsAuthVersion"
+    implementation 'com.google.firebase:firebase-dynamic-links'
+
+    // google play services gms
+   // implementation "com.google.android.gms:play-services-vision:$goodleVision"
+
+    // testing libraries
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //graph
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // card scan
+    implementation "io.card:android-sdk:$cardScanV"
+
+    implementation "com.android.support:exifinterface:$supportLibV"
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation "com.commonsware.cwac:saferoom.x:$safeRoom"
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    //root-beer
+    implementation 'com.scottyab:rootbeer-lib:0.0.7'
+
+    //Kochava
+    implementation 'com.kochava.base:tracker:3.10.1'
+
+    // For Java
+//    implementation 'androidx.work:work-runtime:2.7.1'
+    // For Kotlin
+//    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+}
+
+
+apply plugin: 'com.google.gms.google-services'

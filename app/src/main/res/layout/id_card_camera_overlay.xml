@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/torchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mb_overlay_camera_translucent"
+        android:paddingLeft="@dimen/padding_top_bar"
+        android:paddingTop="@dimen/padding_top_bar"
+        android:paddingRight="@dimen/padding_top_bar"
+        android:paddingBottom="@dimen/mb_margin_torch_button">
+
+        <ImageButton
+            android:id="@+id/torchButton"
+            style="@style/MB_top_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mb_ic_flash_off_24dp"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewfinderMarginTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mb_margin_torch_button"
+        android:background="@color/mb_overlay_camera_translucent"
+        tools:ignore="RtlHardcoded"
+        tools:visibility="gone" />
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/upperHalf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="50%">
+
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:id="@+id/viewfinderContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:id="@+id/viewfinderQuadrangle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    app:layout_aspectRatio="158.577251%"
+                    app:layout_widthPercent="90%">
+
+                    <com.microblink.view.viewfinder.ViewfinderShapeView
+                        android:id="@+id/viewfinderRectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:mb_cornerRadius="@dimen/dp_6"
+                        app:mb_outerColor="@color/mb_overlay_camera_translucent"
+                        app:mb_shapeType="rectangle" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/dp_16"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            android:id="@+id/tvCardMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="invisible"
+                            tools:text="Front side"
+                            tools:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/ivCardIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/mb_frontid_white"
+                            tools:visibility="visible" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/shadowLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/viewfinderQuadrangle"
+                    android:background="@color/mb_overlay_camera_translucent"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:id="@+id/shadowRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/viewfinderQuadrangle"
+                    android:background="@color/mb_overlay_camera_translucent"
+                    tools:ignore="RtlHardcoded" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/viewfinderQuadrangle"
+                    android:layout_toLeftOf="@id/shadowRight"
+                    android:layout_toRightOf="@id/shadowLeft"
+                    android:background="@color/mb_overlay_camera_translucent"
+                    tools:ignore="RtlHardcoded" />
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/upperHalf"
+            android:background="@color/mb_overlay_camera_translucent"
+            app:layout_heightPercent="50%" />
+
+        <TextView
+            android:id="@+id/tvGlareMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperHalf"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/mb_tooltip_glare"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+
+        <RelativeLayout
+            android:id="@+id/statusOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_status_msg"
+            android:padding="@dimen/mb_padding_tooltip"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tvStatusMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/mb_padding_tooltip"
+                android:layout_marginRight="@dimen/mb_padding_tooltip"
+                android:layout_toStartOf="@+id/ivStatusImg"
+                android:layout_toLeftOf="@+id/ivStatusImg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:typeface="normal"
+                tools:ignore="SelectableText"
+                tools:text="Step explanation" />
+
+            <ImageView
+                android:id="@+id/ivStatusImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/mb_frontid_white" />
+        </RelativeLayout>
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+</LinearLayout>
+

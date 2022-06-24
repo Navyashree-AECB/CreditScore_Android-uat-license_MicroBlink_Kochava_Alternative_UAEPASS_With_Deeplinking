@@ -1,0 +1,89 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.google.gms:google-services:4.3.4'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        //classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.4.1'
+    }
+}
+
+allprojects {
+    configurations.all {
+        resolutionStrategy.force 'org.objenesis:objenesis:2.6'
+    }
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        //maven { url 'https://dl.bintray.com/drummer-aidan/maven' }
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://s3.amazonaws.com/repo.commonsware.com' }
+        maven { url 'https://maven.microblink.com' }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    ext {
+        appName = "AECB Credit"
+        minSdkV = 19
+        targetSdkV = 31
+        compileSdkV = 31
+        applicationId = "com.aecb"
+        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testApplicationId = "test.com.aecb"
+        buildToolsV = "27.0.3"
+        daggerV = "2.25.4"
+        firebaseAuthV = "19.3.0"
+        firebaseMessagingV = "20.1.5"
+        glideV = "4.9.0"
+        gmsVersion = "17.5.0"
+        gmsVersionService ="17.0.0"
+        gmsAuthVersion ="17.4.0"
+        goodleVision = "19.0.0"
+        gsonV = "2.8.2"
+        leakcanaryV = "1.5.1"
+        liveDataV = "1.1.1"
+        mosbyV = "3.1.1"
+        multidexV = "1.0.3"
+        okhttpV = "3.7.0"
+        permissionDispatcherV = "3.1.0"
+        retrofitV = "2.4.0"
+        roomV = "1.1.1"
+        rxAndroidV = "2.1.0"
+        rxV = "2.1.1"
+        stethoV = "1.5.1"
+        supportLibV = "28.0.0"
+        timberV = "4.6.1"
+        sdplibV = "1.0.5"
+        ssplipV = "1.0.5"
+        calligraphyV = "2.3.0"
+        eventbusV = "3.1.1"
+        jodatimeV = "2.9.9.2"
+        javaxannotationV = "10.0-b28"
+        smartScropV = "v1.2.5"
+        cardScanV = "5.5.1"
+        tensorflowV = "1.13.1"
+        goodleAnalicysV = "18.0.1"
+        safeRoom="1.2.1"
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

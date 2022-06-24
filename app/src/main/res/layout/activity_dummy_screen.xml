@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aecb.ui.DummyScreen">
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:id="@+id/noReportNoScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No Report No Score"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/noReportSingleScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No Report Single Score"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/noReportMultiScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No Report Multi Score"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/singleReportNoScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Single Report No Score"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/multiReportNoScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Multi Report No Score"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/multiReportMultiScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Multi Report Multi Score"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/onlyReportWithScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Only Report with score"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/multiReportMultiScoreNoLastYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="Multi Report Multi Score(No Last year)"
+        android:textAllCaps="false" />
+
+</LinearLayout>

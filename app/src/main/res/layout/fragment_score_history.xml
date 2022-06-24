@@ -1,0 +1,94 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/llTopView"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPrevious"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_left_arrow_blue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvScoreHistory"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:orientation="horizontal" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNext"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_right_arrow_blue" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNoPurchaseFound"
+                style="@style/ExtraMediumFont"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/no_purchase_found"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/SmallFont"
+                android:id="@+id/lastTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvMonthList"
+                app:layout_constraintVertical_weight="0.5" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMonthList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/lastTextView"
+                app:layout_constraintTop_toBottomOf="@+id/lineChart"
+                app:layout_constraintVertical_weight="1.5" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/rvMonthList"
+                app:layout_constraintTop_toBottomOf="@+id/llTopView"
+                app:layout_constraintVertical_weight="2" />
+
+        </RelativeLayout>
+    <data>
+
+    </data>
+
+</layout>

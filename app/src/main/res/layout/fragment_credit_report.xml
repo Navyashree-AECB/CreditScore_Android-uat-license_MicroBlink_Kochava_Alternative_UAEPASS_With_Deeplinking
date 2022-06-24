@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/_45sdp"
+        android:background="@color/transparent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/parentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/bg_topcurv_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvText"
+                style="@style/ToolbarTitleFontBlackBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/credit_report" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                style="@style/SmallFont.TextAlineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layoutDirection="locale"
+                android:background="@color/transparent"
+                app:tabSelectedTextColor="@color/border_color"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabTextAppearance="@style/CustomTextAppearanceTab"
+                android:visibility="gone"
+                app:tabTextColor="@color/gray_light" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:visibility="gone"
+                android:background="@color/gray_light" />
+
+            <com.aecb.presentation.RTLViewPager
+                android:id="@+id/viewPager"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="WebViewLayout" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

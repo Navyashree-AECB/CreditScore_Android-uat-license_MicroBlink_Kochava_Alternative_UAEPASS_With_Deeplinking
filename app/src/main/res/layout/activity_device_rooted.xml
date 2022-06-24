@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.appundermaintenance.view.AppUnderMaintenanceActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/language_color"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:src="@drawable/maintenance_frame_option2" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/LargeFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/device_is_rooted"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/MediumFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/you_can_t_use_this_app_as_we_have_found_that_your_device_is_rooted"
+            android:textColor="@color/active_icon_bottom_color"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:srcCompat="@drawable/aecb_white_icon" />
+
+    </LinearLayout>
+</layout>

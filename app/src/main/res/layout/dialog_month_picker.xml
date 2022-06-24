@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:theme="?android:theme">
+
+        <LinearLayout
+            android:id="@+id/material_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/month_picker_back"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/routToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_back_white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/titleMonth"
+                            style="@style/MediumFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/titleYear"
+                            style="@style/MediumFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ScrollView
+                    android:id="@+id/message_content_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_4sdp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/btnPrevious"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginStart="@dimen/_16sdp"
+                                android:padding="@dimen/_4sdp"
+                                app:srcCompat="@drawable/previous_vector" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/btnNext"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/_16sdp"
+                                android:padding="@dimen/_4sdp"
+                                app:srcCompat="@drawable/next_vector" />
+
+                            <TextView
+                                android:id="@+id/textYear"
+                                style="@style/MediumFont"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_160sdp"
+                            android:layout_gravity="center" />
+
+                        <NumberPicker
+                            android:id="@+id/yearPicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_160sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="@dimen/_16sdp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp">
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    style="@style/SmallFont"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/txt_cancel"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/btnOk"
+                    style="@style/SmallFont"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/txt_ok"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

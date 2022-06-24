@@ -1,0 +1,1410 @@
+<resources>
+    <!--<string name="app_name">AECB</string>-->
+
+    <!-- Splash Screen -->
+    <string name="app_version">Version</string>
+    <!-- End Splash Screen -->
+
+    <!-- Contact Number Screen -->
+    <string name="lbl_login_account">Login to your account</string>
+    <!-- End Contact Number Screen -->
+
+    <!-- Login Screen -->
+
+    <string name="hint_phone_number">Enter your Mobile Number</string>
+    <string name="txt_login_with_touch_id">Login with Touch ID</string>
+    <string name="txt_login" formatted="true">Login</string>
+    <string name="txt_register">Register</string>
+    <string name="lbl_enter_password">Enter Your Password</string>
+
+    <string name="hint_password">Enter Password</string>
+
+    <string name="enter_user_name">Please Enter your Email Address</string>
+    <string name="enter_valid_username">Please enter a valid Email Address</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="enter_valid_email">Please enter a valid email address</string>
+    <string name="enter_phone">Please enter phone number</string>
+    <string name="enter_valid_phone">Please enter a valid mobile number</string>
+    <string name="enter_password">New Password</string>
+    <string name="enter_confirm_password">Please enter confirm password</string>
+    <string name="password_less_than_six">Password length should not be less than 6 characters</string>
+    <string name="password_greater_than_thirty">Password length should not be greater than 30 characters</string>
+    <string name="error_valid_password">Please enter valid password</string>
+    <string name="enter_mobile">Enter Mobile Number</string>
+
+    <string name="enter_valid_mobile">Please enter a valid mobile number</string>
+    <!-- End Login Screen -->
+
+    <!-- Register Screen -->
+    <string name="lbl_enter_email_address">Enter Email Address</string>
+    <string name="lbl_register_an_account" translatable="false">Register</string>
+    <string name="hint_email">Enter Email Address</string>
+    <string name="lbl_email">Email Address</string>
+    <string name="lbl_description_term_condition">To continue ,agree to our</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_continue_and_pay">Confirm &amp; Pay</string>
+    <string name="txt_confirm_and_continue">Confirm &amp; Continue</string>
+    <string name="txt_switchto_english">التبديل إلى اللغة الإنجليزية</string>
+    <string name="txt_switchto_arabic">Switch to Arabic</string>
+    <string name="txt_english">English</string>
+    <string name="txt_arabic">العربية</string>
+    <string name="lbl_select_language">Select Language</string>
+    <string name="lbl_term_condition">Terms and Conditions</string>
+    <string name="lbl_forgot_pwd">Forgot Your Password?</string>
+    <string name="error_t_c">Please accept our Terms &amp; Conditions</string>
+    <string name="hint_pls_register">, Please Register</string>
+    <!--End Register Screen -->
+
+    <!-- Otp Screen -->
+    <string name="txt_title_enter_otp">Enter OTP</string>
+    <string name="one_time_password">One Time Password</string>
+    <string name="txt_desc_otp_sent">A One Time Password (OTP) has been sent to your phone mobile number. Please enter</string>
+    <string name="txt_otp_sent_email">An OTP has been sent to your email address</string>
+    <string name="txt_desc_otp_verify">Please verify here.</string>
+    <string name="txt_desc_otp_one">A One Time Password (OTP) will be sent to the mobile number you provided</string>
+    <string name="txt_desc_touch">Place your thumb or finger on \n the Home Button.</string>
+    <string name="txt_title_touch">Set up Touch ID</string>
+    <string name="txt_title_touch_already_set">Touch ID Already Setup</string>
+    <string name="txt_no_thanks">No thanks</string>
+    <string name="hint_x">x</string>
+    <string name="error_enter_opt">Invalid Onetime Password (OTP). Please try again</string>
+    <string name="txt_desc_no_figerprint">Set up your fingerprint for faster &amp; easier access to your account</string>
+    <string name="txt_desc_exiest_figerprint">Use existing fingerprint set on your device. \n No need to enter mobile number for login</string>
+    <string name="txt_enable_fingerprint">Enable fingerprint</string>
+    <string name="txt_setup_fingerprint">Set up fingerprint</string>
+    <string name="txt_desc_touchlogin">You have enabled login via TouchID for faster access to your account</string>
+    <string name="timer">00:00:00</string>
+    <string name="sucess_msg_otp">Otp resend successfully</string>
+    <string name="dialog_msg_change_email">Are you sure, you want to change your email address?</string>
+    <string name="dialog_msg_change_mobile">Are you sure, you want to change your mobile number?</string>
+    <!-- End Otp Screen -->
+
+    <!-- Payment Confirmation Screen -->
+    <string name="txt_title_card_detail_store">Card details securely stored. \n proceed to payment</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_confirm_payment">Confirm payment</string>]
+    <string name="txt_title_purchase_report">Your purchased PDF report cost</string>
+    <string name="txt_base_pdf_report">Base Fee (pdf report)</string>
+    <string name="txt_total">Total</string>
+    <!-- End Payment Confirmation Screen -->
+
+    <!-- Forgot Password Screen -->
+
+
+    <string name="lbl_forgot_password">Forgot Password ?</string>
+    <string name="lbl_reset_password">Reset Password</string>
+    <string name="txt_desc_forgot_password">Enter your registered email address, and we will send you A OneTime Password (OTP) to the mobile number you provided. </string>
+    <string name="txt_send_reset_link">Send Reset Link</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_desc_forgot_link">A reset link has been sent to your email ID. Follow the instructions to change your password</string>
+    <string name="txt_update_password">Update Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_confirm_password_for_create_password">Confirm Password</string>
+    <string name="error_password_not_match">Password and confirm password does not match</string>
+    <string name="error_confirm_password">Please enter confirm password.</string>
+    <!-- End Forgot Password Screen -->
+
+    <!-- Dashboard Screen -->
+
+
+    <string name="txt_upcoming_payment">Amount of Upcoming Rental Payment</string>
+    <string name="txt_no_of_payment">No. of payments</string>
+    <string name="txt_to_be_paid">To be paid</string>
+    <string name="txt_aed">AED</string>
+    <string name="txt_my_contract">My Contracts</string>
+    <string name="txt_quarterly_payment">Quarterly Payment</string>
+    <string name="txt_biannual_payment">Biannual Payment</string>
+    <string name="txt_annual_payment">Annual Payment</string>
+    <string name="txt_payment_due">Payment due</string>
+    <string name="txt_my_scan">My Scans</string>
+    <string name="txt_scan_a_tenant">Scan a tenant</string>
+    <string name="txt_scan_tenant">Scan tenant</string>
+    <string name="txt_add_contract_manually">Add contract manually</string>
+    <string name="txt_add_new_tenant">Add New Tenant</string>
+    <string name="hint_scan_a_tenant">You can scan a tenant\'s EID Or use Trade License to generate Tenant Score and report.</string>
+    <string name="txt_charges">Charges:</string>
+    <string name="txt_base_fee">Base Fee (PDF Report)</string>
+    <string name="txt_dont_show_msg">Don\'t show this message again. </string>
+    <string name="btn_scan_now">Scan Now</string>
+    <string name="txt_vat">VAT </string>
+    <string name="txt_delete">Delete</string>
+    <string name="txt_delete_scan">Are you sure you want to delete the scan?</string>
+    <string name="txt_no_contract">Your purchased Tenant Score will appear here</string>
+    <string name="txt_welcome">Welcome,</string>
+
+    <string name="txt_filter">Filter</string>
+    <string name="txt_tenant_score">Tenant Score</string>
+    <string name="txt_welcome_user">Welcome user,</string>
+    <string name="dialog_msg_change_language">Are you sure want to change application language?</string>
+
+    <string name="txt_12">12</string>
+    <string name="txt_pending_reports">Pending Reports</string>
+    <string name="txt_paid_reports">Paid Reports</string>
+    <string name="txt_please_confirm_the_clearence">Please confirm the clearence</string>
+    <string name="txt_iban_2338">IBAN **** **** 2338</string>
+    <string name="txt_u_name">Sheikh Haseeb</string>
+    <string name="txt_ud_name">20 April 2019</string>
+    <string name="txt_u_left_name">6 days left to cheque clearence</string>
+    <string name="txt_aeb_name">25 April 2019</string>
+    <string name="txt_aeb_title">AED 2,000</string>
+    <string name="txt_pdf_not_generated">Pdf not generated</string>
+    <string name="txt_dashboard_desc">A hassle free way to asses the likelihood of your tenant to honor their rental obligations</string>
+    <string name="txt_cheque_scan">Cheques\nscanned</string>
+    <string name="txt_cheque">Cheques</string>
+    <string name="txt_scanned">scanned</string>
+    <string name="txt_last_two_week">In the last 2 weeks</string>
+    <string name="txt_cheque_due">Cheques\nDue</string>
+    <string name="txt_due">Due</string>
+    <string name="txt_next_two_week">In the next 2 weeks</string>
+    <string name="txt_days">Days</string>
+    <string name="txt_cleared">Cleared</string>
+    <string name="txt_bounced">Bounced</string>
+    <string name="txt_cancelled">Cancelled</string>
+    <string name="hint_search_by">Search by name</string>
+    <string name="txt_to">To</string>
+    <string name="txt_range_amount">AED 1000 - 10,000</string>
+
+    <string name="txt_capture">Capture</string>
+    <string name="txt_manual_capture">Manual Capture</string>
+
+    <string name="dialog_msg_status_cleared">Are you sure want to change the status of this cheque as Cleared?</string>
+    <string name="dialog_msg_status_bounced">Are you sure want to change the status of this cheque as bounced?</string>
+
+    <string name="txt_payment_due_date">Payment Due Date</string>
+    <!--End Dashboard Screen -->
+
+
+    <!-- Notification Screen -->
+
+    <string name="txt_notifications">Notifications</string>
+    <string name="txt_clear_all">Clear All</string>
+    <string name="txt_remove">Remove</string>
+
+    <string name="txt_n_one">Please update payment status of AED 15,000 from Abdullah Hadley</string>
+    <string name="txt_sec_ago_1">2 mins. ago</string>
+    <string name="txt_sec_ago_2">4 mins. ago</string>
+    <string name="txt_sec_ago_3">08 Oct 2019</string>
+
+    <string name="txt_n_two">Update your profile</string>
+    <string name="txt_n_three">Contract #2521, expires in 2 days</string>
+    <string name="txt_n_four">You have an upcoming payment of AED 10,000 from David Patrick, due on 13 Oct 2019. Send reminder.</string>
+
+    <!-- End Notification Screen -->
+
+
+    <!-- Image crop Screen -->
+
+    <string name="txt_upload">Upload</string>
+
+    <!-- End Image crop Screen -->
+
+
+    <!-- Payment Method Screen -->
+
+    <string name="title_payment_method" translatable="false">Payment Method</string>
+    <string name="lbl_payment_method" translatable="false">Payment Method*</string>
+    <string name="txt_add_new_credit_card" translatable="false">Add a new Credit Card</string>
+    <string name="txt_telecom" translatable="false">Telecom</string>
+    <string name="txt_google_pay">Google Pay</string>
+    <string name="txt_apple_pay" translatable="false">Apple Pay</string>
+    <string name="txt_title_end_journey">Do you want to save \nand exit?</string>
+    <string name="txt_desc_end_journey">To end this journeytap YES. Or proceed to payment and press No.</string>
+    <string name="txt_check_out">Check out</string>
+    <string name="txt_base_fee_pdf_report">Base Fee(PDF Report)</string>
+    <string name="txt_aedd_with_space">AED </string>
+    <string name="txt_vat_5">VAT % </string>
+    <!--End Payment Method Screen -->
+
+
+    <!-- Add Card Screen -->
+
+    <string name="txt_add_card">Add Card</string>
+    <string name="txt_add_card_desc">Your payment information is securely stored.</string>
+    <string name="hint_full_name_of_add_card">Full Name</string>
+    <string name="hint_card_number">Card Number</string>
+    <string name="hint_expiry_date">Expiry Date</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="txt_scan">Scan</string>
+    <string name="txt_save_changes">Save Changes</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_enter_card_number">Please enter the card number</string>
+    <string name="txt_yyyy_mm">MM/YY</string>
+    <string name="txt_please_enter">Please enter the card number</string>
+    <string name="agree_to_save_card_details">I agree to save my card details</string>
+    <string name="make_this_card_as_my_default_card">Make it Default</string>
+    <string name="card_deleted_successfully">Card Deleted Successfully</string>
+    <string name="txt_title_card_details">Card Details</string>
+    <!--End Add Card Screen -->
+
+    <!-- Almost there Screen -->
+
+    <string name="txt_almost_there">Almost there...</string>
+    <string name="txt_desc_save_time">We are generating your Tenant Score.</string>
+
+    <!-- End Almost there Screen -->
+
+
+    <!-- View pdf Screen -->
+
+    <string name="txt_view_pdf">View Pdf</string>
+    <string name="txt_view_pdf_worry">Nothing to worry about.</string>
+    <string name="txt_very_low_risk">Less than 1% chance of missing payments</string>
+    <string name="txt_low_risk">Less than 2% chance of missing payments</string>
+    <string name="txt_medium_risk">Less than 5% chance of missing rental payments</string>
+    <string name="txt_high_risk">Up to 40% chance of missing rental payments</string>
+    <string name="txt_very_high_risk">More than 50% chance of missing rental payments</string>
+    <string name="txt_low" translatable="false">Low</string>
+    <string name="txt_scan_date">Scan Date</string>
+    <string name="txt_view_desc">A detailed PDF report has also been sent to your registered email address.</string>
+    <string name="txt_cheque_status_id">ID # 009 1002 9993</string>
+    <string name="txt_cheque_status">Status: Due in 10 days</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_create_contract">Create Contract</string>
+    <string name="txt_prospect">Prospect</string>
+    <string name="txt_14_jan_2020">14 Jan 2020</string>
+    <string name="txt_Hammad_Salem">Hammad Salem -</string>
+    <string name="txt_Tenant_Score">Tenant Score</string>
+
+    <string name="hint_cheque_reminder">Send cheque clearance reminder</string>
+    <string name="hint_cheque_status">Cheque Status</string>
+    <string name="hint_reminder_issuer">Remind the issuer of the cheque</string>
+    <string name="txt_send_reminder">Send Reminder</string>
+
+    <string name="txt_settings">Settings</string>
+
+    <string name="txt_additional_settings">Additional Information</string>
+    <!--End View pdf Screen -->
+
+    <!-- Setting Screen -->
+
+    <string name="txt_More_Info">More Info</string>
+    <string name="txt_language">Select Language</string>
+    <string name="txt_profile">Profile</string>
+    <string name="txt_sub_title_profile">Edit your name, details, etc.</string>
+    <string name="txt_about_aecb">About AECB</string>
+    <string name="txt_company_overview">Read overview</string>
+    <string name="txt_contact">Contact</string>
+    <string name="txt_sub_title_contact">Feel free to contact us</string>
+    <string name="txt_faqs">FAQs</string>
+    <string name="txt_sub_title_faqs">Frequently asked questions</string>
+    <string name="txt_account_settings">Account Settings</string>
+    <string name="txt_sub_title_account_setting">Edit your settings anytime</string>
+    <string name="txt_follow_us">Follow us</string>
+    <string name="txt_stay_updated">Stay updated with our latest stories</string>
+    <string name="sub_title_account_settings">Edit your account settings</string>
+    <string name="txt_preferred_payment_method">Select preferred payment method</string>
+
+    <string name="txt_dashboard_view">Dashboard view</string>
+    <string name="txt_login_settings">Login Settings</string>
+    <string name="txt_delete_notification">Delete Notifications</string>
+    <string name="txt_push_notification">Push Notifications</string>
+    <string name="txt_renewal_reminder">Renewal reminder</string>
+    <string name="txt_payment_reminder">Payment Reminders</string>
+    <string name="txt_credit_card">Credit Card</string>
+    <string name="txt_by_due_date">By Due Date</string>
+
+    <string name="txt_alpha_order">Alphabetical Order</string>
+    <string name="txt_clearance_state">Clearance State</string>
+    <string name="txt_cheque_scan_one">Cheques Scanned</string>
+    <string name="txt_cheque_due_one">Cheques Due</string>
+
+    <string name="settinhs_last_two_week">in  last 2 weeks</string>
+    <string name="settinhs_next_two_week">in  next 2 weeks</string>
+
+    <string name="txt_email">Email</string>
+    <string name="txt_touch_id">Touch ID</string>
+
+    <string name="txt_a_to_z">A - Z</string>
+    <string name="txt_z_to_a">Z - A</string>
+
+    <string name="txt_days_before">days before</string>
+    <string name="txt_month_later">month later</string>
+
+    <string name="sub_title_profile_settings">Edit your details</string>
+    <string name="hint_id_number">ID Number</string>
+
+    <string name="txt_title_about">Al Etihad Credit Bureau is a Public Joint Stock Company wholly owned by the UAE Federal Government.</string>
+    <string name="txt_desc_about">As per UAE Federal Law No. (6) of 2010 concerning Credit Information, the company is mandated to regularly collect credit information from financial and non-financial institutions in the UAE. A1 Etihad Credit Bureau aggregates and analyzes this data to calculate Credit Scores and produce Credit Reports that are made available to individuals and companies in the UAE. Credit Reports and Scores for companies are not available through our online services at the moment, kindly visit our Customer Happiness Centres to get your report.</string>
+
+    <string name="txt_copyride_about">© AECB 2019</string>
+    <string name="txt_privacy_policy">Privacy Policy</string>
+    <string name="txt_submit_query">Submit Query</string>
+
+    <string name="lbl_subject">Subject</string>
+    <string name="lbl_message">Message</string>
+    <string name="hint_query">Reason for contact</string>
+    <string name="txt_desc_contact">Fill in your query and our team will get back to you</string>
+    <string name="hint_subject">Enter query subject</string>
+    <string name="hint_message">Enter your message here</string>
+    <string name="hint_search_keyword">Search by keyword</string>
+    <string name="txt_desc_faqs">Have a look at the most commonly asked questions.</string>
+
+    <string name="txt_mobile_number">Mobile Number</string>
+    <string name="txt_change_email">Change Email</string>
+
+    <string name="txt_change_mobile">Change Mobile</string>
+    <string name="txt_change_password">Change Password</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="hint_query_type">Select your query type</string>
+    <string name="query_type_opt1">Query type one</string>
+    <string name="query_type_opt2">Query type two</string>
+
+    <string name="query_type_opt3">Query type three</string>
+    <string name="query_type_opt4">Query type four</string>
+    <string name="upload_query">Upload file with your query \n(Max 20 MB)</string>
+    <string name="txt_sign_out">Sign out</string>
+
+    <string name="txt_sub_title_sign_out">App sign out from here</string>
+
+    <string name="dialog_msg_enable_touch">Are you sure you want to enable touch login?</string>
+    <string name="dialog_msg_desable_touch">Are you sure you want to disable touch login?</string>
+
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <!--End Setting Screen -->
+
+    <!--Crop Screen -->
+
+    <string name="txt_tilt_camera">Tilt phone to adjust camera screen</string>
+    <string name="txt_generated_reports">Generated</string>
+    <string name="txt_ungenerated_reports">Ungenerated</string>
+    <!--End Crop Screen -->
+
+
+    <!--Dashboard Filter Screen -->
+
+    <string name="hint_search_by_keyword">Search by name</string>
+    <string name="hint_contract_status">Contract Status</string>
+    <string name="hint_payment_status">Payment Status</string>
+    <string name="hint_contract_expiry">Contract Expiry</string>
+    <string name="hint_cheque_clearance_date">Cheque Clearance Date</string>
+    <string name="hint_lowest_highest">Lowest - Highest</string>
+    <string name="hint_highest_lowest">Highest - Lowest</string>
+    <string name="hint_nearest_farthest">Nearest - Farthest</string>
+    <string name="hint_farthest_nearest">Farthest - Nearest</string>
+    <string name="txt_pending">Pending</string>
+    <string name="txt_renewed">Renewed</string>
+    <string name="txt_recent">Recent</string>
+    <string name="txt_earlier">Earlier</string>
+    <string name="txt_reports">Reports</string>
+    <string name="txt_apply_filter">Apply Filters</string>
+    <string name="txt_all">All</string>
+    <string name="txt_high">High</string>
+    <string name="txt_medium">Medium</string>
+    <string name="txt_ungenerated">Ungenerated</string>
+    <string name="txt_indicator_level">Indicator Level</string>
+    <string name="txt_sort_by">Sort By</string>
+    <string name="txt_nearest">Nearest</string>
+    <string name="txt_farthest">Farthest</string>
+    <string name="txt_high_to_low">High - Low</string>
+    <string name="txt_low_to_high">Low - High</string>
+    <string name="txt_verify">Verify</string>
+    <string name="txt_Credit_one">**** **** **** 6652</string>
+    <string name="txt_Credit_two">**** **** **** 0014</string>
+    <string name="txt_reset">Reset</string>
+    <string name="txt_payment_amt">Payment Amount</string>
+
+    <string name="txt_very_high">Very High</string>
+
+    <string name="txt_very_low">Very Low</string>
+    <string name="txt_risk_indecator_purchase">Risk Indicator Purchased</string>
+    <string name="txt_contract_party">Contract Party</string>
+    <string name="txt_landlord">Landlord</string>
+    <string name="txt_tenant">Tenant</string>
+    <string name="txt_contract_type">Contract Type</string>
+    <string name="txt_individual">Individual</string>
+    <string name="txt_company">Company</string>
+    <string name="txt_active">Active</string>
+    <string name="txt_expired">Expired</string>
+    <string name="txt_payment_due_amount">Payment Due Amount</string>
+    <string name="txt_error">Error</string>
+
+    <string name="txt_desc_error">Unable to generate PDF using Emirates ID.\n Please proceed with the following</string>
+    <!--Dashboard Filter Screen -->
+
+    <!-- Emirate and Trade Licence Screen -->
+
+    <string name="txt_emirates_id">Emirates Id</string>
+    <string name="txt_trade_license">Trade License</string>
+    <string name="txt_desc_emirates_id">Upload a picture of your Emirates Id \nor simply scan it</string>
+    <string name="txt_desc_trade_license">Upload a picture of your Trade License \nor simply scan it</string>
+    <string name="title_trade_license_details">Trade License Details</string>
+    <string name="title_eid_details">E.I.D Details</string>
+    <string name="hint_identification_no">Emirates ID Number </string>
+    <string name="txt_emirates_id_number">Emirates ID Number </string>
+    <string name="hint_nationality">Enter Nationality</string>
+    <string name="hint_license_no">License Number</string>
+    <string name="hint_entity_name">Entity Name</string>
+    <string name="hint_start_date">Start Date</string>
+    <string name="hint_dob">Date of Birth</string>
+    <string name="hint_trade_name">Trade Name</string>
+    <string name="txt_review_detail">Review Detail</string>
+    <string name="txt_sorry">Sorry...</string>
+    <string name="txt_sorry_description">We can\'t seem to find the relevant IBAN number regarding your cheque.</string>
+
+    <string name="hint_start_date_">Start Date</string>
+    <string name="hint_end_date_">End Date</string>
+
+    <string name="txt_how_proceed_payment">How would you like to \nproceed ?</string>
+    <string name="txt_add_new_contract">Add New Contract</string>
+    <!-- End Emirate and Trade Licence Screen -->
+
+    <!-- Proceed Payment Fragment -->
+    <string name="txt_purchase_report">Purchase Report</string>
+    <string name="txt_edit_Fname">Dario</string>
+    <string name="txt_edit_Lname">Smith</string>
+    <!-- End Proceed Payment Fragment -->
+
+    <!-- Setting Profile -->
+    <string name="txt_edit_email">dario@gmail.com</string>
+    <string name="txt_edit_Pnumber">+971 987 654 3210</string>
+    <string name="ripple_duration" translatable="false">300</string>
+    <string name="timeoutError">Server is taking too long to respond.\nPlease try again</string>
+
+    <!-- Others -->
+    <string name="serverError">Something went wrong on the server side !</string>
+
+    <string name="unauthenticatedError">Your session has expired. Please login again.</string>
+    <string name="networkError">Please check your internet connection and retry !</string>
+    <string name="btnBack">Back Button</string>
+    <string name="connectionError">Can\'t connect to the servers</string>
+
+    <string name="no_activity_found">No Activity Found</string>
+
+    <string name="permission_storage_denied">Please provide permissions to access storage</string>
+    <string name="permission_storage_permanent_denial">You have denied permission to access storage. Please go to Settings and provide storage permissions</string>
+
+    <string name="permission_storage_rationale">You need to provide permissions for storage access</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+
+    <string name="yes">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="txt_app_version">AECB TenantScore App Version:</string>
+    <string name="title_contract_details">Contract Details</string>
+
+    <string name="txt_renew_contract">Renew Contract</string>
+    <!-- End Others -->
+
+
+    <!-- Contract Detail Screen -->
+    <string name="txt_previous_contract">Previous Tenancy Contracts</string>
+    <string name="hint_property_name">Property Name</string>
+    <string name="hint_emirate">Emirate</string>
+    <string name="hint_area">Area</string>
+    <string name="hint_contract_no">Contract Number</string>
+    <string name="hint_end_date">End Date</string>
+    <string name="hint_payment_period">Payment Period</string>
+    <string name="hint_payment_amount">Contract Amount</string>
+    <string name="hint_no_payment">Number Of Payments</string>
+    <string name="txt_add_new_payment">Add a new payment</string>
+    <string name="hint_indicator_reports">Indicator Reports</string>
+    <string name="txt_reminer_payment">Remind the tenant of payment</string>
+    <string name="txt_set_reminer">Payment reminder set</string>
+    <string name="txt_risk">Risk</string>
+    <string name="hint_payment_detail">Payment List</string>
+    <string name="title_previous_contract">Previous Tenancy Contracts</string>
+    <string name="sub_title_previous_contract">View details of previous Tenancy contracts for these tenant and property</string>
+
+    <string name="title_manage_contract">Manage</string>
+    <string name="txt_auto_clear_payment">Auto clear payments</string>
+
+    <string name="txt_contract_period">Contract Period</string>
+    <string name="txt_cancel_contract">Cancel Contract</string>
+    <string name="txt_remind_tenant_payment">Remind tenant of payment</string>
+    <string name="txt_send_payment_reminder">Send payment reminder</string>
+    <string name="title_add_new_payment">Add New Rental Payment</string>
+    <string name="sub_title_add_payment">Enter new payment details</string>
+    <!-- End Contract Detail  Screen -->
+
+    <!-- Add Payment Screen -->
+    <string name="txt_save_detail">Save Detail</string>
+    <string name="lbl_payment_number">Payment Number</string>
+    <string name="hint_payment_number">Enter payment number</string>
+    <string name="hint_due_date_add_payment">Enter the payment due date</string>
+
+    <string name="hint_enter_payment_amount">Enter payment amount</string>
+    <string name="txt_canceled_contract">Tenancy Contract Cancelled</string>
+    <string name="txt_cancel_contract_hint">The contract has been removed from your list.</string>
+    <!--End Add Payment  Screen -->
+
+    <!-- Cancel Contract -->
+    <string name="txt_desc_cancel_contract">Are you sure you want to cancel this tenancy  contract?</string>
+    <string name="title_create_contract">Create Contract</string>
+
+    <string name="sub_title_create_contract">Please put the details below and confirm to continue.</string>
+    <!-- End Cancel Contract -->
+
+    <!--Create Contract -->
+    <string name="lbl_name">Name</string>
+    <string name="hint_name">Enter name</string>
+
+    <string name="enter_id_number">Enter id number</string>
+    <string name="enter_emailid">Enter email address</string>
+    <string name="enter_contact">Enter contact number</string>
+    <string name="enter_contract_no">Enter contract number</string>
+    <string name="txt_from">From</string>
+    <string name="enter_contract_amt">Enter contract amount</string>
+
+    <string name="enter_payment_amt">Enter payment amount</string>
+    <string name="lbl_man_contract_no">Contract Number</string>
+    <string name="lbl_man_payment_amt">Payment Amount</string>
+    <string name="enter_property_name">Enter property Name</string>
+    <string name="enter_area">Enter area</string>
+    <string name="select_payment_period">Select Payment Period</string>
+    <string name="select_emirate">Select Emirate</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="txt_confirm_for_create_password">Confirm</string>
+    <string name="lbl_payment_cheque">Payment in Cheque</string>
+    <string name="enter_payment_cheque">Enter payment in Cheque</string>
+    <string name="txt_switch_tenant">Switch to tenant</string>
+    <string name="txt_proceed_landlord">Proceed As Landlord</string>
+    <string name="select_area">Select Area</string>
+    <string name="txt_payment_date">Payment date</string>
+    <string name="txt_search_title">What are you looking for?</string>
+    <string name="txt_search">Search your text here...</string>
+    <!--End Create Contract -->
+
+    <string name="no_data_found">No data found</string>
+    <string name="no_available_notification">No available notification</string>
+    <string name="txt_yes" translatable="false">Yes</string>
+    <string name="txt_no" translatable="false">No</string>
+
+    <!-- Terms & Condition -->
+
+
+    <!-- For Api Perameter -->
+
+    <string name="clear">Clear</string>
+    <string name="cash">Cash</string>
+    <string name="debit_card">Debit / Card</string>
+    <string name="payment">Payment</string>
+    <string name="prompt_point_at_an_object" translatable="false">Point your camera at The front of your Emirates ID</string>
+    <string name="prompt_hold_camera_steady" translatable="false">Keep camera still for a moment</string>
+    <string name="txt_sorry_for_eid_detail">We can\'t seem to find the score for Emirates Id.</string>
+    <string name="txt_sorry_for_trade_license_detail">We can\'t seem to find the score for Trade License.</string>
+    <string name="add_new_contract">Add new Contract</string>
+    <string name="individuals">Individuals</string>
+    <string name="companies">Companies</string>
+    <string name="trade_name">Trade Name</string>
+    <string name="license_number">License Number</string>
+    <string name="enter_trade_license_number">Enter trade license number</string>
+    <string name="add_details">Add Details</string>
+    <string name="contract_cancelled">Contract cancelled successfully</string>
+    <string name="select_property_name">Please enter property name</string>
+    <string name="select_name">Please enter name</string>
+    <string name="enter_valid_name">Please ensure the first and last names are entered correctly</string>
+    <string name="select_contact">Please enter contact</string>
+    <string name="please_select_email">Please enter email</string>
+    <string name="please_select_start_date">Please select start date</string>
+    <string name="please_select_end_date">Please select end date</string>
+    <string name="please_select_contract_amount">Please enter contract amount</string>
+    <string name="please_select_contract_number">Please enter contract number</string>
+    <string name="please_select_payment_period">Please select payment period</string>
+    <string name="enter_identification_number">Please enter identification number</string>
+    <string name="enter_valid_id_number">Please ensure the Emirates ID number is entered correctly</string>
+    <string name="enter_trade_name">Please enter trade name</string>
+    <string name="enter_license_number">Please enter license number</string>
+    <string name="payment_error_monthly">Please add 12 payments as you have selected monthly payment period</string>
+    <string name="payment_error_quarterly">Please add 4 payments as you have selected quarterly payment period</string>
+    <string name="payment_error_biannually">Please add 2 payments as you have selected bi-annually payment period</string>
+    <string name="payment_error_annually">Please select payment date and amount as you have selected annually payment period</string>
+    <string name="please_select_one">Please select one</string>
+    <string name="please_select_emirate">Please select emirate</string>
+    <string name="select_payment_method">Select Payment Method</string>
+    <string name="please_select_trade_place">Please select Place of Registration</string>
+    <string name="hint_search_trade_place">Search Place of Registration Here...</string>
+    <string name="proceed_as_landlord">Proceed as Landlord</string>
+    <string name="select_nationality">Select Nationality</string>
+    <string name="place_of_registration">Place of Registration</string>
+    <string name="cancel_contract_confirmation">Do you want to cancel this contract?</string>
+    <string name="currency" translatable="false">AED</string>
+    <string name="aed_amount_filter" translatable="false">AED 00 - 100000</string>
+    <string name="fingerprint_not_enabled">TouchID authentication permission not enabled</string>
+    <string name="please_enter_name">Please enter a valid Name</string>
+    <string name="name_length_error">Name length should not be greater than 256 characters</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="please_enter_valid_card_numer">Please enter </string>
+    <string name="please_enter_expiry_date">Please enter expiry date</string>
+    <string name="date_length_validation">Expiry date length should not be less than 5 characters</string>
+    <string name="enter_cvv">Enter CVV</string>
+    <string name="cvv_validation">CVV number length should not be less than 3 characters</string>
+    <string name="payment_status_unpaid">unpaid</string>
+    <string name="please_select_due_date">Please select due date</string>
+    <string name="please_enter_due_amount">Please enter amount</string>
+    <string name="please_enter_valid_amount">Please enter valid amount</string>
+    <string name="please_enter_valid_name">Please enter valid Name</string>
+    <string name="please_enter_id_number">Please enter Id-Number</string>
+    <string name="please_select_date_of_birth">Please ensure the Date of Birth is selected correctly.</string>
+    <string name="txt_in_last">in last</string>
+    <string name="txt_in_next">in next</string>
+    <string name="txt_weeks">weeks</string>
+    <string name="txt_clearance_reminder">Clearance Reminder</string>
+    <string name="txt_update">Update</string>
+    <string name="dialog_msg_change_push_notification">Are you sure you want to disable push notification?</string>
+    <string name="please_select_query_type">Please select query type</string>
+    <string name="Please_enter_query_subject">Please enter query subject</string>
+    <string name="please_enter_query_message">Please enter Query Message.</string>
+    <string name="permission_biometric_denied">TouchID Authentication permission has been denied.</string>
+    <string name="permission_biometric_denial">You have denied permission to access TouchID Authentication. Please go to Settings and Enable TouchID Authentication permissions</string>
+    <string name="permission_biometric_rationale">You need to provide permissions for TouchID Authentication</string>
+    <string name="coming_soon">COMING SOON</string>
+    <string name="risk">Risk</string>
+    <string name="pdf_not_generated">Pdf not generated</string>
+    <string name="from_less_than_to_date">From date should be greater than To date</string>
+    <string name="please_enter_valid_id_number">please enter valid id number</string>
+    <string name="txt_report">Report</string>
+    <string name="_100_000" translatable="false">100,000</string>
+    <string name="aed">AED</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="credit_or_card">Credit or Debit</string>
+    <string name="cardholder_name">Cardholders Name</string>
+    <string name="valid_thru">Valid thru</string>
+    <string name="delete_card_msg">Are you sure you want to delete the card ?</string>
+    <string name="default_card_msg">Are you sure you want to make this card default ?</string>
+    <string name="default_edirham_msg">Are you sure you want to make this EDirham default ?</string>
+    <string name="card_added_successfully">Card added successfully</string>
+    <string name="hint_full_name">Enter Name Here</string>
+
+    <string name="txt_msg_valid_expiry_date">please select valid expiry date</string>
+    <string name="txt_msg_name_max_length">Name length should not be greater than 256 characters</string>
+    <string name="txt_msg_valid_card_number">Plesae enter a valid card number</string>
+    <string name="txt_msg_enter_expiry_date">Please select expiry date</string>
+    <string name="txt_msg_expiry_date_min_length">Expiry date length should not be less than 5 characters</string>
+    <string name="txt_msg_enter_cvv">Please enter cvv number</string>
+    <string name="txt_msg_cvv_min_length">Please enter a valid CVV number</string>
+    <string name="txt_msg_validate_alphabetic">Only alphabetic values are allowed</string>
+    <string name="txt_msg_validate_alphanumeric">Only alphabetic and alphanumeric values are allowed</string>
+    <string name="txt_msg_agree_save_card_details">Please accept agree to save my card details</string>
+    <string name="txt_msg_select_query_message">Please enter query message</string>
+    <string name="txt_msg_select_query_subject">Please enter query subject</string>
+    <string name="almost_there">Almost there...</string>
+    <string name="sit_tight_while_our_system_generates_n_your_reports">We are generating  \n your Tenant Score.</string>
+    <string name="title_cancel_contract">Are you sure you want to cancel the contract?</string>
+
+    <string name="message_delete_notification">Are you sure you want to delete this notification?</string>
+    <string name="message_delete_all_notification">Are you sure you want to delete all notification?</string>
+    <string name="hint_amount">Amount</string>
+    <string name="txt_week_before">week before</string>
+    <string name="search_your_text_here">Search Nationality here...</string>
+    <string name="days_before_due_date">days before due date</string>
+    <string name="days_left">days</string>
+    <string name="txt_save_scan">Save Scan</string>
+    <string name="txt_proceed">Proceed</string>
+    <string name="txt_edit">edit</string>
+    <string name="hint_scan_date">Scan Date</string>
+    <string name="hint_due_date">Due Date</string>
+    <string name="hint_contact_expiry">Contract Expiry</string>
+    <string name="name_should_be_alphabetic">Only alphabetic values are allowed to Name</string>
+    <string name="permission_call_denied">Please provide permissions to Make Phone Calls.</string>
+    <string name="permission_call_permanent_denial">You have denied permission to Make Phone Calls. Please go to Settings and provide Phone permissions</string>
+    <string name="permission_call_rationale">You need to provide permissions to Make Phone Calls.</string>
+    <string name="add_card_confirmation">A small amount will be deducted from your credit card for a one time verification process, this amount will be automatically refunded. </string>
+    <string name="remind_tenant">Remind Tenant</string>
+    <string name="ignore">Ignore</string>
+    <string name="remind_later">Remind Later</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="welcome_title_one" translatable="false">An exclusive platform \nfor your tenancy needs</string>
+    <string name="welcome_sub_title_one" translatable="false">No matter if you are a tenant or a\nlandlord, TenantScore provides you\nwith multitude of features for all your\ntenency needs</string>
+    <string name="welcome_title_two" translatable="false">Register Your \nAccount</string>
+    <string name="welcome_sub_title_two" translatable="false">Register your account by \n entering your mobile number \n and email address</string>
+    <string name="welcome_title_three" translatable="false">Scan an \nEmirates ID</string>
+    <string name="welcome_sub_title_three" translatable="false">Scan a tenant emirates ID \n or enter the tenancy contract \n details to get the tenant score</string>
+    <string name="welcome_title_four" translatable="false">Get the \nTenant Score</string>
+    <string name="welcome_sub_title_four" translatable="false">Get the tenant score to know \n the risk of a tenant to miss \n the payment </string>
+    <string name="welcome_title_five" translatable="false">Save and Manage \nContracts</string>
+    <string name="welcome_sub_title_five" translatable="false">Save your tenancy contracts \n information, easily manage and set \n reminders of upcoming payments</string>
+    <string name="start" translatable="false">START</string>
+    <string name="device_is_rooted">Device is Rooted</string>
+    <string name="you_can_t_use_this_app_as_we_have_found_that_your_device_is_rooted">You can\'t use this app as we have found that your device is Rooted</string>
+    <string name="password_length_should_be_between_8_to_20_char">Password  must contain minimum of 8 characters, at least one uppercase, lowercase,  a special character and a number</string>
+    <string name="please_enter_a_valid_password">Please enter a valid password</string>
+    <string name="invalid_password_error_msgs">Password  must contain minimum of 8 characters, at least one uppercase, lowercase,  a special character and a number</string>
+    <string name="login_with_touch_id">Login with Touch ID</string>
+    <string name="login_with_uae_pass">Login with UAE Pass</string>
+    <string name="login">Login</string>
+    <string name="login_with_aecb_credentials">Login with AECB Credentials</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_submit_data_correction">Submit</string>
+    <string name="or"> OR </string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="please_enter_uae_passpin">Please enter UAE Pass pin</string>
+    <string name="forgot_pin">Forgot PIN ?</string>
+    <string name="uae_pass">UAE Pass</string>
+    <string name="add_your_details">Add Your Details</string>
+    <string name="enter_emirates_id_number">Enter ID No</string>
+    <string name="enter_emirates_id_number_profile">Emirate ID number</string>
+    <string name="hint_emirates_id_number">Emirates ID</string>
+    <string name="emirate_id">Emirates ID</string>
+    <string name="hint_title_full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="txt_gender">Gender</string>
+    <string name="nationality">Nationality</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="hint_date_of_birth">Enter Date of Birth</string>
+    <string name="passport_no">Passport No</string>
+    <string name="hint_passport_no">Enter Passport No</string>
+    <string name="expiry">Expiry</string>
+    <string name="i_accept_tc">I accept all <u>Terms and Conditions</u></string>
+    <string name="select_gender">Select Gender</string>
+    <string name="please_select_gender">Please ensure the Gender is  selected correctly</string>
+    <string name="please_select_passport_no">Please ensure the passport number is in alphanumeric only, no special characters allowed.</string>
+    <string name="please_select_expiry">Please select expiry</string>
+    <string name="i_agree">I Agree</string>
+    <string name="email_address">Email Address</string>
+    <string name="confirm_email">Confirm Email Address</string>
+
+
+    <string name="contact_details">Contact Details</string>
+    <string name="please_enter_mobile">Please Enter Mobile number</string>
+    <string name="please_enter_email_address">Please Enter Email address</string>
+    <string name="please_enter_valid_email">Please Enter valid Email Address</string>
+    <string name="please_enter_confirm_email">Please enter confirm email</string>
+    <string name="email_does_not_match">Please ensure email addresses are entered correctly</string>
+
+    <string name="otp">One Time Password (OTP)</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="contact_us">Contact Us</string>
+    <string name="security_questions">Security Questions</string>
+    <string name="answer">Answer</string>
+    <string name="type_here">Type Here</string>
+
+    <string name="please_enter_answer">Please provide your answer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="enter_password_desc">Your password must be 8 characters long, including a combination of uppercase, lowercase, at least one special character (for example: !@#) and a number</string>
+    <string name="password">Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="enter_new_password">Enter Password</string>
+    <string name="please_enter_password">Please Enter Password</string>
+    <string name="please_enter_current_password">Please Enter Current Password</string>
+    <string name="please_enter_valid_password">Please Enter valid password</string>
+    <string name="please_enter_confirm_password">Please Enter confirm password</string>
+    <string name="password_does_not_match">Password and confirm password do not match</string>
+    <string name="please_enter_correct_password">Please enter the correct password</string>
+    <string name="create_touch_id">Create Touch ID</string>
+    <string name="place_your_thumb">Place your  finger on the scanner  </string>
+    <string name="email">Email</string>
+    <string name="enter_password_hint">Enter Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password_desc">Enter your email address below and we will send you instructions on how to reset your password.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="step_one">Step 1</string>
+    <string name="step_two">Step 2</string>
+    <string name="please_agree_with_tc">Please accept our Terms and Conditions</string>
+    <string name="question">Question</string>
+    <string name="of">of</string>
+    <string name="enter_valid_passport_no">Please enter valid passport number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="time_remaining">Time Remaining: </string>
+    <string name="short_form_seconds">s</string>
+    <string name="empty_email_error">Please Enter Email Address</string>
+    <string name="inavlid_email_error">Please Enter valid Email Address</string>
+    <string name="empty_password_error">Please Enter Password</string>
+    <string name="get_your_first_credit_score">Get your first Credit Score</string>
+    <string name="credit_score_price">52.99</string>
+    <string name="incl_vat">Incl. VAT</string>
+    <string name="get_your_first_credit_report">Get Your first Credit Report</string>
+    <string name="credit_report_price">31.5</string>
+    <string name="get_your_credit_score_report_both">Get your Credit Report With Score or Score anytime anywhere.</string>
+    <string name="dummy_credit_Score" translatable="false">736</string>
+    <string name="my_credit_score">My Credit Score</string>
+    <string name="dummy_credit_score_date">Nov 3, 2019</string>
+    <string name="report_history">Report History</string>
+    <string name="score_history">Score History</string>
+    <string name="credit_report_with_score">Credit Report with Score</string>
+    <string name="credit_score_with_report_price" translatable="false">112.99</string>
+    <string name="credit_report_only">Credit Report only</string>
+    <string name="credit_score_only">Credit Score only</string>
+    <string name="release_on_date">Released on Nov 27, 2019</string>
+    <string name="view_report">View Report</string>
+    <string name="credit_report">Credit Report</string>
+    <string name="checkout">Checkout</string>
+    <string name="add_credit_report_for_only">Add Credit Report for AED 73.5 only</string>
+    <string name="regular_price">Regular price</string>
+    <string name="add">Add</string>
+    <string name="shared_with_recipients">Shared with %2$d recipients</string>
+    <string name="view_all">View All</string>
+    <string name="credit_score">Credit Score</string>
+    <string name="sar_50">SAR 50.0</string>
+    <string name="sar_5">SAR 5.0</string>
+    <string name="sar_55">SAR 55.0</string>
+    <string name="no_user_available_in_local">No user Available in Database.</string>
+    <string name="last_user_not_enabled_biometric">Last User not enabled Biometric.</string>
+    <string name="question_share_your_report">Would you like to share your Report?</string>
+    <string name="you_have_already_added_email">You have already added this Email</string>
+    <string name="edit_recipient">Edit Recipient</string>
+    <string name="add_recipient">Add Recipient</string>
+    <string name="save_and_continue">Save &amp; Continue</string>
+    <string name="get_your_first">Get your first</string>
+    <string name="only">Only</string>
+    <string name="txt_for">for</string>
+    <string name="please_select_nationality">Please ensure the Nationality is selected correctly.</string>
+    <string name="ui_text_hea">Your payment information is securely stored.</string>
+    <string name="save_card_details_for_next_time">Save card details for next time</string>
+    <string name="i_accept_all_terms_and_conditions">I accept all Terms and Conditions</string>
+    <string name="enter_full_name">Full Name</string>
+    <string name="please_enter_card_number">Please enter card number</string>
+    <string name="please_enter_full_name">Please enter full name</string>
+    <string name="please_select_terms_conditions">Please accept terms conditions</string>
+    <string name="select_or_add_card">Select or Add Card</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="saved_card">Saved Card</string>
+    <string name="txt_default">Default</string>
+    <string name="make_default">Make Default</string>
+    <string name="ok">OK</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="your_payment_has_been_successfully_processed_nthank_you">Your payment has been successfully processed, Thank You!</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="payment_successfully">Payment Successfully</string>
+    <string name="title_payment_failed">Payment Failed</string>
+    <string name="your_payment_has_been_successfully_processed">Payment successful, you will receive the PDF report/score in the next 8 hours</string>
+    <string name="payment_failed_description_msg">Unsuccessful Payment attempt. Please try again or try another payment method.</string>
+    <string name="scan_card">Scan Card</string>
+    <string name="no_card_found">No Card added</string>
+    <string name="intro">Intro</string>
+    <string name="faqs">FAQs</string>
+    <string name="glossary">Glossary</string>
+    <string name="app_under_construction">Page is currently unavailable\nWe apologies for any inconvenience</string>
+    <string name="password_cannot_be_changed">Password cannot be changed</string>
+    <string name="incorrect_password">Please enter the correct password </string>
+    <string name="space_scrolling_view_behavior">SpaceNavigationViewBehavior</string>
+    <string name="answer_does_not_match_correctly">Answer does not match correctly</string>
+    <string name="remaining_attempts">Remaining attempts</string>
+    <string name="language_english">EN</string>
+    <string name="language_arabic">AR</string>
+    <string name="download">Download</string>
+    <string name="txt_summry_download_pdf">This document is password protected. The password consists of the first 4 letters of your full name (in lowercase) followed by the date, month and year of your birth (in DDMMYYYY format).</string>
+
+    <string name="mb_light">Light</string>
+    <string name="PPAmount">Amount</string>
+    <string name="PPCurrency">Currency</string>
+    <string name="PPCurrencyCode">Currency code</string>
+    <string name="PPAccount">Account</string>
+    <string name="PPRecipientAccount">Recipient account</string>
+    <string name="PPAccountPrefix">Account prefix</string>
+    <string name="PPReference">Reference No.</string>
+
+
+    <!-- RecognitionResult strings -->
+    <string name="PPReferenceModel">Model</string>
+    <string name="PPReferenceStatus">Reference Status</string>
+    <string name="PPBankCode">Bank</string>
+    <string name="PPBankName">Bank name</string>
+    <string name="PPIBAN">IBAN</string>
+    <string name="PPBIC">BIC</string>
+    <string name="PPFormID">Form ID</string>
+    <string name="PPSlipID">Slip ID</string>
+    <string name="PPPayerID">Payer ID</string>
+    <string name="PPPayerName">Payer</string>
+    <string name="PPPayerAddress">Payer address</string>
+    <string name="PPPayerPlace">Payer place</string>
+    <string name="PPPayerStreet">Payer street</string>
+    <string name="PPPayerDetailedAddress">Payer detailed address</string>
+    <string name="PPPayerHouseNumber">Payer house number</string>
+    <string name="PPPayerPostalCode">Payer postal code</string>
+    <string name="PPPayerCity">Payer city</string>
+    <string name="PPPayerCountry">Payer country</string>
+    <string name="PPRecipientName">Recipient</string>
+    <string name="PPRecipientAddress">Address</string>
+    <string name="PPRecipientPlace">Place</string>
+    <string name="PPRecipientStreet">Street</string>
+    <string name="PPRecipientHouseNumber">House number</string>
+    <string name="PPRecipientPostalCode">Postal code</string>
+    <string name="PPRecipientCity">City</string>
+    <string name="PPRecipientCountry">Country</string>
+    <string name="PPCountryCode">Country code</string>
+    <string name="PPRecipientDetailedAddress">Detailed Address</string>
+    <string name="PPReferenceNumber">Reference Number</string>
+    <string name="PPUltimateRecipientName">Ultimate recipient</string>
+    <string name="PPUltimateRecipientAddress">Ultimate recipient address</string>
+    <string name="PPUltimateRecipientStreet">Ultimate recipient street</string>
+    <string name="PPUltimateRecipientHouseNumber">Ultimate recipient house number</string>
+    <string name="PPUltimateRecipientPostalCode">Ultimate recipient postal code</string>
+    <string name="PPUltimateRecipientCity">Ultimate recipient city</string>
+    <string name="PPUltimateRecipientCountry">Ultimate recipient country</string>
+    <string name="PPPaymentCode">Payment code</string>
+    <string name="PPPaymentDescriptionCode">Payment description code</string>
+    <string name="PPPaymentDescription">Payment description</string>
+    <string name="PPDeposit">Deposit</string>
+    <string name="PPWithdraw">Withdrawal</string>
+    <string name="PPDueDate">Due date</string>
+    <string name="PPPaymentStatus">Payment status</string>
+    <string name="PPPayerAccount">Payer account</string>
+    <string name="PPPayerReference">Payer Reference No</string>
+    <string name="PPPayerReferenceModel">Payer Model</string>
+    <string name="PPPayerBankCode">Payer Bank</string>
+    <string name="PPPayerBankName">Payer Bank Name</string>
+    <string name="PPPayerIBAN">Payer IBAN</string>
+    <string name="PPPaymentDataType">Data Type</string>
+    <string name="PPPurposeCode">Purpose code</string>
+    <string name="PPTaxNumber">Tax number</string>
+    <string name="PPCustomerData">Customer data</string>
+    <string name="PPRawResult">Raw result</string>
+    <string name="PPPrufziffer">Check digit</string>
+    <string name="PPBelegnummer">Beleg No.</string>
+    <string name="PPSurname">Surname</string>
+    <string name="PPFirstNames">First names</string>
+    <string name="PPGivenNames">Given names</string>
+    <string name="PPCardVersion">Card version</string>
+    <string name="PPDonorIndicator">Donor indicator</string>
+    <string name="PPContractAccount">Contract account</string>
+    <string name="PPDisplayData">Display data</string>
+    <string name="PPSortCode">Sorting code</string>
+    <string name="PPTransactionCode">Transaction code</string>
+    <string name="PPUtilityID">Utility ID</string>
+    <string name="PPOptionalData">Optional data</string>
+    <string name="PPAuthorityType">Authority type</string>
+    <string name="PPExecutionDate">Execution date</string>
+    <string name="PPSubscriberNumber">Subscriber number</string>
+    <string name="PPOcrLine">Ocr line</string>
+    <string name="PPUncertain">Uncertain data</string>
+    <string name="PPBarcodeData">Barcode data</string>
+    <string name="PPBarcodeRawData">Barcode raw data</string>
+    <string name="PPBarcodeType">Barcode type</string>
+    <string name="PPExtendedBarcodeData">Extended barcode data</string>
+    <string name="PPMRTDDocumentType">Document Type</string>
+    <string name="PPMRZParsed">MRZ parsed</string>
+    <string name="PPMRZVerified">MRZ verified</string>
+    <string name="PPDocumentBothSidesMatch">Document Both Sides Match</string>
+    <string name="PPPrimaryId">Primary ID</string>
+    <string name="PPSecondaryId">Secondary ID</string>
+    <string name="PPDateOfBirth">Date of birth</string>
+    <string name="PPDateOfExpiry">Date of Expiry</string>
+    <string name="PPDateOfExpiryPermanent">Date of Expiry Permanent</string>
+    <string name="PPDocumentCode">Document code</string>
+    <string name="PPDocumentNumber">Document number</string>
+    <string name="PPDocumentAdditionalNumber">Document additional number</string>
+    <string name="PPNationalNumber">National number</string>
+    <string name="PPOpt1">Optional field 1</string>
+    <string name="PPOpt2">Optional field 2</string>
+    <string name="PPSex">Sex</string>
+    <string name="PPNationality">Nationality</string>
+    <string name="PPCitizenship">Citizenship</string>
+    <string name="PPIssuer">Issuer</string>
+    <string name="PPMRZText">MRZ text</string>
+    <string name="PPFirstName">First name</string>
+    <string name="PPLastName">Last name</string>
+    <string name="PPFamilyName">Family Name</string>
+    <string name="PPSurnameAtBirth">Surname at birth</string>
+    <string name="PPIssuingAuthority">Issuing Authority</string>
+    <string name="PPConditions">Conditions</string>
+    <string name="PPAdministrativeUnit">Administrative Unit</string>
+    <string name="PPIssuedBy">Issued by</string>
+    <string name="PPIssuingAgency">Issuing agency</string>
+    <string name="PPAddress">Address</string>
+    <string name="PPAdditionalAddressInformation">Additional Address Information</string>
+    <string name="PPResidence">Residence</string>
+    <string name="PPAddressChangeDate">Date of address change</string>
+    <string name="PPFacultyAddress">Faculty Address</string>
+    <string name="PPAddressZipCode">Address ZIP code</string>
+    <string name="PPAddressStreet">Address street</string>
+    <string name="PPAddressCity">Address city</string>
+    <string name="PPAddressState">Address state</string>
+    <string name="PPAddressHouseNumber">Address house number</string>
+    <string name="PPPlaceOfBirth">Place of birth</string>
+    <string name="PPPlaceOfOrigin">Place of origin</string>
+    <string name="PPPlaceOfIssue">Place of issue</string>
+    <string name="PPIssueDate">Date of issuance</string>
+    <string name="PPDriverNumber">Driver number</string>
+    <string name="PPDetectorResult">Detector result</string>
+    <string name="PPFullName">Full name</string>
+    <string name="PPLocalizedName">Localized name</string>
+    <string name="PPAdditionalNameInformation">Additional name information</string>
+    <string name="PPCommercialCode">Commercial Code</string>
+    <string name="PPCompanyName">Company name</string>
+    <string name="PPReligion">Religion</string>
+    <string name="PPProfession">Profession</string>
+    <string name="PPNRICNumber">National Registration Identity Card Number</string>
+    <string name="PPArmyNumber">Army number</string>
+    <string name="PPCountryId">Country</string>
+    <string name="PPVariableSymbol">Variable symbol</string>
+    <string name="PPConstantSymbol">Constant symbol</string>
+    <string name="PPSpecificSymbol">Specific symbol</string>
+    <string name="PPProductCode">Product code</string>
+    <string name="PPServiceCode">Service code</string>
+    <string name="PPProcessingCode">Processing code</string>
+    <string name="PPOperationalCode">Operational code</string>
+    <string name="PPOrientationNumber">Orientation number</string>
+    <string name="PPRace">Race</string>
+    <string name="PPCountryOfBirth">Country of birth</string>
+    <string name="PPBloodGroup">Blood group</string>
+    <string name="PPDocumentClassification">Document Classification</string>
+    <string name="PPPaymentType">Payment Type</string>
+    <string name="PPMaturityDate">Maturity date</string>
+    <string name="PPInvoiceID">Invoice ID</string>
+    <string name="PPPaymentOptions">Payment options</string>
+    <string name="PPEyeColour">Eye colour</string>
+    <string name="PPPrincipalResidenceAtIssuance">Principal residence at issuance</string>
+    <string name="PPHeight">Height</string>
+    <string name="PPAlienNumber">ALien number</string>
+    <string name="PPApplicationReceiptNumber">Application receipt number</string>
+    <string name="PPImmigrantCaseNumber">Immigrant case number</string>
+    <string name="PPPersonalNumber">Personal number</string>
+    <string name="PPAuthority">Authority</string>
+    <string name="PPSpecialRemarks">Special remarks</string>
+    <string name="PPValidFrom">Valid from</string>
+    <string name="PPValidUntil">Valid until</string>
+    <string name="PPValidThru">Valid thru</string>
+    <string name="PPPassportNumber">Passport number</string>
+    <string name="PPEmployer">Employer</string>
+    <string name="PPSector">Sector</string>
+    <string name="PPSimNumber">Sim number</string>
+    <string name="PPVin">Vehicle Identification Number</string>
+    <string name="PPDocumentBilingual">Document bilingual</string>
+    <string name="PPDocumentForNonResidents">Document for non residents</string>
+    <string name="PPSeries">Series</string>
+    <string name="PPCNP">CNP</string>
+    <string name="PPParentNames">Parent names</string>
+    <string name="PPIdentityCardNumber">Identity card number</string>
+    <string name="PPDistrictCode">District code</string>
+    <string name="PPCustomerID">Customer ID</string>
+    <string name="PPLicenceNumber">Licence Number</string>
+    <string name="PPLicenceType">Licence Type</string>
+    <string name="PPLicenceCategories">Licence Categories</string>
+    <string name="PPVehicleCategories">Vehicle Categories</string>
+    <string name="PPVehicleClass">Vehicle Class</string>
+    <string name="PPLicencingAuthority">Licencing Authority</string>
+    <string name="PPAlternativeSchemeParameters">Alternative scheme parameters</string>
+    <string name="PPAdditionalInformation">Additional information</string>
+    <string name="PPSuccessFrame">Camera frame on recognition success</string>
+    <string name="PPProvince">Province</string>
+    <string name="PPCity">City</string>
+    <string name="PPName">Name</string>
+    <string name="PPOwner">Owner</string>
+    <string name="PPFatherName">Father\'s name</string>
+    <string name="PPMotherName">Mother\'s name</string>
+    <string name="PPCivilStatusNumber">Civil status number</string>
+    <string name="PPRT">RT</string>
+    <string name="PPRW">RW</string>
+    <string name="PPKelDesa">Kel/Desa</string>
+    <string name="PPDistrict">District</string>
+    <string name="PPMaritalStatus">Marital status</string>
+    <string name="PPOccupation">Occupation</string>
+    <string name="PPExtendedNRIC">Extended NRIC</string>
+    <string name="PPOldNRIC">Old NRIC</string>
+    <string name="PPFingerprint">Fingerprint</string>
+    <string name="PPClass">Class</string>
+    <string name="PPIdentityNumber">Identity number</string>
+    <string name="PPCANNumber">CAN number</string>
+    <string name="PPIsAlive">Liveness check status</string>
+    <string name="PPResidentialStatus">Residential status</string>
+    <string name="PPCivilIdNumber">Civil Id Number</string>
+    <string name="PPSerialNo">Serial No</string>
+    <string name="PPPaymentCardNumber">Card number</string>
+    <string name="PaymentCardType">Type</string>
+    <string name="PPCVV">CVV</string>
+    <string name="PPInventoryNumber">Inventory number</string>
+    <string name="PPElectorKey">Elector key</string>
+    <string name="PPCURP">CURP</string>
+    <string name="PPIdentificationCode">Identification code</string>
+    <string name="PPMerchantCodeCategory">Merchant code category</string>
+    <string name="PPOneTimePaymentCode">One time payment code</string>
+    <string name="PPMerchantReference">Merchant reference</string>
+    <string name="PPCreditorId">Creditor ID</string>
+    <string name="PPDateOfSignature">Date of signature</string>
+    <string name="PPFormFunction">Form function</string>
+    <string name="PPFormType">Form type</string>
+    <string name="PPFormVersion">Form version</string>
+    <string name="PPMandateId">Mandate ID</string>
+    <string name="PPPeriodicFirstExecutionDate">Periodic first execution date</string>
+    <string name="PPPeriodicLastExecutionDate">Periodic last execution date</string>
+    <string name="PPPeriodicTimeUnit">Periodic time unit</string>
+    <string name="PPPeriodicTimeUnitRotation">Period duration</string>
+    <string name="PPPostingKey">Posting key</string>
+    <string name="PPRestrictions">Restrictions</string>
+    <string name="PPEndorsements">Endorsements</string>
+    <string name="PPRank">Rank</string>
+    <string name="PPClassInfoCountry">Country</string>
+    <string name="PPClassInfoRegion">Region</string>
+    <string name="PPClassInfoType">Type</string>
+    <string name="MBRecognitionStatus">Recognition status</string>
+    <string name="MBFullDocumentImage">Full document image</string>
+    <string name="MBEncodedFullDocumentImage">Encoded full document image</string>
+    <string name="MBEncodedMrzImage">Encoded mrz image</string>
+    <string name="MBFullDocumentImageFront">Full document image front</string>
+    <string name="MBEncodedFullDocumentImageFront">Encoded full document image front</string>
+    <string name="MBFullDocumentImageBack">Full document image back</string>
+
+    <string name="MBEncodedFullDocumentImageBack">Encoded full document image back</string>
+    <string name="MBMRZImage">MRZ image</string>
+    <string name="MBFaceImage">Face image</string>
+    <string name="MBEncodedFaceImage">Encoded face image</string>
+    <string name="MBSignatureImage">Signature image</string>
+    <string name="MBEncodedSignatureImage">Encoded signature image</string>
+    <string name="MBHighResImage">High resolution image</string>
+    <string name="MBDigitalSignature">Digital signature</string>
+    <string name="MBDigitalSignatureVersion">Digital signature version</string>
+    <string name="MBDocumentLocation">Document location</string>
+    <string name="MBFaceLocation">Face location</string>
+    <string name="MBFormVersion">Form version</string>
+    <string name="MBFormFunction">Form function</string>
+    <string name="MBAvailableAccounts">Available accounts</string>
+
+    <string name="MBSlovakPaymentInfoKeySuffix">(%d)</string>
+    <string name="MBBirthData">Birth data</string>
+
+    <string name="MBDocumentCaptureTitle">Document capture</string>
+    <string name="PPDateOfIssueDlCategoryB">Date of issue B category</string>
+
+    <string name="PPDateOfIssueDlCategoryBNotSpecified">Date of issue B category not specified</string>
+    <string name="recognition_not_supported">Recognition is supported only in DirectAPI mode!</string>
+    <string name="recognition_not_supported_reason">Recognition is not supported! Reason:</string>
+
+    <string name="result_list_is_empty">Result list is empty</string>
+
+    <string name="application_number">Application No.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="general">General</string>
+    <string name="preffered_language">Preferred Language</string>
+    <string name="manage_payment">Manage payment options</string>
+    <string name="logout">Logout</string>
+    <string name="profile_text">Profile</string>
+    <string name="update_profile">Update Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="maintenance_text">App Under Maintenance</string>
+    <string name="maintenance_text1">Our team is working to provide you a better user experience.\n\nWe apologise for the inconvenience.</string>
+    <string name="notification_text">Notifications</string>
+    <string name="clear_notification"><u>Clear all</u></string>
+    <string name="please_wait_this_might_take_some_time">Please wait...\nThis might take some time.</string>
+
+    <string name="font_helvetica_ce_regular" translatable="false">fonts/sf_pro_text_regular.ttf</string>
+    <!--profile screen -->
+
+    <string name="title_edit_passport">Edit Passport</string>
+    <string name="title_edit_mobile">Edit Mobile</string>
+    <string name="title_edit_email">Edit Email</string>
+    <string name="save">Save</string>
+    <string name="help_support_faq_tab1">FAQs</string>
+    <string name="help_support_contactus_tab2">Contact Us</string>
+
+    <!--maintenance screen-->
+    <string name="help_support_data_currection_tab3">Data Correction</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="data_correction_text">We strive to ensure data supplied to us is correct. If this is not the case, it is critical that it is corrected.\nTo resolve inaccurate credit report information in your report, you will need to contact your data provider who can correct and update your records. Once redirected to your email, please remember to attach any documents that support your claim.</string>
+    <string name="select_data_provider">Select a Data Provider</string>
+    <string name="data_provider">Data Provider</string>
+    <string name="reason_for_contact">Reason for contact</string>
+    <string name="enter_your_message">Enter your message here</string>
+    <string name="upload_file">Upload file</string>
+    <string name="select_reason">Select reason for contact</string>
+    <string name="your_message">Your message</string>
+    <string name="txt_msg_select_reason">Please select reason for contact</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="default_payment_method">Default Payment Method</string>
+
+    <string name="update_payment_method">Update Payment Method</string>
+    <string name="update_payment_method_msg">Update payment method successfully.</string>
+    <string name="enter_current_password">Current Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="re_enter_new_password">Confirm Password</string>
+    <string name="na_text">We have found no credit history or activity on your name.\n\nFor more information use the actions below</string>
+
+    <string name="no_available_score_title">Credit Score: Not Available</string>
+    <string name="txt_switchto">English</string>
+    <string name="txt_title_ar">Arabic</string>
+    <string name="touch_login_enable_successfully">Bio-Metric login update successfully</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="open_gallery">Choose from Gallery</string>
+    <string name="file_manager">File Manager</string>
+    <string name="please_select_data_provider">Please select data provider</string>
+    <string name="please_select_card">Please select card</string>
+    <string name="enter_valid_passport">Please ensure the passport number is entered correctly</string>
+    <string name="enable_touch_id">Enable Touch ID</string>
+    <string name="disable_touch_id">Disable Touch ID</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="do_you_have_emirate_id">Do you have an Emirates ID?</string>
+    <string name="yes_scan_now">Scan now</string>
+    <string name="scan_your_emirate_id">Scan Your Emirates ID</string>
+    <string name="warning_msg">Warning Message</string>
+    <string name="user_not_authenticated_desc">Unsuccessful authentication. Please click proceed to go back to the registration else click contact us to contact our Customer Experience Team</string>
+    <string name="user_not_authenticated_desc_round_second">" We were unable to verify your information. You need to answer few more security questions."</string>
+    <string name="dialog_logout">Are you sure you want to logout?</string>
+    <string name="app_under_maintenance">App is under maintenance</string>
+    <string name="verify_amount">Verify Amount</string>
+    <string name="add_card_desc_for_verify">A verification amount will be shortly sent to your mobile by the Card Issuer. Please contact your Card Issuer in case you do not receive it.</string>
+    <string name="session_expired">Session Expired</string>
+    <string name="please_login_again">Please login again.</string>
+    <string name="nationality_optional">Nationality - optional</string>
+    <string name="passport_optional">Passport - optional</string>
+    <string name="passport_number_optional">Passport Number - optional</string>
+    <string name="send_now">Send OTP Now</string>
+    <string name="description_forgot_password">A One Time Password (OTP) will be sent to your registered email address or mobile number.</string>
+    <string name="create_password">Create Password</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="please_enter_valid_payement_amount">Please enter the correct verification amount  sent to your mobile by the Card Issuer</string>
+    <string name="amount_is_not_valid">Amount can not be greater than 10,00,00,000</string>
+    <string name="get">Get</string>
+    <string name="update_required_desc">"To continue uninterrupted use of the AECB Application, you will need to update it on your device. "</string>
+    <string name="update_now">Update Now</string>
+    <string name="we_are_calculating_score">We are calculating your \nCredit Score...</string>
+    <string name="usually_takes_few_seconds">This usually takes \nfew seconds...</string>
+    <string name="we_are_almost_done">We are almost done...</string>
+    <string name="get_you_credit_score_now">Get Your \nCredit Score \nNow</string>
+    <string name="no_purchase_found">There are currently no purchase activities</string>
+    <string name="please_ensure_the_login_details_are_entered_correctly">Please ensure the login details are entered correctly</string>
+    <string name="credit_score_only_english">Credit Score</string>
+    <string name="using_alternative_data" translatable="false">using Alternative Data</string>
+    <string name="using_non_credit_data" translatable="false">(non-credit data)</string>
+    <string name="please_enter_the_exact_verification_amount">Please enter the exact verification amount</string>
+    <string name="you_can_add_up_to_5_additional_recipients_who_we_will_receive_a_pdf_copy_of_your_report_from_an_aecb_authorized_email">You can add up to 5 additional recipients who we will receive a PDF copy of your report from an AECB authorized email.</string>
+
+    <string-array name="clearence_reminder">
+        <item>A day before</item>
+        <item>2 days before</item>
+        <item>4 days before</item>
+        <item>A week before</item>
+    </string-array>
+    <string-array name="contact_query">
+        <item>Select your query type</item>
+        <item>Query type one</item>
+        <item>Query type two</item>
+        <item>Query type three</item>
+    </string-array>
+    <string-array name="months_values">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="detailsSteps">
+        <item>Step 01</item>
+        <item>Step 02</item>
+        <item></item>
+    </string-array>
+    <string-array name="questionsRoundOne">
+        <item>Question 01</item>
+        <item>Question 02</item>
+        <item>Question 03</item>
+        <item>Question 04</item>
+        <item>Question 05</item>
+        <item></item>
+    </string-array>
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="genders_profile">
+        <item>Null</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="no_notification_to_delete">There are no notification to delete.</string>
+    <string name="credit_or_debit_card">Credit or Debit Card</string>
+    <string name="share_your_report">Share your report with other \nrecipients.</string>
+    <string name="add_email_desc">You can add up to 5 additional recipients who we will receive a PDF copy of your report from an AECB authorized email.</string>
+    <string name="your_report_will_be_sent_to">Your report will be sent by AECB to</string>
+    <string name="shared_with_others">and to %1$d others</string>
+    <string name="pay_with">Pay with</string>
+    <string name="change">Change</string>
+    <string name="purchase_now">Purchase Now</string>
+    <string name="add_payment_details">Add Payment Details</string>
+    <string name="aecb">AECB</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete?</string>
+    <string name="read_more_desc_one">Your Credit Report includes  personal identity information, details of your credit cards, loans and your bounced cheque history.</string>
+    <string name="read_more_desc_two">Your Credit Score is a three-digit number that predicts the likelihood that you\'ll make your loan &amp; credit card payments on time. </string>
+    <string name="read_more_desc_three">Your Credit Report contains information of the past five years. For an easier review of your report, please refer to our glossary.</string>
+    <string name="for_more_info">Learn more</string>
+    <string name="did_you_know">Did You Know ?</string>
+    <string name="your_request_is_being_processed">Your request is being processed. Your credit report / score will be ready shortly.</string>
+    <string name="pdf_copy_sent">A PDF copy of your report and the invoice of your purchase will be sent to your email address.</string>
+    <string name="transaction_completed">Your transaction is completed. Please check your dashboard / email to view your report.</string>
+    <string name="continue_without_scanning">Continue without scanning</string>
+    <string name="txt_nationality">Nationality</string>
+    <string name="passport_number_hint">Passport Number (Helps us find your records more quickly)</string>
+    <string name="send_message">Send Message</string>
+    <string name="txt_passport_number">Passport Number</string>
+    <string name="add_card_description">Your card data is saved in a PCI DSS compliant secure vault. You can always update/delete your card data using the settings menu</string>
+    <string name="contact_us_desc">We are happy to hear your comments and suggestions. Fill in your details and our team will get back to you.</string>
+    <string name="choose_categories">Choose Categories!</string>
+    <string name="intro_one_title">Easy Registration</string>
+    <string name="intro_one_desc">Easily Scan your Emirates ID</string>
+    <string name="intro_two_title">Choose Your Product</string>
+    <string name="intro_two_desc">Choose Credit Score or Credit \n Report with Score</string>
+    <string name="intro_three_title">Purchase and Share \n Your Report</string>
+    <string name="intro_three_desc">Add recipients, complete your \n purchase and receive your report \n instantly</string>
+    <string name="intro_four_title">View Your Dashboard \n and Purchase History</string>
+    <string name="intro_four_desc">View your latest Credit \n Score, previously purchased \n reports</string>
+    <string name="intro_prod_desc">A three-digit number that predicts how likely you are to make your loan and credit card payments on time</string>
+    <string name="intro_prod_price">Price AED 84</string>
+    <string name="intro_product_title">Get your first Credit Score</string>
+    <string name="back_press_warning">Please click BACK again to exit</string>
+    <string name="proceed_to_round_two_desc">We were unable to verify your information. You need to answer few more security questions.</string>
+    <string name="ssl_error">SSL Certificate error.</string>
+    <string name="ssl_is_untrusted">The certificate is not trusted.</string>
+    <string name="ssl_is_expired">The certificate has expired.</string>
+    <string name="invalid_hostname">Invalid hostname for the certificate.</string>
+    <string name="invalid_certificate">The certificate is invalid.</string>
+    <string name="continue_anyway"> Do you want to continue anyway?</string>
+
+    <!--profile screen -->
+    <!--<string name="facebook_app_id" translatable="false">945473815908653</string>-->
+    <string name="fb_login_protocol_scheme" translatable="false">fb945473815908653</string>
+    <string name="facebook_client_token_prod" translatable="false">bbb5dde2aa6e4a257c0dc80e0547b494</string>
+    <string name="contact_us_regi_desc">We are happy to hear your comments and suggestions.</string>
+    <string name="contact_center">Contact Centre</string>
+    <string name="contact_center_number">800-Bureau (800 287 328)</string>
+    <string name="fullName_validation">Field must have minimum two words</string>
+    <string name="emirate_validation">No alphabetical or special character allowed</string>
+    <string name="gender_validation">Gender can not be blank</string>
+    <string name="nationality_validation">Nationality field can not be blank</string>
+    <string name="dob_validation">Please select date of birth</string>
+    <string name="existing_user">Existing User</string>
+    <string name="new_user">New User</string>
+    <string name="receipient_desc_one">You can add up to 5 additional recipients</string>
+    <string name="receipient_desc_two">Recipients will receive a PDF copy of your report from an AECB authorized email</string>
+    <string name="document_title">This document is password protected. The password consists of :</string>
+    <string name="document_desc_one">First 4 letters of your full name (in lowercase)</string>
+    <string name="document_desc_two">Date of Birth (in DDMMYYYY format)</string>
+    <string name="help_us_for_passport">Help us find your records more quickly</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="passport_number_optional_bracket">Passport Number (Optional)</string>
+    <string name="password_title">Your password must contain</string>
+    <string name="password_validation_one">8 Characters long</string>
+    <string name="password_validation_two">Uppercase Character</string>
+    <string name="password_validation_three">Lowercase Character</string>
+    <string name="password_validation_four">Special Character *([@#$%^&amp;+=])</string>
+    <string name="dob_invalid_error">Date of Birth and Emirates ID number do not match.</string>
+    <string name="password_validation_five">At least a Number</string>
+    <string name="share_with_other_receipients">Share your Report with other recipients</string>
+    <string name="second_emirate_id_error">"Please enter a value between 1900 to 2100 "</string>
+    <string name="enter_three_digit_cvv">Enter the 3 digit CVV </string>
+    <string name="card_authentication">Card Authentication</string>
+    <string name="cvv_back_of_card">CVV - 3 Digit code at the back of the card (XXX)</string>
+    <string name="add_card_amount_deduction_description">An amount of 1AED will be charged to your card in order to refer to it when confirming the addition of a new payment card on the app. This amount is only a pre-authorization which is not billable and is usually automatically released within two weeks.</string>
+    <string name="payment_progress">Payment in progress, please do not quit the app until it is complete.</string>
+    <string name="add_passport_dob_desc">Please complete the following details to proceed with your request</string>
+    <string name="uae_pass_error">Couldn\'t fetch data from UAE Pass</string>
+    <string name="date_of_birth_new">Date of Birth</string>
+    <string name="help_us_for_passport_new">Help us find your records more quickly</string>
+    <string name="txt_submit_new">Submit</string>
+    <string name="txt_cancel_new">Cancel</string>
+    <string name="sign_in_uae_pass">Sign in with UAE PASS</string>
+    <string name="sop1_user_restricted">We were unable to verify your information. Please visit the UAEPASS Kiosks to complete the final verification step and try again.</string>
+    <string name="user_cancelled_authentication">User cancelled the login</string>
+    <string name="sop1_desc_first">Your account is unverified, please visit the nearest UAE PASS <u><font color='#1058E0'> Kiosk</font></u> </string>
+    <string name="sop1_desc_second">For more information, kindly contact  <u><font color='#1058E0'>800-Bureau (800 287 328)</font></u> </string>
+    <string name="sign_up_uae_pass">Sign up with UAE PASS</string>
+    <string name="age_is_not_18_yrs">Age must be greater than 18 years</string>
+    <string name="score_not_available">Your Credit Score cannot be calculated for different reasons, to know more please call our contact center 800-BUREAU (800-287328). Please note that Al Etihad Credit Bureau will not charge you for this transaction.</string>
+    <string name="credit_report_with_score_price">84.0</string>
+    <string name="add_credit_report_with_score_for_only">Add Credit Report with Score for AED 73.5 only</string>
+    <string name="credit_score_price_new">10.5</string>
+</resources>

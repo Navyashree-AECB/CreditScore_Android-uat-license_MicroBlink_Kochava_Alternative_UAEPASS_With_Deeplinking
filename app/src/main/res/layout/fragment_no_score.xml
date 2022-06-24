@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/bg_topcurv_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/na_credit_score_txt"
+            style="@style/ToolbarTitleFontBlackBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/no_available_score_title"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/credit_text"
+            style="@style/SmallFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:paddingStart="@dimen/_40sdp"
+            android:paddingEnd="@dimen/_40sdp"
+            android:text="@string/na_text" />
+
+        <Button
+            android:id="@+id/btnFAQ"
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_round_corner_blue"
+            android:text="@string/faqs"
+            android:textColor="@color/bg_white_button_border_color" />
+
+        <Button
+            android:id="@+id/btnContactUs"
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_blue_button"
+            android:text="@string/contact_us"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/app_bg_color"
+            android:orientation="vertical"
+            tools:context="com.aecb.ui.downloadpdf.view.DownloadPdfActivity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivAecbLogo"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/aecb_icon" />
+
+                <ImageView
+                    android:id="@+id/ivCancel"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_cancel_blue"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_topcurv_white"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/download_pdf" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvCreditScoreOnly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_21sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_21sdp"
+                    app:cardCornerRadius="@dimen/dp_5"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_7sdp">
+
+                            <TextView
+                                style="@style/SmallFont.TextAlineStart"
+                                android:layout_width="@dimen/dp_0"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/credit_report"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvDate"
+                                style="@style/VerySmallFont"
+                                android:layout_width="@dimen/dp_0"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                tools:text="16/02/2018" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_1"
+                            android:background="@color/view_line_otp_touch">
+
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_7sdp">
+
+                            <TextView
+                                style="@style/SmallFont.TextAlineStart"
+                                android:layout_width="@dimen/dp_0"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/application_number"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvResponseId"
+                                style="@style/VerySmallFont"
+                                android:layout_width="@dimen/dp_0"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:padding="@dimen/_5sdp"
+                                android:textColor="@color/black"
+                                tools:text="16/02/2018" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    style="@style/SmallFont"
+                    android:id="@+id/btnDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_21sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_21sdp"
+                    android:background="@drawable/bg_blue_button"
+                    android:text="@string/view_report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_21sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_21sdp"
+                    android:background="@drawable/selected_card_backgraound"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/document_title"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/SmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/document_desc_one"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableStart="@drawable/ic_bullet_dot"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        style="@style/SmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/document_desc_two"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableStart="@drawable/ic_bullet_dot"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
+

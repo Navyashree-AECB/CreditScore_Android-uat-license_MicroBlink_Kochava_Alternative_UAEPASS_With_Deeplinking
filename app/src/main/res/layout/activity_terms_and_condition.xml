@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aecb.ui.aboutus.view.AboutUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_terms_and_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_27sdp"
+            android:padding="@dimen/_10sdp"
+            android:rotation="@integer/rtl"
+            app:srcCompat="@drawable/ic_back_btn"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/ToolbarTitleFontBlackBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/bg_topcurv_white"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/lbl_term_condition" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:scrollbars="vertical">
+
+            <WebView
+                android:id="@+id/webView_terms_and_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="WebViewLayout" />
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</layout>

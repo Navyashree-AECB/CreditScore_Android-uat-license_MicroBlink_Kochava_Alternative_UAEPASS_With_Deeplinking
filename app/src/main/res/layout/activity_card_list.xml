@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aecb.ui.purchasejourney.addcard.view.AddCardActivity">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.aecb.presentation.customviews.ToolbarView
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_topcurv_white">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btnContinue"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:id="@+id/mainContentOFCardList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/btnContinue"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCardListTitle"
+                            style="@style/ToolbarTitleFontBlackBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:text="@string/default_payment_method" />
+
+                        <LinearLayout
+                            android:id="@+id/llListOfCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tvTitleAddCard"
+                                style="@style/SmallFont"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:padding="@dimen/_2sdp"
+                                android:text="@string/saved_card"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tvEmpty"
+                                style="@style/SmallFont"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_15sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:gravity="center"
+                                android:minHeight="@dimen/_130sdp"
+                                android:text="@string/no_card_found"
+                                android:visibility="gone" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:visibility="gone">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnAddCard"
+                            style="@style/ButtonTextBlue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:background="@drawable/bg_white_button"
+                            android:gravity="center"
+                            android:text="@string/add_new_card"
+                            android:textAllCaps="false"
+                            android:textColor="@color/border_color" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvEDirham"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:visibility="visible"
+                            app:cardCornerRadius="@dimen/dp_5"
+                            app:cardElevation="@dimen/_2sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layoutDirection="ltr"
+                                android:orientation="vertical"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_5sdp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layoutDirection="ltr"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:paddingTop="@dimen/_3sdp"
+                                        android:paddingBottom="@dimen/_3sdp"
+                                        app:srcCompat="@drawable/edirham_logo" />
+
+                                    <TextView
+                                        android:id="@+id/tvDefaultEDirham"
+                                        style="@style/VerySmallFontDefault"
+                                        android:layout_width="0dp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_marginStart="@dimen/_14sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:paddingEnd="@dimen/_10sdp"
+                                        android:text="@string/txt_default"
+                                        android:textColor="@color/border_color"
+                                        android:visibility="invisible" />
+
+                                    <ImageView
+                                        android:id="@+id/ivThreeDotsEDirham"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="@dimen/_2sdp"
+                                        android:padding="@dimen/_5sdp"
+                                        android:visibility="gone"
+                                        app:srcCompat="@drawable/ic_three_dots" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvCardList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            app:cardCornerRadius="@dimen/dp_5"
+                            app:cardElevation="@dimen/_2sdp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_14sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    app:srcCompat="@drawable/ic_gpay_logo" />
+
+                                <TextView
+                                    style="@style/SmallFont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_19sdp"
+                                    android:layout_marginEnd="@dimen/_20sdp"
+                                    android:text="@string/coming_soon"
+                                    android:textColor="@color/gray_light"
+                                    android:textDirection="ltr"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/llPaymentMethods"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="@dimen/dp_0"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/selected_card_backgraound"
+                                app:cardCornerRadius="@dimen/_5sdp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/selected_card_backgraound">
+
+                                    <LinearLayout
+                                        android:id="@+id/llCreditCard"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_marginBottom="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <androidx.appcompat.widget.AppCompatImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="@dimen/_10sdp"
+                                            android:adjustViewBounds="true"
+                                            app:srcCompat="@drawable/ic_credit_card" />
+
+                                        <TextView
+                                            android:id="@+id/tvPaymentMethodTitle"
+                                            style="@style/VerySmallFont"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="@dimen/_7sdp"
+                                            android:text="@string/credit_card"
+                                            android:textColor="@color/black" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    style="@style/SmallFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@drawable/disable_button"
+                    android:enabled="false"
+                    android:text="@string/txt_continue"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

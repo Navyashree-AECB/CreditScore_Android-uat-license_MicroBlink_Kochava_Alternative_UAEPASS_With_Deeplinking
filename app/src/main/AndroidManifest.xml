@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aecb">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Step 1: Add the following permission to the app --><!-- Step 2: This permission is depreciated in Android P -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.WRITE_GSERVICES" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <queries>
+        <!--<package android:name="ae.uaepass.mainapp.stg" />
+        <intent><action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" /></intent>-->
+        <package android:name="ae.uaepass.mainapp" />
+        <intent><action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" /></intent>
+    </queries>
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup,android:icon">
+        <activity
+            android:name=".ui.adcbwebview.view.AdcbCardWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.edirhamwebview.view.EDirhamWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.introscreen.intromain.view.IntroActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <meta-data android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token_prod"/>
+
+        <!--<activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>-->
+
+        <!-- <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>-->
+
+        <service
+            android:name=".services.MyFirebaseInstanceIDService"
+            android:stopWithTask="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.devicerooted.view.DeviceRootedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splash.view.SplashActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="creditreport.smart.link" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.DummyScreen" />
+        <activity
+            android:name=".ui.termsandcodition.view.TermsAndConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.verifyamountforpayment.view.VerifyAmountForPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.scanemirate.view.ScanEmirateIdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.aboutus.view.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.maintanance.view.MaintenanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.view.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pdf.view.PdfViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.addrecipients.view.AddRecipientsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.purchasejourney.cardlist.view.CardListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.purchasejourney.addcard.view.AddCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.checkout.view.CheckoutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.view.DashboardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.startsup.view.StartupActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <!--<intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="aecbapp.page.link"
+                    android:scheme="https" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.loginflow.forgotpassword.view.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.registerflow.createpassword.view.CreatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.registerflow.securityquestionsroundtwo.view.SecurityQuestionsRoundTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.registerflow.securityquestionsroundone.view.SecurityQuestionsRoundOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.registerflow.contactdetails.view.ContactDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.registerflow.personaldetails.view.PersonalDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.loginflow.uaepasspin.view.UAEPassPinActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="${host_success}"
+                    android:scheme="${scheme}" />
+
+                <data
+                    android:host="${host_failure}"
+                    android:scheme="${scheme}" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.loginflow.login.view.LoginActivity"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:screenOrientation="portrait">
+    </activity>
+
+        <activity
+            android:name=".ui.menu.view.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.scanemirate.CustomVerificationFlowActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppTheme.FullScreen" />
+        <activity
+            android:name=".ui.changepassword.view.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

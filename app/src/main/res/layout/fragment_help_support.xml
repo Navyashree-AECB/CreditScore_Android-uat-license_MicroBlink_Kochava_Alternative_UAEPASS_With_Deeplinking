@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/llTopView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivHistoryFragmentNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_notification"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAecbLogo"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/aecb_icon" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_topcurv_white"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/helpSupportTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/ToolbarTitleFontBlackBold"
+                android:background="@drawable/bg_topcurv_white"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/help_support"  />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:tabSelectedTextColor="@color/border_color"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabTextAppearance="@style/CustomTextAppearanceTab"
+                app:tabTextColor="@color/gray_light" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/step_progress_color"/>
+
+            <com.aecb.presentation.viewpager.NonSwipeableViewPager
+                android:id="@+id/viewPagerHelpSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <data></data>
+</layout>

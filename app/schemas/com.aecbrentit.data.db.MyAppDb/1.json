@@ -1,0 +1,39 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "dfe461d54be844171ad9daa58f81177d",
+    "entities": [
+      {
+        "tableName": "newsLetter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`newsLetterId` INTEGER, `newsLetterName` TEXT, PRIMARY KEY(`newsLetterId`))",
+        "fields": [
+          {
+            "fieldPath": "newsLetterId",
+            "columnName": "newsLetterId",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "newsLetterName",
+            "columnName": "newsLetterName",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "newsLetterId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"dfe461d54be844171ad9daa58f81177d\")"
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/llNoScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivInfoNoScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ivNoScore"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_blue_info" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNoScore"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/credit_score_not_available" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCreditScore"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible">
+
+                <com.triggertrap.seekarc.SeekArc
+                    android:id="@+id/creditScoreArc"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    app:arcWidth="@dimen/_8sdp"
+                    app:max="600"
+                    app:progress="0"
+                    app:progressWidth="@dimen/_8sdp"
+                    app:rotation="185"
+                    app:roundEdges="true"
+                    app:startAngle="50"
+                    app:sweepAngle="250"
+                    app:thumb="@drawable/white_circle_progress" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_blue_info" />
+
+
+                <TextView
+                    android:id="@+id/tvCreditScore"
+                    style="@style/DoubleExtraLargeFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    tools:text="@string/dummy_credit_Score" />
+
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/starView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCreditScore"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:srb_borderColor="@color/transparent"
+                    app:srb_fillColor="@color/star_filled_color"
+                    app:srb_numberOfStars="5"
+                    app:srb_rating="0"
+                    app:srb_starCornerRadius="0"
+                    app:srb_starsSeparation="@dimen/_1sdp"
+                    app:srb_starBackgroundColor="@color/star_unfilled_color"
+                    app:srb_starSize="@dimen/_21sdp"
+                    app:srb_stepSize="1" />
+
+                <TextView
+                    android:id="@+id/tvCreditScoreTitle"
+                    style="@style/MediumFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/starView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/credit_score_only_english"
+                    android:textColor="@color/star_filled_color" />
+
+                <TextView
+                    android:id="@+id/tvAlternativeData"
+                    style="@style/MediumFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCreditScoreTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/using_alternative_data"
+                    android:textColor="@color/star_filled_color"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/tvNonCreditData"
+                    style="@style/MediumFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAlternativeData"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/using_non_credit_data"
+                    android:textColor="@color/star_filled_color"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvCreditScoreDate"
+                style="@style/VerySmallFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"
+                tools:text="@string/dummy_credit_score_date" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNoCreditScoreAndReport"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/no_credit_score"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <data />
+</layout>

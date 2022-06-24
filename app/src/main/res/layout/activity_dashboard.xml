@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical"
+        tools:context="com.aecb.ui.dashboard.view.DashboardActivity">
+
+        <FrameLayout
+            android:id="@+id/flScreensContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:background="@color/app_bg_color" />
+
+        <RelativeLayout
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            app:layout_constraintBottom_toTopOf="@+id/rvProductList">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_line"
+                android:elevation="@dimen/_7sdp">
+
+                <Button
+                    android:id="@+id/btnHome"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/ic_home_selected"
+                    android:padding="@dimen/_5sdp" />
+
+                <Button
+                    android:id="@+id/btnHistory"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/btnHome"
+                    android:background="@drawable/ic_history"
+                    android:padding="@dimen/_5sdp" />
+
+                <Button
+                    android:id="@+id/btnHelpSupport"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_toStartOf="@+id/btnNavMenu"
+                    android:background="@drawable/ic_help_support"
+                    android:padding="@dimen/_5sdp" />
+
+                <Button
+                    android:id="@+id/btnNavMenu"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:background="@drawable/ic_nav_menu"
+                    android:padding="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bottom_oval"
+                android:elevation="@dimen/_7sdp">
+
+                <Button
+                    android:id="@+id/btnShowProducts"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_dashboard" />
+
+                <Button
+                    android:id="@+id/btnClose"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_dashboard_cancel"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

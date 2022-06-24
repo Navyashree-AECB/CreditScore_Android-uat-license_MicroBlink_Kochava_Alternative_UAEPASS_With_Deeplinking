@@ -1,0 +1,20 @@
+{
+  "status": "200",
+  "success": true,
+  "message": "Successfully received purchase history",
+  "refId": "d30fd465-ea8b-4efa-acfe-de784cd0f5b6",
+  "data": {
+    "history": [
+      {
+        "reportTypeId": "d7d6ac3b-5d69-e811-9449-00155db7a21e",
+        "reportNumber": "CR-00008036",
+        "reportName": "Credit Report 2/6/2020 4:38:33 PM",
+        "createdon": "2020-02-06T12:38:31Z",
+        "reportId": "bf2b8c94-dd48-ea11-944f-005056010318",
+        "isPdfAvailable": true,
+        "score": 567,
+        "scoreRange": null
+      }
+    ]
+  }
+}

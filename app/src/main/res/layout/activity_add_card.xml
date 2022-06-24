@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aecb.ui.purchasejourney.addcard.view.AddCardActivity">
+
+    <data />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg_color"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/progressCircular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        style="@style/LargeFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:text="@string/please_wait_this_might_take_some_time"
+                        android:textColor="@color/border_color"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.aecb.presentation.customviews.ToolbarView
+                    android:id="@+id/toolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_topcurv_white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mainContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTextTitle"
+                            style="@style/ToolbarTitleFontBlackBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:text="@string/txt_add_card" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/ivScan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_20sdp"
+                                android:background="@drawable/bg_round_corner_blue"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/_5sdp">
+
+                                <ImageButton
+                                    android:id="@+id/button_x"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:padding="@dimen/_3sdp"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/ic_camera" />
+
+                                <TextView
+                                    style="@style/MediumFont"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_3sdp"
+                                    android:text="@string/scan_card"
+                                    android:textColor="@color/border_color" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txtInputLoutCardNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="@string/enter_card_number"
+                                android:textDirection="ltr"
+                                android:theme="@style/TextLabel">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtCardNumber"
+                                    style="@style/SmallFont.TextAlineStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:maxLength="19"
+                                    android:nextFocusForward="@+id/edtFullName"
+                                    android:paddingTop="@dimen/_4sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_color"
+                                    android:textColorHint="@drawable/hint_selector" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txtInputLoutFullName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="@string/enter_full_name"
+                                android:theme="@style/TextLabel">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtFullName"
+                                    style="@style/SmallFont.TextAlineStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textCapWords"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
+                                    android:nextFocusForward="@+id/edtExpireDate"
+                                    android:paddingTop="@dimen/_4sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_color"
+                                    android:textColorHint="@drawable/hint_selector" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txtInputLoutExpiryDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="@string/txt_yyyy_mm"
+                                android:theme="@style/TextLabel">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtExpireDate"
+                                    style="@style/SmallFont.TextAlineStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:hint="@string/txt_yyyy_mm"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:maxLength="7"
+                                    android:nextFocusForward="@+id/edtCVV"
+                                    android:paddingTop="@dimen/_4sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_color"
+                                    android:textColorHint="@drawable/hint_selector"
+                                    android:textDirection="ltr" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txtInputLoutCVV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:hint="@string/enter_cvv"
+                                android:theme="@style/TextLabel">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtCVV"
+                                    style="@style/SmallFont.TextAlineStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:digits="0123456789"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="numberPassword"
+                                    android:maxLength="3"
+                                    android:paddingTop="@dimen/_4sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/text_color"
+                                    android:textColorHint="@drawable/hint_selector"
+                                    android:textDirection="ltr" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/radioGroupSaveCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+                                <RadioButton
+                                    android:id="@+id/radioSaveCard"
+                                    style="@style/ui_text_hea"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="@string/save_card_details_for_next_time" />
+                            </RadioGroup>
+
+                            <LinearLayout
+                                android:id="@+id/llTermsConditions"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <CheckBox
+                                    android:id="@+id/checkboxTC"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/tvTermsAndCondition"
+                                    style="@style/SmallFont.TextAlineStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:text="@string/i_accept_tc"
+                                    android:textColor="@color/text_color" />
+                            </LinearLayout>
+
+                            <RadioButton
+                                android:id="@+id/rbMakeDefault"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:text="@string/make_this_card_as_my_default_card"
+                                android:textColor="@color/text_color" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    app:srcCompat="@drawable/ic_bullet_dot" />
+
+                                <TextView
+                                    style="@style/SmallFont"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:text="@string/add_card_description" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    app:srcCompat="@drawable/ic_bullet_dot" />
+
+                                <TextView
+                                    style="@style/SmallFont"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:text="@string/add_card_amount_deduction_description" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnContinue"
+                        style="@style/SmallFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:background="@drawable/disable_button"
+                        android:text="@string/txt_continue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,1131 @@
+<resources>
+
+    <string name="app_name" translatable="false">AECB</string>
+
+
+    <!-- Splash Screen -->
+    <string name="app_version">الإصدار </string>
+
+    <!-- End Splash Screen -->
+
+    <!-- Contact Number Screen -->
+    <string name="lbl_login_account">تسجيل الدخول إلى حسابك</string>
+    <!-- End Contact Number Screen -->
+    <string-array name="genders">
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </string-array>
+    <string-array name="genders_profile">
+        <item>Null</item>
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </string-array>
+
+    <!-- Login Screen -->
+
+    <string name="hint_phone_number">أدخل رقم هاتفك المتحرك</string>
+    <string name="txt_login">تسجيل الدخول</string>
+    <string name="txt_register">التسجيل</string>
+
+    <string name="lbl_enter_password">إنشاء كلمة المرور</string>
+    <string name="hint_password">كلمه السر</string>
+
+    <string name="enter_user_name">أدخل عنوان البريد الإلكتروني</string>
+    <string name="enter_valid_username">الرجاءادخال اسم مستخدم صحيح</string>
+    <string name="enter_email">أدخل عنوان البريد الإلكتروني</string>
+    <string name="enter_valid_email">من فضلك أدخل بريد أليكترونى صحيح</string>
+    <string name="enter_phone">أدخل رقم هاتفك المتحرك</string>
+    <string name="enter_valid_phone">الرجاء إدخال رقم الجوال</string>
+    <string name="enter_password">كلمة المرور الجديد</string>
+    <string name="password_less_than_six">يجب ألا يقل طول كلمة المرور عن 6 أحرف</string>
+    <string name="password_greater_than_thirty">يجب ألا يزيد طول كلمة المرور عن 30 حرفًا</string>
+    <string name="error_valid_password">الرجاء إدخال كلمة مرور صالحة</string>
+    <string name="enter_confirm_password">الرجاء إدخال تأكيد كلمة المرور</string>
+    <string name="txt_desc_touchlogin">لقد قمت بتمكين تسجيل الدخول عبر بصمة الأصابع للوصول بشكل أسرع إلى حسابك</string>
+
+    <string name="enter_mobile">دخل رقم  الهاتف المتحرك</string>
+    <string name="enter_valid_mobile">الرجاء إدخال رقم جوال صحيح</string>
+    <!-- End Login Screen -->
+    <string name="preffered_language">اللغة المفضلة</string>
+    <!-- Register Screen -->
+    <string name="lbl_enter_email_address">أدخل البريد الإلكتروني</string>
+    <string name="lbl_register_an_account">تسجيل</string>
+    <string name="hint_email">أدخل عنوان البريد الالكتروني</string>
+    <string name="lbl_email">البريد الإلكتروني</string>
+    <string name="txt_continue">المتابعة</string>
+    <string name="txt_continue_and_pay">تأكيد ودفع</string>
+    <string name="txt_confirm_and_continue">تأكيد ومتابعة</string>
+    <string name="txt_switchto_english">Switch to English</string>
+    <string name="txt_switchto_arabic">التبديل إلى اللغة العربية</string>
+    <string name="lbl_select_language">إختر اللغة</string>
+    <string name="txt_english">English</string>
+    <string name="txt_arabic">العربية</string>
+    <string name="lbl_description_term_condition">بالمتابعة ، أنت توافق على موقعنا</string>
+    <string name="lbl_term_condition">الأحكام والشروط</string>
+    <string name="lbl_forgot_pwd">هل نسيت كلمة المرور؟</string>
+    <string name="error_t_c">يجب الموافقة على الشروط والأحكام وسياسة الخصوصية من أجل المتابعة</string>
+    <string name="hint_pls_register">، الرجاء التسجيل</string>
+    <!--End Register Screen -->
+    <!--profile screen -->
+    <string name="profile_text">لملف الشخصي</string>
+    <string name="update_profile">تحديث الملف</string>
+
+    <!-- Otp Screen -->
+
+    <!-- <string name="txt_desc_otp">أدخل الرمز التعريفي (يستخدم لمرة واحدة)</string>-->
+    <string name="one_time_password">الرمز التعريفي</string>
+    <string name="txt_desc_otp_sent">تمّ إرسال رمز تعريفي (يستخدم لمرة واحدة) إلى رقم هاتفك المتحرك الذي قمت بإدخاله</string>
+    <string name="txt_otp_sent_email">تم إرسال OTP إلى عنوان بريدك الإلكتروني</string>
+    <string name="txt_desc_otp_verify">يرجى التحقق هنا.</string>
+    <string name="txt_desc_otp_one">تمّ إرسال رمز تعريفي (يستخدم لمرة واحدة) إلى رقم هاتفك المتحرك الذي قمت بإدخاله</string>
+    <string name="txt_title_enter_otp">أدخل OTP</string>
+    <string name="txt_desc_touch">ضع إصبعك أو إصبعك على زر الصفحة الرئيسية</string>
+    <string name="txt_title_touch">إعداد معرف اللمس</string>
+    <string name="txt_no_thanks">لا شكرا</string>
+    <string name="hint_x">x</string>
+    <string name="txt_title_touch_already_set">المس معرف بالفعل الإعداد</string>
+
+    <string name="error_enter_opt">إن الرمز التعريفي (يستخدم لمرة واحدة) الذي أدخلته غير صحيح، يرجى المحاولة مرة أخرى</string>
+
+    <string name="txt_desc_no_figerprint">قم بإعداد بصمة إصبعك للوصول بشكل أسرع إلى حسابك</string>
+    <string name="txt_desc_exiest_figerprint">استخدم مجموعة البصمات الموجودة على جهازك. لا حاجة لإدخال رقم الجوال لتسجيل الدخول</string>
+    <string name="txt_enable_fingerprint">تمكين بصمة</string>
+    <string name="txt_setup_fingerprint">إعداد بصمة</string>
+
+    <string name="dialog_msg_change_email">هل تريد بالتأكيد تغيير عنوان بريدك الإلكتروني؟</string>
+    <string name="dialog_msg_change_mobile">هل تريد بالتأكيد تغيير رقم هاتفك المحمول؟</string>
+    <!-- EndOtp Screen -->
+
+    <!-- Payment Confirmation Screen -->
+    <string name="txt_title_card_detail_store">تفاصيل البطاقة مخزنة بشكل آمن. انتقل إلى الدفع</string>
+    <string name="txt_cancel">إلغاء</string>
+    <string name="txt_confirm_payment">تأكيد الدفع</string>
+    <string name="txt_title_purchase_report">تكلفة تقرير PDF المشتراة</string>
+    <string name="txt_base_pdf_report">الرسوم الأساسية (تقرير pdf)</string>
+    <string name="txt_total">مجموع</string>
+
+    <string name="timer">00:00:00</string>
+    <string name="sucess_msg_otp">Otp إعادة إرسال بنجاح</string>
+    <!-- End Payment Confirmation Screen -->
+
+
+    <!-- Forgot Password Screen -->
+
+    <string name="lbl_forgot_password">نسيت كلمة المرور؟</string>
+    <string name="lbl_reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="txt_desc_forgot_password">أدخل عنوان بريدك الإلكتروني المسجل ، وسنرسل لك كلمة مرور واحدة إلى رقم الهاتف المحمول الذي قدمته.</string>
+    <string name="txt_send_reset_link">إرسال رابط إعادة التعيين</string>
+    <string name="txt_ok">حسنا</string>
+    <string name="txt_desc_forgot_link">تم إرسال رابط إعادة التعيين إلى معرف البريد الإلكتروني الخاص بك. اتبع التعليمات لتغيير كلمة المرور الخاصة بك</string>
+    <string name="txt_update_password">تطوير كلمة السر</string>
+    <string name="hint_new_password">كلمة مرور جديدة</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="hint_confirm_password_for_create_password">تأكيد كلمة المرور الجديد</string>
+    <string name="error_password_not_match"> كلمة المرور وتأكيد كلمة المرور غير متطابقة</string>
+    <string name="error_confirm_password">الرجاء إدخال تأكيد كلمة المرور</string>
+    <!-- End Forgot Password Screen -->
+
+    <!-- Dashboard Screen -->
+    <string name="txt_upcoming_payment">قيمة الدفعات الإيجارية القادمة</string>
+    <string name="txt_no_of_payment">عدد المدفوعات</string>
+    <string name="txt_to_be_paid">لكي تدفع</string>
+    <string name="txt_aed">د.إ</string>
+    <string name="txt_my_contract">العقود الإيجارية</string>
+    <string name="txt_quarterly_payment">دفع ربع سنوي</string>
+    <string name="txt_payment_due">تاريخ الدفعة القادمة</string>
+    <string name="txt_biannual_payment">دفع نصف سنوي</string>
+    <string name="txt_annual_payment">الدفعة السنوية</string>
+    <string name="txt_my_scan">الأشخاص الذين تمّ إدخالهم</string>
+    <string name="txt_scan_a_tenant">مسح المستأجر</string>
+    <string name="txt_scan_tenant">مسح المستأجر</string>
+    <string name="txt_add_contract_manually">إضافة العقد يدويا</string>
+    <string name="txt_add_new_tenant">إضافة مستأجر جديد</string>
+    <string name="hint_scan_a_tenant">يمكنك مسح رقم الهوية / الرخصة التجارية للمستأجر ضوئيًا لإنشاء تقرير مؤشر مخاطر الإيجار.</string>
+
+    <string name="txt_charges">شحنة:</string>
+    <string name="txt_base_fee">الرسوم الأساسية (تقرير PDF)</string>
+    <string name="txt_dont_show_msg">لا تعرض هذه الرسالة مرة أخرى. </string>
+    <string name="btn_scan_now">إمؤشر ملاءة المستأجرين</string>
+    <string name="txt_vat">ضريبة القيمة المضافة </string>
+
+    <string name="txt_tenant_score">المستأجر النتيجة</string>
+    <string name="txt_welcome_user">اهلا بك مستخدم</string>
+    <string name="txt_filter">منقي</string>
+    <string name="dialog_msg_change_language">هل تريد بالتأكيد تغيير لغة التطبيق؟</string>
+
+    <string name="txt_delete">حذف</string>
+    <string name="txt_delete_scan">هل أنت متأكد أنك تريد حذف الفحص؟</string>
+
+    <string name="txt_no_contract">سيظهر مؤشر ملاءة المستأجرين هنا</string>
+    <string name="txt_welcome">أهلا بك،</string>
+
+    <string name="txt_12">12</string>
+    <string name="txt_pending_reports">في انتظار التقارير</string>
+    <string name="txt_paid_reports">تقارير مدفوعة</string>
+    <string name="txt_please_confirm_the_clearence">يرجى تأكيد وضوح</string>
+    <string name="txt_iban_2338">آيبان **** **** 2338</string>
+    <string name="txt_u_name">الشيخ حسيب</string>
+    <string name="txt_ud_name">20 أبريل 2019</string>
+    <string name="txt_u_left_name">تبقى 6 أيام للتحقق من الوضوح</string>
+    <string name="txt_aeb_name">25 أبريل 2019</string>
+    <string name="txt_aeb_title">AED 2,000</string>
+    <string name="txt_pdf_not_generated">قوات الدفاع الشعبي لم تنشأ</string>
+    <string name="txt_dashboard_desc">طريقة خالية من المتاعب لتأكيد احتمالية قيام المستأجر بالوفاء بالتزاماته المتعلقة بالتأجير</string>
+    <string name="txt_cheque_scan">الشيكات الممسوحة ضوئيا</string>
+    <string name="txt_cheque">الشيكات</string>
+    <string name="txt_scanned">الممسوحة ضوئيا</string>
+    <string name="txt_last_two_week">في آخر أسبوعين</string>
+    <string name="txt_cheque_due">الشيكات اثنين</string>
+    <string name="txt_due">بسبب</string>
+    <string name="txt_next_two_week">في الأسبوعين المقبلين</string>
+    <string name="txt_days">أيام</string>
+    <string name="txt_cleared">مسح</string>
+    <string name="txt_bounced">وثب</string>
+    <string name="txt_cancelled">ألغيت</string>
+    <string name="hint_search_by">البحث عن طريق الإسم</string>
+    <string name="txt_to">إلى</string>
+    <string name="txt_range_amount">AED 1000 &#8211; 10,000</string>
+
+    <string name="txt_capture">أسر</string>
+    <string name="txt_manual_capture">القبض اليدوي</string>
+    <string name="dialog_msg_status_cleared">هل تريد بالتأكيد تغيير الحالة التي تم مسحها لهذا الفحص؟</string>
+    <string name="dialog_msg_status_bounced">هل تريد بالتأكيد تغيير الوضع المرتد لهذا الفحص؟</string>
+
+
+    <!--End Dashboard Screen -->
+
+
+    <!-- Notification Screen -->
+
+    <string name="txt_notifications">إشعارات الإعدادات</string>
+    <string name="txt_clear_all">امسح الكل</string>
+
+    <string name="txt_n_one">يرجى تحديث حالة الدفع البالغة 15،000 درهم من عبد الله هادلي</string>
+    <string name="txt_n_two">تحديث ملفك الشخصي</string>
+    <string name="txt_n_three">ينتهي العقد رقم 2521 خلال يومين</string>
+    <string name="txt_n_four">لديك دفعة قادمة بقيمة 10،000 درهم من David Patrick ، ​​مستحقة الدفع في 13 أكتوبر 2019. أرسل تذكير.</string>
+
+    <string name="txt_sec_ago_1">دقيقتان منذ</string>
+    <string name="txt_sec_ago_2">دقيقتان منذ</string>
+    <string name="txt_sec_ago_3">08 أكتوبر 2019</string>
+
+    <string name="txt_remove">إزالة</string>
+    <!-- End Notification Screen -->
+
+    <!-- Image crop Screen -->
+
+    <string name="txt_upload">رفع</string>
+    <string name="txt_tilt_camera">إمالة الهاتف لضبط شاشة الكاميرا</string>
+    <!-- End Image crop Screen -->
+
+
+    <!-- Payment Method Screen -->
+
+    <string name="title_payment_method">طريقة الدفع</string>
+    <string name="txt_add_new_credit_card">إضافة بطاقة جديدة</string>
+    <string name="txt_telecom">الاتصالات</string>
+    <string name="txt_google_pay">الدفع حسب نظام غوغل </string>
+    <string name="txt_apple_pay">الدفع حسب نظام أبل</string>
+    <string name="txt_title_end_journey">هل تريد الحفظ والخروج؟</string>
+    <string name="txt_desc_end_journey">لإنهاء هذا triptap نعم. أو تابع عملية الدفع واضغط على رقم</string>
+    <string name="txt_check_out">الدفع</string>
+    <string name="txt_base_fee_pdf_report">الرسوم الأساسية (تقرير PDF)</string>
+    <string name="txt_aedd_with_space">30 درهم</string>
+    <string name="txt_vat_5">ضريبة القيمة المضافة </string>
+    <!--End Payment Method Screen -->
+
+
+    <!-- Add Card Screen -->
+
+    <string name="txt_add_card">إضافة بطاقة</string>
+    <string name="hint_full_name_of_add_card">الاسم بالكامل</string>
+    <string name="txt_add_card_desc">تفاصيل الدفع محفوظة بشكل آمن</string>
+    <string name="hint_full_name">أدخل الإسم هنا</string>
+    <string name="hint_card_number">رقم البطاقة</string>
+    <string name="hint_expiry_date">تاريخ إنتهاء الصلاحية</string>
+    <string name="hint_cvv">رمز الأمان الخاص بالبطاقة</string>
+    <string name="txt_scan">تفحص</string>
+    <string name="txt_save_changes">حفظ التغييرات</string>
+    <string name="txt_name">اسم</string>
+    <string name="txt_enter_card_number">الرجاء إدخال رقم البطاقة</string>
+    <string name="txt_yyyy_mm">الشهر/السنة</string>
+    <string name="txt_please_enter">يرجى إدخال رقم البطاقة</string>
+
+    <string name="agree_to_save_card_details">تم حفظ تفاصيل بطاقة الائتمان بأمان.المتابعة للدفع</string>
+    <string name="make_this_card_as_my_default_card">اجعل هذه البطاقة هي بطاقتي الافتراضية</string>
+    <string name="card_deleted_successfully">تم حذف البطاقة بنجاح</string>
+    <string name="txt_title_card_details">إضافة البطاقة</string>
+    <!--End Add Card Screen -->
+
+
+    <!-- Almost there Screen -->
+
+    <string name="txt_almost_there">لقد شارفت على الإنتهاء…</string>
+    <string name="txt_desc_save_time">يرجى الإنتظار بينما نقوم بإصدار مؤشر ملاءة المستأجرين.</string>
+
+    <!-- End Almost there Screen -->
+
+
+    <!-- View pdf Screen -->
+
+    <string name="txt_view_pdf">عرض (بي دي اف)</string>
+    <string name="txt_view_pdf_worry">لا شيء يدعو للقلق.</string>
+    <string name="txt_low">منخفض</string>
+    <string name="txt_view_desc">تم إرسال تقرير PDF مفصل إلى عنوان بريدك الإلكتروني المسجل.</string>
+    <string name="txt_cheque_status_id">ID # 009 1002 9993</string>
+    <string name="txt_scan_date">تاريخ المسح</string>
+    <string name="txt_cheque_status">الحالة: مستحقة خلال 10 أيام</string>
+    <string name="txt_create_contract">إنشاء العقد</string>
+    <string name="txt_prospect">احتمال</string>
+    <string name="txt_save">حفظ</string>
+    <string name="hint_cheque_reminder">إرسال تحقق التخليص تذكير</string>
+    <string name="hint_cheque_status">تحقق الحالة</string>
+    <string name="hint_reminder_issuer">ذكر مصدر الشيك</string>
+    <string name="txt_send_reminder">يرسل تذكير</string>
+    <string name="txt_14_jan_2020">14 Jan 2020</string>
+    <string name="txt_Hammad_Salem">حماد سالم -</string>
+    <string name="txt_Tenant_Score">المستأجر النتيجة</string>
+
+    <string-array name="clearence_reminder">
+        <item>قبل يوم واحد</item>
+        <item>قبل يومين</item>
+        <item>قبل 4 أيام</item>
+        <item>قبل أسبوع واحد</item>
+    </string-array>
+
+    <string-array name="contact_query">
+        <item>حدد نوع الاستعلام الخاص بك</item>
+        <item>نوع الاستعلام واحد</item>
+        <item>نوع الاستعلام الثاني</item>
+        <item>نوع الاستعلام ثلاثة</item>
+    </string-array>
+    <!--End View pdf Screen -->
+
+    <!-- Setting Screen -->
+
+    <string name="txt_settings">الإعدادات</string>
+    <string name="txt_additional_settings">معلومات إضافية</string>
+    <string name="txt_More_Info">مزيد من المعلومات</string>
+    <string name="txt_language">إختر اللغة</string>
+    <string name="txt_profile">الملف الشخصي</string>
+    <string name="txt_sub_title_profile">مراجعة الإسم والمعلومات الشخصية</string>
+    <string name="txt_about_aecb">عن الشركة</string>
+    <string name="txt_company_overview">قراءة نظرة عامة</string>
+    <string name="txt_contact">التواصل</string>
+    <string name="txt_sub_title_contact">اتصل بنا</string>
+    <string name="txt_faqs">الأسئلة المتكررة</string>
+    <string name="txt_sub_title_faqs">مجموعة من الأسئلة المتكررة</string>
+    <string name="txt_account_settings">إعدادت الحساب</string>
+    <string name="txt_sub_title_account_setting">تعديل اسمك وتفاصيلك</string>
+    <string name="txt_follow_us">تابعنا</string>
+    <string name="txt_stay_updated">إطلع على آخر الأخبار</string>
+
+    <string name="sub_title_account_settings">تحرير إعدادات حسابك</string>
+    <string name="txt_preferred_payment_method">إختر الطريقة المعتمدة للدفع</string>
+    <string name="txt_dashboard_view">عرض لوحة القيادة</string>
+    <string name="txt_login_settings">إعدادات الدخول</string>
+    <string name="txt_login_with_touch_id">الدخول من خلال بصمة الإصبع</string>
+
+
+    <string name="txt_delete_notification">حذف الإشعارات</string>
+    <string name="txt_push_notification">إصدار الإشعارات</string>
+    <string name="txt_renewal_reminder">التذكير بالدفع</string>
+
+    <string name="txt_credit_card">بطاقة الائتمان</string>
+
+    <string name="txt_by_due_date">بواسطة تاريخ الاستحقاق</string>
+    <string name="txt_alpha_order">ترتيب ابجدي</string>
+    <string name="txt_clearance_state">دولة التخليص</string>
+    <string name="txt_cheque_scan_one">الشيكات الممسوحة ضوئيا</string>
+    <string name="txt_cheque_due_one">الشيكات اثنين</string>
+
+    <string name="settinhs_last_two_week">في آخر 2 أسابيع</string>
+    <string name="settinhs_next_two_week">في 2 أسابيع القادمة</string>
+
+
+    <string name="txt_email">البريد الإلكتروني</string>
+    <string name="txt_touch_id">بصمة الأصبع</string>
+
+
+    <string name="txt_a_to_z">أ - ي</string>
+    <string name="txt_z_to_a">ي - أ</string>
+
+    <string name="txt_days_before">قبل 1 أسابيع</string>
+    <string name="txt_month_later">بعد شهر واحد</string>
+    <string name="txt_payment_reminder">تذكير المدفوعات</string>
+
+    <string name="sub_title_profile_settings">مراجعة المعلومات الشخصية</string>
+    <string name="hint_id_number">رقم الهوية</string>
+    <string name="hint_dob">تاريخ الولادة</string>
+
+    <string name="txt_title_about">مكتب الاتحاد الائتماني هو شركة مساهمة عامة مملوكة بالكامل من قبل حكومة الإمارات العربية المتحدة.</string>
+    <string name="txt_desc_about">بموجب القانون الاتحادي لدولة الإمارات العربية المتحدة رقم (6) لسنة 2010 بشأن المعلومات الائتمانية ، فإن الشركة مكلفة بجمع المعلومات الائتمانية بانتظام من المؤسسات المالية وغير المالية في دولة الإمارات العربية المتحدة. A1 يقوم مكتب الاتحاد الائتماني بجمع وتحليل هذه البيانات لحساب درجات الائتمان وإنتاج تقارير ائتمان يتم توفيرها للأفراد والشركات في دولة الإمارات العربية المتحدة. لا تتوفر تقارير الائتمان وعشرات الشركات من خلال خدماتنا عبر الإنترنت في الوقت الحالي ، يرجى زيارة مراكز سعادة العملاء للحصول على تقريرك.</string>
+    <string name="txt_copyride_about">© AECB 2019</string>
+
+    <string name="txt_privacy_policy">سياسة الخصوصية</string>
+    <string name="txt_submit_query">التواصل</string>
+    <string name="lbl_subject">الموضوع</string>
+    <string name="lbl_message">الرسالة</string>
+    <string name="hint_query">سبب التواصل</string>
+    <string name="txt_desc_contact">املأ استفسارك وسيقوم فريقنا بالرد عليك</string>
+
+    <string name="ui_text_hea">تفاصيل الدفع محفوظة بشكل آمن</string>
+
+    <string name="hint_search_keyword">البحث عن طريق الكلمات الرئيسية</string>
+    <string name="txt_desc_faqs">مجموعة من الأسئلة المتكررة.</string>
+
+    <string name="hint_subject">أدخل موضوع الاستعلام</string>
+    <string name="hint_message">أدخل رسالتك هنا</string>
+
+    <string name="txt_mobile_number">رقم الهاتف المتحرك</string>
+
+    <string name="txt_change_email">تغيير الايميل</string>
+    <string name="txt_change_mobile">تغيير موبايل</string>
+    <string name="txt_change_password">تغيير كلمة المرور</string>
+    <string name="hint_old_password">كلمة المرور القديمة</string>
+    <string name="hint_query_type">حدد نوع الاستعلام الخاص بك</string>
+
+    <string name="query_type_opt1">نوع الاستعلام واحد</string>
+    <string name="query_type_opt2">نوع الاستعلام الثاني</string>
+    <string name="query_type_opt3">نوع الاستعلام ثلاثة</string>
+    <string name="query_type_opt4">نوع الاستعلام أربعة</string>
+
+    <string name="upload_query">تحميل الملف باستخدام الاستعلام \n (بحد أقصى 20 ميغابايت)</string>
+    <string name="txt_sign_out">خروج</string>
+    <string name="txt_sub_title_sign_out">التطبيق تسجيل الخروج من هنا</string>
+
+    <string name="dialog_msg_enable_touch">هل تريد بالتأكيد تمكين تسجيل الدخول باللمس؟</string>
+    <string name="dialog_msg_desable_touch">هل أنت متأكد من أنك تريد تعطيل تسجيل الدخول باللمس؟</string>
+    <!--End Setting Screen -->
+
+    <!--Crop Screen -->
+
+    <string name="crop__pick_error">لا توجد مصادر صور متاحة</string>
+    <string name="camera_error">هذا الجهاز لا يدعم Camera2 API.</string>
+    <!--End Crop Screen -->
+
+
+    <!--Dashboard Filter Screen -->
+    <string name="txt_generated_reports">ولدت</string>
+    <string name="txt_ungenerated_reports">Ungenerated</string>
+    <string name="hint_search_by_keyword">بحث حسب كلمة رئيسية</string>
+    <string name="hint_contract_status">حالة العقد</string>
+    <string name="hint_payment_status">حالة السداد</string>
+    <string name="hint_contract_expiry">تاريخ انتهاء العقد</string>
+    <string name="hint_cheque_clearance_date">التحقق من تاريخ التخليص</string>
+    <string name="hint_lowest_highest">الأقل - الأعلى</string>
+    <string name="hint_highest_lowest">الأعلى - الأدنى</string>
+    <string name="txt_reports">تقارير</string>
+    <string name="txt_recent">الأخيرة</string>
+    <string name="txt_earlier">سابقا</string>
+    <string name="txt_apply_filter">تطبيق</string>
+    <string name="txt_all">الكل</string>
+    <string name="txt_high">متوسط</string>
+    <string name="txt_medium">متوسط</string>
+    <string name="txt_ungenerated">الامم المتحدة ولدت</string>
+    <string name="txt_indicator_level">مستوى المؤشر</string>
+    <string name="txt_sort_by">ترتيب حسب</string>
+    <string name="txt_nearest">أقرب</string>
+    <string name="txt_farthest">الأبعد</string>
+    <string name="txt_high_to_low">عالي منخفض</string>
+    <string name="txt_low_to_high">منخفض مرتفع</string>
+    <string name="hint_nearest_farthest">الأقرب - الأبعد</string>
+    <string name="hint_farthest_nearest">الأبعد - الأقرب</string>
+    <string name="txt_pending">قيد الانتظار</string>
+    <string name="txt_renewed">متجدد</string>
+
+    <string name="txt_reset">إعادة تعيين</string>
+    <string name="txt_payment_amt">مبلغ الدفع</string>
+    <string name="txt_very_high">عالي جدا</string>
+    <string name="txt_very_low">منخفظ جدا</string>
+    <string name="txt_risk_indecator_purchase">المخاطرة التي تم شراؤها</string>
+    <string name="txt_contract_party">الطرف المتعاقد</string>
+    <string name="txt_landlord">المالك</string>
+    <string name="txt_tenant">مستأجر</string>
+    <string name="txt_contract_type">نوع العقد</string>
+    <string name="txt_individual">فرد</string>
+    <string name="txt_company">شركة</string>
+    <string name="txt_active">نشيط</string>
+    <string name="txt_expired">منتهية الصلاحية</string>
+
+    <string name="txt_payment_due_date">التاريخ المحدد للدفع</string>
+    <string name="txt_payment_due_amount">المبلغ المستحق الدفع</string>
+    <!--Dashboard Filter Screen -->
+
+
+    <!-- Emirate and Trade Licence Screen -->
+
+    <string name="txt_error">خطأ</string>
+    <string name="txt_desc_error">غير قادر على إنشاء PDF باستخدام IBAN. يرجى المتابعة مع ما يلي</string>
+    <string name="txt_emirates_id">الهوية الإمارتية</string>
+    <string name="txt_trade_license">الرخصة التجارية</string>
+    <string name="txt_desc_emirates_id">رقم الهوية الإمارتية</string>
+    <string name="txt_desc_trade_license">قم بتحميل صورة للرخصة التجارية الخاصة بك أو قم بمسحها ضوئيًا</string>
+    <string name="title_trade_license_details">Trade License Details</string>
+    <string name="title_eid_details">مراجعة التفاصيل E.I.D</string>
+    <string name="hint_identification_no">رقم الهوية</string>
+    <string name="txt_emirates_id_number">رقم الهوية الإماراتية</string>
+    <string name="hint_nationality">أدخل الجنسية</string>
+    <string name="hint_license_no">رقم الرخصة</string>
+    <string name="hint_entity_name">اسم الكيان</string>
+    <string name="hint_start_date">تاريخ البدء</string>
+    <string name="txt_verify">التحقق</string>
+    <string name="txt_Credit_one">**** **** **** 6652</string>
+    <string name="txt_Credit_two">**** **** **** 0014</string>
+
+    <string name="txt_sorry">آسف...</string>
+    <string name="txt_sorry_description">يبدو أننا لا نستطيع العثور على رقم IBAN ذي الصلة فيما يتعلق بشيكك.</string>
+
+    <string name="hint_start_date_">تاريخ البدء</string>
+    <string name="hint_end_date_">تاريخ الانتهاء</string>
+    <!-- End Emirate and Trade Licence Screen -->
+
+
+    <!-- Cancel Contract -->
+    <string name="txt_canceled_contract">تم الغاء العقد</string>
+    <string name="txt_cancel_contract_hint">تمت إزالة العقد من قائمتك.</string>
+
+    <string name="txt_desc_cancel_contract">هل أنت متأكد من أنك تريد إلغاء العقد؟</string>
+
+    <!-- End Cancel Contract -->
+
+
+    <!-- Proceed Payment Fragment -->
+    <string name="txt_review_detail">مراجعة التفاصيل</string>
+    <string name="txt_add_new_contract">إضافة عقد جديد</string>
+    <string name="txt_how_proceed_payment">كيف تريد المتابعة ؟</string>
+    <string name="txt_purchase_report">تقرير الشراء</string>
+    <string name="hint_trade_name">اسم تجاري</string>
+    <!-- End Proceed Payment Fragment -->
+
+    <!-- Setting Profile -->
+    <string name="txt_edit_Fname">داريو</string>
+    <string name="txt_edit_Lname">حداد</string>
+    <string name="txt_edit_email">dario@gmail.com</string>
+    <string name="txt_edit_Pnumber">+971 987 654 3210</string>
+
+
+    <!-- Others -->
+
+    <string name="ripple_duration" translatable="false">300</string>
+
+    <string name="timeoutError">يستغرق الخادم وقتًا طويلاً للرد. \ n الرجاء المحاولة مرة أخرى</string>
+    <string name="serverError">حدث خطأ ما على جانب الخادم!</string>
+    <string name="unauthenticatedError">انتهت صلاحية جلسة العمل الخاصة بك. الرجاد الدخول على الحساب من جديد.</string>
+    <string name="networkError">يرجى التحقق من اتصالك بالإنترنت وإعادة المحاولة!</string>
+
+    <string name="btnBack">زر العودة</string>
+
+    <string name="connectionError">لا يمكن الاتصال بالخوادم</string>
+    <string name="no_activity_found">لم يتم العثور على نشاط</string>
+
+    <string name="permission_storage_denied">يرجى تقديم أذونات للوصول إلى التخزين</string>
+    <string name="permission_storage_permanent_denial">لقد رفضت الإذن للوصول إلى التخزين. يرجى الانتقال إلى الإعدادات وتوفير أذونات التخزين</string>
+    <string name="permission_storage_rationale">تحتاج إلى توفير أذونات للوصول إلى التخزين</string>
+
+    <string name="allow">السماح</string>
+    <string name="deny">أنكر</string>
+
+    <string name="yes">نعم فعلا</string>
+    <string name="no">لا</string>
+    <string name="no_data_found">لاتوجد بيانات!</string>
+    <string name="no_available_notification">لا يوجد أي إشعار</string>
+
+    <string name="txt_app_version">AECB TenantScore App Version:</string>
+    <!-- End Others -->
+
+
+    <!-- Contract Detail Screen -->
+    <string name="title_contract_details">تفاصيل العقد</string>
+    <string name="txt_renew_contract">تجديد العقد</string>
+    <string name="txt_previous_contract">عقود الإيجار السابقة</string>
+    <string name="hint_property_name">إسم العقار</string>
+    <string name="hint_emirate">الإمارة</string>
+    <string name="hint_area">منطقة</string>
+    <string name="hint_contract_no">رقم العقد</string>
+    <string name="hint_end_date">تاريخ الإنتهاء</string>
+    <string name="hint_payment_amount">قيمة العقد</string>
+    <string name="hint_no_payment">عدد الدفعات</string>
+    <string name="txt_add_new_payment">إضافة دفعة جديدة</string>
+    <string name="hint_payment_period">فترة الدفع</string>
+    <string name="hint_indicator_reports">تقارير المؤشر</string>
+    <string name="txt_reminer_payment">ذكر المستأجر بالدفع</string>
+    <string name="txt_risk">خطر</string>
+    <string name="hint_payment_detail">قائمة الدفع</string>
+
+    <string name="title_previous_contract">عقود الإيجار السابقة</string>
+    <string name="sub_title_previous_contract">تفاصيل عقود الإيجار السابقة للمستأجرين والعقار</string>
+
+    <string name="title_manage_contract">تدبير</string>
+    <string name="txt_auto_clear_payment">المدفوعات واضحة السيارات</string>
+    <string name="txt_contract_period">مدة العقد</string>
+    <string name="txt_cancel_contract">إلغاء العقد</string>
+
+    <string name="txt_set_reminer">مجموعة تذكير الدفع</string>
+    <string name="txt_remind_tenant_payment">تذكير المستأجر من الدفع</string>
+    <string name="txt_send_payment_reminder">إرسال تذكير الدفع</string>
+    <!-- End Contract Detail  Screen -->
+
+    <!-- Add Payment Screen -->
+    <string name="title_add_new_payment">إضافة دفعة إيجاريه جديدة</string>
+    <string name="sub_title_add_payment">أدخل تفاصيل الدفع الجديدة</string>
+    <string name="txt_save_detail">حفظ التفاصيل</string>
+    <string name="lbl_payment_number">رقم الدفعة</string>
+    <string name="hint_payment_number">أدخل رقم الدفع</string>
+    <string name="hint_due_date_add_payment">أدخل تاريخ استحقاق الدفعة</string>
+    <string name="hint_enter_payment_amount">أدخل قيمة الدفعة</string>
+    <!--End Add Payment  Screen -->
+
+    <!--Create Contract -->
+    <string name="title_create_contract">إنشاء عقد</string>
+    <string name="sub_title_create_contract">الرجاء إدخال التفاصيل أدناه ثم التأكيد للمتابعة.</string>
+
+    <string name="lbl_name">الإسم</string>
+    <string name="hint_name">أدخل الاسم</string>
+    <string name="enter_id_number">أدخل رقم الهوية الاماراتية</string>
+    <string name="enter_emailid">أدخل البريد الإلكتروني</string>
+    <string name="enter_contact">أدخل الاتصال</string>
+    <string name="enter_contract_no">أدخل رقم العقد</string>
+
+    <string name="txt_from">من عند</string>
+    <string name="enter_contract_amt">أدخل جهة الإتصال</string>
+    <string name="enter_payment_amt">أدخل مبلغ الدفع</string>
+    <string name="lbl_man_contract_no">رقم التعاقد</string>
+    <string name="lbl_man_payment_amt">مبلغ الدفع </string>
+    <string name="enter_property_name">أدخل اسم العقار</string>
+    <string name="enter_area">دخول المنطقة</string>
+
+    <string name="select_payment_period">حدد دورية الدفعات</string>
+    <string name="select_emirate">اختر الإمارة</string>
+    <string name="txt_confirm">تأكيد</string>
+    <string name="txt_confirm_for_create_password">تغيير كلمة المرور</string>
+    <string name="lbl_payment_cheque">الدفع في الشيك</string>
+    <string name="enter_payment_cheque">أدخل الدفع في الشيك</string>
+    <string name="txt_switch_tenant">التبديل إلى المستأجر</string>
+    <string name="txt_proceed_landlord">المتابعة كمالك العقار</string>
+
+    <string name="select_area">اختر المنطقة</string>
+    <string name="txt_payment_date">تاريخ الدفع</string>
+    <!--End Create Contract -->
+
+
+    <!-- Search Screen -->
+    <string name="txt_search_title">عما تبحث؟</string>
+    <string name="txt_search">ابحث في النص هنا ...</string>
+    <!-- End Search Screen -->
+
+    <string name="clear">واضح</string>
+    <string name="payment">دفع</string>
+
+    <string-array name="months_values">
+        <item>يناير</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>مايو</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>أكتوبر</item>
+        <item>نوفمبر</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+    <string name="txt_very_low_risk">1% إمكانية عدم دفع مستحقات الإيجار أقل من</string>
+    <string name="txt_low_risk">2% إمكانية عدم دفع مستحقات الإيجار أقل من</string>
+    <string name="txt_medium_risk">5% إمكانية عدم دفع مستحقات الإيجار أقل من</string>
+    <string name="txt_high_risk">40% إمكانية عدم دفع مستحقات الإيجار أقل من</string>
+    <string name="txt_very_high_risk">50% إمكانية عدم دفع مستحقات الإيجار أقل من</string>
+    <string name="cash">السيولة النقدية</string>
+    <string name="debit_card">بطاقة ائتمان</string>
+    <string name="txt_sorry_for_eid_detail">لا يمكننا العثور على نتيجة لمعرف الإمارات.</string>
+    <string name="txt_sorry_for_trade_license_detail">لا يمكننا العثور على نتيجة للرخصة التجارية.</string>
+
+    <string name="add_new_contract">إضافة عقد جديد</string>
+    <string name="individuals">الأفراد</string>
+    <string name="companies">الشركات</string>
+    <string name="trade_name">اسم تجاري</string>
+    <string name="license_number">رقم الرخصة</string>
+    <string name="enter_trade_license_number">أدخل رقم الرخصة التجارية</string>
+    <string name="add_details">إضافة التفاصيل</string>
+    <string name="contract_cancelled">تم إلغاء العقد بنجاح</string>
+    <string name="select_property_name">الرجاء إدخال اسم العقار</string>
+    <string name="select_name">من فضلك ادخل الاسم</string>
+    <string name="enter_valid_name">الرجاء التأكد من إدخال الإسم الأول والإسم الأخير بطريقة صحيحة</string>
+    <string name="select_contact">الرجاء إدخال الاتصال</string>
+    <string name="please_select_email">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="please_select_start_date">يرجى تحديد تاريخ البدء</string>
+    <string name="please_select_end_date">يرجى تحديد تاريخ الانتهاء</string>
+    <string name="please_select_contract_amount">الرجاء إدخال مبلغ العقد</string>
+    <string name="please_select_contract_number">الرجاء إدخال رقم العقد</string>
+    <string name="please_select_payment_period">يرجى اختيار فترة الدفع</string>
+    <string name="enter_identification_number">الرجاء إدخال رقم التعريف</string>
+    <string name="enter_valid_id_number">الرجاء التأكد من إدخال رقم الهوية الإماراتية بطريقة صحيحة</string>
+    <string name="enter_trade_name">الرجاء إدخال الاسم التجاري</string>
+    <string name="enter_license_number">الرجاء إدخال رقم الترخيص</string>
+    <string name="payment_error_monthly">الرجاء إضافة 12 دفعة كما حددت فترة الدفع الشهرية</string>
+    <string name="payment_error_quarterly">الرجاء إضافة 4 دفعات كما حددت فترة الدفع الفصلية</string>
+    <string name="payment_error_biannually">الرجاء إضافة دفعتين كما حددت فترة سداد كل عامين</string>
+    <string name="payment_error_annually">يرجى تحديد تاريخ الدفع والمبلغ كما حددته فترة الدفع السنوية</string>
+    <string name="please_select_one">رجاءا اختر واحدة</string>
+    <string name="please_select_emirate">يرجى اختيار الإمارة</string>
+    <string name="select_payment_method">اختيار وسيلة الدفع</string>
+    <string name="please_select_trade_place">يرجى اختيار مكان التجارة</string>
+    <string name="proceed_as_landlord">المضي قدما كما المالك</string>
+    <string name="hint_search_trade_place">البحث عن مكان التجارة هنا</string>
+    <string name="select_nationality">جنسية</string>
+    <string name="place_of_registration">مكان التسجيل</string>
+    <string name="cancel_contract_confirmation">هل تريد إلغاء هذا العقد؟</string>
+    <string name="fingerprint_not_enabled">لم يتم تمكين إذن مصادقة البصمة</string>
+    <string name="please_enter_name">الرجاء إدخال الاسم</string>
+    <string name="name_length_error">يجب ألا يزيد طول الاسم عن 256 حرفًا</string>
+    <string name="enter_card_number">أدخل رقم البطاقة</string>
+    <string name="please_enter_valid_card_numer">يجب ألا يكون رقم البطاقة أكبر من 19</string>
+    <string name="please_enter_expiry_date">الرجاء إدخال تاريخ انتهاء الصلاحية</string>
+    <string name="date_length_validation">يجب ألا يقل طول تاريخ انتهاء الصلاحية عن 5 أحرف</string>
+    <string name="enter_cvv">أدخل رمز الأمان الخاص بالبطاقة</string>
+    <string name="cvv_validation">يجب ألا يقل طول رقم CVV عن 3 أحرف</string>
+    <string name="payment_status_unpaid">غير مدفوع</string>
+    <string name="please_select_due_date">يرجى تحديد تاريخ الاستحقاق</string>
+    <string name="please_enter_due_amount">الرجاء إدخال المبلغ</string>
+    <string name="please_enter_valid_amount">الرجاء إدخال مبلغ صالح</string>
+    <string name="please_enter_valid_name">الرجاء إدخال اسم صالح</string>
+    <string name="please_select_query_type">يرجى اختيار نوع الاستعلام</string>
+    <string name="Please_enter_query_subject">الرجاء إدخال موضوع الاستعلام</string>
+    <string name="please_enter_query_message">الرجاء إدخال رسالة الاستعلام.</string>
+    <string name="permission_biometric_denied">تم رفض إذن مصادقة البصمة.</string>
+    <string name="permission_biometric_denial">لقد رفضت الإذن للوصول إلى مصادقة Fingerprint. يرجى الانتقال إلى الإعدادات وتوفير أذونات مصادقة Fingerprint</string>
+    <string name="permission_biometric_rationale">تحتاج إلى توفير أذونات لمصادقة Fingerprint</string>
+    <string name="coming_soon">قريبا..</string>
+    <string name="txt_report">أبلغ عن</string>
+    <string name="credit_card">بطاقة ائتمان</string>
+    <string name="credit_or_card">اقة الائتمان و الدفع</string>
+    <string name="cardholder_name">اسم حامل البطاقة</string>
+    <string name="valid_thru">صالحة من خلال</string>
+    <string name="delete_card_msg">هل أنت متأكد أنك تريد حذف البطاقة؟</string>
+    <string name="card_added_successfully">تمت إضافة البطاقة بنجاح</string>
+    <string name="risk">خطر</string>
+    <string name="pdf_not_generated">قوات الدفاع الشعبي لم تنشأ</string>
+    <string name="from_less_than_to_date">من تاريخ يجب أن يكون أكبر من حتى الآن</string>
+    <string name="please_enter_valid_id_number">الرجاء إدخال رقم معرف صالح</string>
+    <string name="txt_msg_valid_expiry_date">يرجى تحديد تاريخ انتهاء الصلاحية صالح</string>
+    <string name="txt_msg_name_max_length">يجب ألا يزيد طول الاسم عن 256 حرفًا</string>
+    <string name="txt_msg_valid_card_number">الرجاء إدخال رقم البطاقة بطريقة الصحيح</string>
+    <string name="txt_msg_enter_expiry_date">يرجى تحديد تاريخ انتهاء الصلاحية</string>
+    <string name="txt_msg_expiry_date_min_length">يجب ألا يقل طول تاريخ انتهاء الصلاحية عن 5 أحرف</string>
+    <string name="txt_msg_enter_cvv">الرجاء إدخال رقم السيرة الذاتية</string>
+    <string name="txt_msg_cvv_min_length">الرجاء إدخال رقم CVV بطريقة صحيحة</string>
+    <string name="txt_msg_validate_alphabetic">يُسمح بالقيم الأبجدية فقط</string>
+    <string name="txt_msg_validate_alphanumeric">يُسمح فقط بالقيم الأبجدية والأبجدية الرقمية</string>
+    <string name="txt_msg_agree_save_card_details">يرجى الموافقة على حفظ تفاصيل بطاقتي</string>
+    <string name="title_cancel_contract">هل أنت متأكد من أنك تريد إلغاء العقد؟</string>
+    <string name="hint_amount">كمية</string>
+    <string name="txt_week_before">قبل اسبوع</string>
+    <string name="search_your_text_here">ابحث عن الجنسية هنا ...</string>
+    <string name="days_before_due_date">أيام قبل تاريخ الاستحقاق</string>
+    <string name="days_left">ايام متبقية</string>
+    <string name="txt_save_scan">حفظ المسح الضوئي</string>
+    <string name="txt_proceed">تقدم</string>
+    <string name="txt_edit">تصحيح</string>
+    <string name="hint_scan_date">تاريخ المسح</string>
+    <string name="hint_due_date">تاريخ الاستحقاق</string>
+    <string name="please_enter_id_number">الرجاء إدخال رقم الهوية</string>
+    <string name="please_select_date_of_birth"> الرجاء التأكد من إختيار تاريخ الميلاد بطريقة صحيحة</string>
+    <string name="txt_in_last">في الختام</string>
+    <string name="txt_in_next">في القادم</string>
+    <string name="txt_weeks">أسابيع</string>
+    <string name="txt_clearance_reminder">تذكير التخليص</string>
+    <string name="txt_update">تحديث</string>
+    <string name="dialog_msg_change_push_notification">هل أنت متأكد من أنك تريد تعطيل إشعار الدفع؟</string>
+    <string name="hint_contact_expiry">انتهاء العقد</string>
+    <string name="almost_there">اوشكت على الوصول...</string>
+    <string name="sit_tight_while_our_system_generates_n_your_reports">اجلس مشدودًا بينما يقوم نظامنا بإنشاء \ n تقاريرك.</string>
+    <string name="message_delete_notification">هل أنت متأكد أنك تريد حذف هذا الإشعار؟</string>
+    <string name="message_delete_all_notification">هل أنت متأكد أنك تريد حذف كل الإشعارات؟</string>
+    <string name="name_should_be_alphabetic">يسمح فقط للقيم الأبجدية بالاسم</string>
+    <string name="permission_call_denied">يرجى تقديم أذونات لإجراء مكالمات هاتفية.</string>
+    <string name="permission_call_permanent_denial">لقد رفضت الإذن بإجراء مكالمات هاتفية. يرجى الذهاب إلى الإعدادات وتقديم أذونات الهاتف.</string>
+    <string name="permission_call_rationale">تحتاج إلى توفير أذونات لإجراء مكالمات هاتفية.</string>
+    <string name="add_card_confirmation">سيتم خصم مبلغ صغير من بطاقتك الائتمانية لعملية التحقق لمرة واحدة ، وسيتم استرداد هذا المبلغ تلقائيًا.</string>
+    <string name="remind_tenant">تذكير المستأجر</string>
+    <string name="ignore">تجاهل</string>
+    <string name="remind_later">تذكر لاحقا</string>
+    <string name="skip">تخطي</string>
+    <string name="next">التالي</string>
+    <string name="device_is_rooted">Device is Rooted</string>
+    <string name="you_can_t_use_this_app_as_we_have_found_that_your_device_is_rooted">لا يمكنك استخدام هذا التطبيق حيث وجدنا أن جهازك متجذر</string>
+    <string name="password_length_should_be_between_8_to_20_char">يجب أن  تتكون  كلمة السر  من 8 خانات وتتضمن حرف كبير، حرف صغير و حرف خاص ورقم على الأقل</string>
+    <string name="please_enter_a_valid_password">يرجى إدخال كلمة السر  الصحيحة</string>
+    <string name="invalid_password_error_msgs">يجب أن  تتكون  كلمة السر  من 8 خانات وتتضمن حرف كبير، حرف صغير و حرف خاص ورقم على الأقل</string>
+    <string name="login_with_touch_id">الدخول باستخدام بصمة الإصبع</string>
+    <string name="login_with_uae_pass">الدخول باستخدام الهوية الإماراتية الرقمية</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="login_with_aecb_credentials">تسجيل الدخول من خلال حسابك لدى شركة الاتحاد للمعلومات الائتمانية</string>
+    <string name="txt_submit">إرسال</string>
+    <string name="txt_submit_data_correction">ارسال الرسالة</string>
+    <string name="or">أو</string>
+    <string name="enter_pin">أدخل دبوس</string>
+    <string name="please_enter_uae_passpin">الرجاء إدخال رمز المرور لدولة الإمارات العربية المتحدة</string>
+    <string name="forgot_pin">نسيت رقم التعريف الشخصي؟</string>
+    <string name="uae_pass">ممر الإمارات</string>
+    <string name="add_your_details">أدخل بياناتك</string>
+    <string name="enter_emirates_id_number">رقم الهوية الإماراتية</string>
+    <string name="enter_emirates_id_number_profile">أدخل  رقم الهوية</string>
+    <string name="hint_emirates_id_number">أدخل رقم الهوية</string>
+    <string name="emirate_id">الهوية  الإماراتية</string>
+    <string name="hint_title_full_name">الإسم الكامل</string>
+    <string name="gender">الجنس</string>
+    <string name="txt_gender">الجنس</string>
+    <string name="nationality">الجنسية</string>
+    <string name="date_of_birth">تاريخ الولادة</string>
+    <string name="hint_date_of_birth">DD/MM/YY</string>
+    <string name="passport_no">رقم جواز السفر</string>
+    <string name="hint_passport_no">أدخل رقم جواز السفر</string>
+    <string name="expiry">إنتهاء الصلاحية</string>
+    <string name="i_accept_tc">أوافق على <u>كافة الشروط والأحكام</u></string>
+    <string name="select_gender">اختر الجنس</string>
+    <string name="please_select_gender">الرجاء التأكد من اختيار الجنس بطريقة صحيحة</string>
+    <string name="please_select_passport_no">الرجاء التأكد أن رقم جواز السفر  أبجدي و رقمي فقط، ولا يسمح باستخدام أحرف خاصة.</string>
+    <string name="please_select_expiry">يرجى تحديد تاريخ انتهاء الصلاحية</string>
+    <string name="i_agree">أنا أوافق</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="confirm_email">تأكيد البريد الإلكتروني</string>
+    <string name="contact_details">بيانات التواصل</string>
+    <string name="please_enter_email_address">الرجاء إدخال عنوان البريد الإلكتروني</string>
+    <string name="please_enter_valid_email">الرجاء إدخال عنوان البريد الاكتروني الصحيح</string>
+    <string name="email_does_not_match">الرجاء إدخال عناوين البريد الالكتروني الصحيح</string>
+    <string name="otp">الرمز التعريفي</string>
+    <string name="contact_us">إتصل بنا</string>
+    <string name="security_questions">الأسئلة السرية</string>
+    <string name="answer">الإجابة</string>
+    <string name="type_here">أكتب هنا</string>
+    <string name="please_enter_answer">يرجى الإجابة</string>
+    <string name="enter_password_desc">يجب أن تتكون كلمة المرور من ثمانية حروف متضمنة حروف كبيرة وصغيرة وعلى الأقل أحد الرموزالخاصة(على سبيل المثال:!@#)  و رقم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور</string>
+    <string name="enter_new_password">أدخل كلمة المرور الجديدة</string>
+    <string name="please_enter_password">من فضلك أدخل كلمة المرور</string>
+    <string name="please_enter_valid_password">يرجى إدخال عنوان بريد الكتروني صحيح</string>
+    <string name="please_enter_confirm_password">الرجاء إدخال تأكيد كلمة المرور</string>
+    <string name="password_does_not_match">كلمات السر غير متطابقة</string>
+    <string name="please_enter_correct_password">الرجاء إدخال  كلمة السر الصحيحة</string>
+    <string name="create_touch_id">نشاء بصمة الأصبع</string>
+    <string name="place_your_thumb">ضع إصبعك على مستشعر بصمة الإصبع</string>
+    <string name="email">لبريد الإلكتروني</string>
+    <string name="enter_password_hint">أدخل كلمة المرور الجديدة</string>
+    <string name="forgot_password">نسيت كلمة المرور</string>
+    <string name="forgot_password_desc">رمز التحقق سيتم إرساله الى البريد الإلكتروني ورقم االهاتف المتحرك المسجل</string>
+    <string name="send_otp">إرسال OTP</string>
+    <string name="step_one">الخطوة 1</string>
+    <string name="step_two">الخطوة 2</string>
+    <string name="please_agree_with_tc">يرجى الموافقة على الشروط والأحكام</string>
+    <string name="question">السؤال</string>
+    <string name="of">of</string>
+    <string name="enter_valid_passport_no">الرجاء إدخال رقم جواز سفر صالح</string>
+    <string name="resend_otp">إعادة إرسال الرمز التعريفي</string>
+    <string name="time_remaining">الوقت المتبقي: </string>
+    <string name="short_form_seconds">s</string>
+    <string name="empty_email_error">الرجاء إدخال عنوان البريد الإلكتروني</string>
+    <string name="inavlid_email_error">الرجاء إدخال عنوان البريد الاكتروني الصحيح</string>
+    <string name="empty_password_error">من فضلك أدخل كلمة المرور</string>
+    <string name="get_your_first_credit_score">أحصل على أول  تقييم ائتماني</string>
+    <string name="credit_score_price">52.99</string>
+    <string name="incl_vat">متضمن ضريبة القيمة المضافة</string>
+    <string name="get_your_first_credit_report">حصل على أول تقرير ائتماني</string>
+    <string name="credit_report_price">31.5</string>
+    <string name="get_your_credit_score_report_both">احصل على تقرير الائتمان الخاص بك مع الدرجة أو درجة الائتمان في أي وقت وفي أي مكان</string>
+    <string name="my_credit_score">التقيم الإئتماني</string>
+    <string name="dummy_credit_score_date">Nov 3, 2019</string>
+    <string name="report_history">التقارير السابقة</string>
+    <string name="score_history">التقييمات السابقة</string>
+    <string name="credit_report_with_score">التقرير الإئتماني مع التقييم</string>
+    <string name="credit_report_only">التقرير الائتماني فقط</string>
+    <string name="credit_score_only">التقييم الائتماني</string>
+    <string name="release_on_date">Released on Nov 27, 2019</string>
+    <string name="view_report">عرض التقرير</string>
+    <string name="credit_report">التقرير الائتماني</string>
+    <string name="checkout">الدفع</string>
+    <string name="add_credit_report_for_only">إضافة التقرير الإئتماني مقابل 73.5 درهما فقط</string>
+    <string name="regular_price">سعر عادي</string>
+    <string name="add">إضافة</string>
+    <string name="view_all">عرض الجميع</string>
+    <string name="credit_score">التقييم الائتماني</string>
+    <string name="sar_50">SAR 50.0</string>
+    <string name="sar_5">SAR 5.0</string>
+    <string name="sar_55">SAR 55.0</string>
+    <string name="you_have_already_added_email">لقد تم إضافة البريد الاكتروني من قبل</string>
+    <string name="edit_recipient">تحرير المستلم</string>
+    <string name="add_recipient">إضافة مستلم</string>
+    <string name="save_and_continue">حفظ ومتابعة</string>
+    <string name="no_user_available_in_local">No user Available in Database.</string>
+    <string name="last_user_not_enabled_biometric">Last User not enabled Biometric.</string>
+    <string name="get_your_first">الحصول على الأول الخاص بك</string>
+    <string name="only">فقط</string>
+    <string name="password_cannot_be_changed">لا يمكن تغيير كلمة المرور</string>
+
+    <string name="answer_does_not_match_correctly">الجواب غير متطابق</string>
+    <string name="remaining_attempts">عدد المحاولات المتبقية</string>
+    <string name="i_accept_all_terms_and_conditions">أوافق على كافة الشروط والأحكام</string>
+
+    <string name="txt_for">إلى عن على</string>
+    <string name="txt_yes" translatable="false">نعم</string>
+    <string name="txt_no" translatable="false">لا</string>
+    <string name="currency" translatable="false">AED</string>
+    <string name="aed_amount_filter" translatable="false">AED 00 - 100000</string>
+    <string name="_100_000" translatable="false">100,000</string>
+    <string name="welcome_title_one" translatable="false">An exclusive platform \nfor your tenancy needs</string>
+    <string name="welcome_sub_title_one" translatable="false">No matter if you are a tenant or a\nlandlord, TenantScore provides you\nwith multitude of features for all your\ntenency needs</string>
+    <string name="welcome_title_two" translatable="false">Register Your \nAccount</string>
+    <string name="welcome_sub_title_two" translatable="false">Register your account by \n entering your mobile number \n and email address</string>
+    <string name="welcome_title_three" translatable="false">Scan an \nEmirates ID</string>
+    <string name="welcome_sub_title_three" translatable="false">Scan a tenant emirates ID \n or enter the tenancy contract \n details to get the tenant score</string>
+    <string name="welcome_title_four" translatable="false">Get the \nTenant Score</string>
+    <string name="welcome_sub_title_four" translatable="false">Get the tenant score to know \n the risk of a tenant to miss \n the payment </string>
+    <string name="welcome_title_five" translatable="false">Save and Manage \nContracts</string>
+    <string name="welcome_sub_title_five" translatable="false">Save your tenancy contracts \n information, easily manage and set \n reminders of upcoming payments</string>
+    <string name="start" translatable="false">START</string>
+    <string name="dummy_credit_Score" translatable="false">736</string>
+    <string name="credit_score_with_report_price" translatable="false">112.99</string>
+
+    <string name="txt_msg_select_query_message">Please enter query message</string>
+    <string name="txt_msg_select_query_subject">Please enter query subject</string>
+    <string name="please_enter_current_password">إدخل كلمة السر الحالية</string>
+    <string name="language_english">EN</string>
+    <string name="please_wait_this_might_take_some_time">Please wait...\nThis might take some time.</string>
+    <string name="select_data_provider">قم باختيار مزود البيانات</string>
+    <string name="data_provider">مزود البيانات</string>
+    <string name="enter_current_password">إدخل كلمة السر الحالية</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="re_enter_new_password">تأكيد كلمة المرور الجديد</string>
+    <string name="na_text">We have found no credit history or activity on your name.\n\nFor more information use the actions below</string>
+    <string name="no_available_score_title">Credit Score: Not Available</string>
+    <string name="txt_switchto">عربي</string>
+    <string name="txt_title_ar">Arabic</string>
+    <string name="touch_login_enable_successfully">تم تحديث تسجيل الدخول باستخدام القياسات الحيوية بنجاح</string>
+    <string name="default_card_msg">هل أنت متأكد أنك تريد حذف البطاقة؟</string>
+    <string name="default_edirham_msg">Are you sure you want to make this EDirham default ?</string>
+
+
+    <string name="please_select_nationality">الرجاء التأكد من إختيار الجنسية بطريقة صحيحة</string>
+    <string name="save_card_details_for_next_time">حفظ بيانات البطاقة للدفع مستقبلا</string>
+    <string name="enter_full_name">الاسم الكامل</string>
+    <string name="please_enter_card_number">يرجى إدخال رقم البطاقة</string>
+    <string name="please_enter_full_name">Please enter full name</string>
+    <string name="please_select_terms_conditions">يرجى الموافقة على الشروط والأحكام</string>
+    <string name="select_or_add_card">قم باختيار  البطاقة أو قم إضافة بطاقة جديدة</string>
+    <string name="add_new_card">إضافة بطاقة جديدة</string>
+    <string name="saved_card">حفظ  البطاقة </string>
+    <string name="txt_default">الاختيار</string>
+    <string name="make_default">اختيار افتراضي</string>
+    <string name="ok">حسنا</string>
+    <string name="payment_successful">تم الدفع بنجاح</string>
+    <string name="your_payment_has_been_successfully_processed_nthank_you">Your payment has been successfully processed, Thank You!</string>
+    <string name="order_summary">تفاصيل الطلب</string>
+    <string name="payment_successfully">تم الدفع بنجاح</string>
+    <string name="title_payment_failed">عملية الدفع فشلت</string>
+    <string name="your_payment_has_been_successfully_processed">تم الدفع بنجاح، ستتلقى التقرير/ التقييم بملف (PDF) خلال الثماني ساعات القادمة</string>
+    <string name="payment_failed_description_msg">لم تنجح محاولة الدفع. يرجى المحاولة مرة أخرى أو استخدام وسيلة دفع مختلفة.</string>
+    <string name="scan_card">مسح البطاقة</string>
+    <string name="no_card_found">لم يتم إضافة أي بطاقة</string>
+    <string name="intro">مقدمة تعريفية</string>
+    <string name="faqs">الأسئلة المتكررة</string>
+    <string name="incorrect_password">الرجاء إدخال  كلمة السر الصحيحة</string>
+    <string name="glossary">المصطلحات</string>
+    <string name="app_under_construction">الصفحة غير متاحة حاليا نعتذر لكم عن أي ازعاج</string>
+    <string name="space_scrolling_view_behavior">SpaceNavigationViewBehavior</string>
+    <string name="please_enter_mobile">الرجاء إدخال رقم الجوال</string>
+    <string name="please_enter_confirm_email">Please enter confirm email</string>
+    <string name="shared_with_recipients">Shared with %2$d recipients</string>
+    <string name="question_share_your_report">هل ترغب بإرسال تقريرك إلى أي جهة؟</string>
+    <string name="aed">د.إ</string>
+    <string name="recognition_not_supported">Recognition is supported only in DirectAPI mode!</string>
+    <string name="recognition_not_supported_reason">Recognition is not supported! Reason:</string>
+    <string name="result_list_is_empty">Result list is empty</string>
+    <string name="general">عام</string>
+    <string name="manage_payment">ادارة خيارات الدفع</string>
+    <string name="logout">تسجيل الخروج</string>
+
+    <string name="title_edit_passport">مراجعة رقم جواز السفر </string>
+    <string name="title_edit_mobile">مراجعة رقم الهاتف المتحرك</string>
+    <string name="title_edit_email">مراجعة البريد الاكتروني</string>
+    <string name="save">حفظ</string>
+    <string name="application_number">رقم الطلب</string>
+    <string name="reason_for_contact">سبب للاتصال</string>
+    <string name="enter_your_message">أدخل رسالتك هنا</string>
+    <string name="upload_file">تحميل الملف</string>
+    <string name="select_reason">حدد سبب الاتصال</string>
+    <string name="your_message">الرسالة</string>
+    <string name="txt_msg_select_reason">حدد سبب الاتصال</string>
+    <string name="default_payment_method">الاختيار الافتراضي لوسيلة الدفع</string>
+    <string name="update_payment_method">تحديث لوسيلة الدفع</string>
+
+    <string name="txt_summry_download_pdf">هذا المستند محمي بكلمة مرور .تتكون كلمة المرور الخاصة بك من أول 4 أحرف من اسمك بالانكليزية (lowercase) متبوعة بتاريخ ، شهر وسنة ميلادك بالشكل التالي (DDMMYYYY)</string>
+    <string name="update_payment_method_msg">لقد تم تغيير طريقة الدفع  بنجاح</string>
+    <string name="notification_text">التنبيهات</string>
+    <string name="clear_notification"><u>حذف الكل</u></string>
+    <string name="take_photo">من الكاميرا</string>
+    <string name="open_gallery">اختر من مكتبة الصور</string>
+    <string name="file_manager">مدير الملفات</string>
+    <string name="please_select_data_provider">Please select data provider</string>
+
+    <string name="help_support">المساعدة و الدعم</string>
+    <string name="help_support_faq_tab1">الاسئلة وأجوبة</string>
+    <string name="help_support_contactus_tab2">اتصل بنا</string>
+    <string name="help_support_data_currection_tab3">تصحيح البيانات</string>
+    <string name="enter_subject">أدخل الموضوع</string>
+
+    <string name="maintenance_text">التطبيق تحت الصيانه</string>
+    <string name="maintenance_text1">نواجه خلل فني .أنظمتنا ستكون متاحة قريبا. نعتذر عن أي ازعاج.</string>
+
+    <string name="data_correction_text">نحن نسعى جاهدين لضمان صحة البيانات المقدمة لنا. إذا لم تكن كذلك فمن المهم أن يتم تصحيحها.
+ ان المعلومات التي يحتويها التقرير الائتماني مقدمة من مزودي المعلومات، و اذا كنت تعتقد أن التقرير يتضمن معلومات غير صحيحة يجب ارسال طلب التصحيح الى مزود المعلومات مباشرة لتصحيح وتعديل البيانات. بعد إعادة توجيهك إلى بريدك الإلكتروني، يرجى إرفاق أي مستندات تدعم طلبك.</string>
+    <string name="please_select_card">يرجى تحديد البطاقة</string>
+    <string name="enter_valid_passport">الرجاء إدخال  رقم جواز السفر الصحيح</string>
+    <string name="warning_msg">رسالة تحذيرية</string>
+    <string name="user_not_authenticated_desc">عذرا، لم تتمكن من تجاوز الأسئلة الأمنية.  الرجاء اختيار المتابعة للعودة الى التسجيل أو اختيار اتصل بنا   للتواصل مع خدمة العملاء .</string>
+    <string name="user_not_authenticated_desc_round_second">عذرا، لم يتم تدقيق معلوماتك. نرجو الإجابة عن أسئلة إضافية للتعريف</string>
+
+    <string name="please_enter_your_password">من فضلك أدخل رقمك السري</string>
+    <string name="dialog_logout">هل أنت متأكد أنك تريد تسجيل الخروج؟</string>
+    <string name="language_arabic">عربي</string>
+    <string name="download">تحميل</string>
+    <string name="enable_touch_id">تفعيل بصمة الأصبع</string>
+    <string name="disable_touch_id">تعطيل بصمة الأصبع</string>
+    <string name="verify_amount">Verify Amount</string>
+    <string name="add_card_desc_for_verify">سيتم إرسال مبلغ المصادقة إلى هاتفك من قبل مصدر البطاقة. الرجاء التواصل مع مصدر البطاقة في حال لم تصلك الرسالة</string>
+    <string name="app_under_maintenance">التطبيق قيد الصيانة</string>
+    <string name="session_expired">انتهت الجلسة</string>
+    <string name="please_login_again">الرجاد الدخول على الحساب من جديد.</string>
+    <string name="nationality_optional">الجنسية - اختياري</string>
+    <string name="passport_optional">جواز السفر - اختياري</string>
+    <string name="passport_number_optional">رقم جواز السفر - اختياري</string>
+    <string name="do_you_have_emirate_id">هل لديك الهوية الإماراتيه؟</string>
+    <string name="yes_scan_now">إمسح الآن</string>
+    <string name="scan_your_emirate_id">مسح الهوية الإماراتية</string>
+    <string name="send_now">قم بارسال رمز التحقق</string>
+    <string name="description_forgot_password">سيتم إرسال رمز التحقق إلى عنوان  البريد الإلكتروني أو رقم الهاتف المتحرك المسجل لدينا</string>
+    <string name="create_password">اختر كلمة المرور</string>
+    <string name="error">خطأ</string>
+    <string name="success">نجاح</string>
+    <string name="please_enter_valid_payement_amount">الرجاء إدخال مبلغ المصادقة الصحيح الذي تم ارساله الى هاتفك من قبل مصدر البطاقة</string>
+    <string name="amount_is_not_valid">Amount can not be greater than 10,00,00,000</string>
+    <string name="get">Get</string>
+    <string name="update_required_desc">"To continue uninterrupted use of the AECB Application, you will need to update it on your device. "</string>
+    <string name="update_now">Update Now</string>
+    <string name="we_are_calculating_score">يتم احتساب التقييم الائتمانى الخاص  بك...</string>
+    <string name="usually_takes_few_seconds">قد يستغرق بضع ثوانٍ...</string>
+    <string name="we_are_almost_done">نحن على وشك الإنتهاء...</string>
+    <string name="get_you_credit_score_now">أحصل على أول تقييم ائتماني</string>
+    <string name="no_purchase_found">
+لا يوجد حاليا أي عمليات شراء
+</string>
+    <string name="please_ensure_the_login_details_are_entered_correctly"> الرجاء التأكد من ان البيانات التي ادخلتها صحيحة.</string>
+    <string name="credit_score_only_english">Credit Score</string>
+    <string name="please_enter_the_exact_verification_amount">الرجاء إدخال مبلغ المصادقة المحدد</string>
+    <string name="you_can_add_up_to_5_additional_recipients_who_we_will_receive_a_pdf_copy_of_your_report_from_an_aecb_authorized_email">يمكنك إضافة ما يصل إلى 5 جهات اضافية لاستلام نسخة عن تقريرك مرسل من بريد إلكتروني معتمد من</string>
+
+
+    <string name="no_notification_to_delete">لا يوجد إشعار للحذف.</string>
+    <string name="credit_or_debit_card">بطاقة الائتمان و الدفع</string>
+    <string name="share_your_report">هل ترغب بإرسال التقرير إلى جهة أخرى؟</string>
+    <string name="add_email_desc">يمكنك إضافة ما يصل إلى 5 جهات اضافية لاستلام نسخة عن تقريرك مرسل من بريد إلكتروني معتمد من AECB</string>
+    <string name="your_report_will_be_sent_to">سيتم ارسال التقرير من شركة الاتحاد للمعومات الائتمانية الى</string>
+    <string name="shared_with_others">و %1$d الآخرين</string>
+    <string name="pay_with">إدفع بواسطة</string>
+    <string name="change">التغيير</string>
+    <string name="purchase_now">إشتر الآن</string>
+    <string name="add_payment_details">أضف تفاصيل الدفع</string>
+    <string name="aecb">AECB</string>
+    <string name="are_you_sure_delete">هل أنت متأكد من الحذف؟</string>
+    <string name="read_more_desc_one">أن التقرير الائتماني يتضمن بيانات الهوية الشخصية، و معلومات مفصلة عن بطاقات الائتمان و القروض و تاريخ الشيكات المرتجعة.</string>
+    <string name="read_more_desc_two"> ان التقييم الائتماني ھو عبارة عن رقم ثلاثي يحدد مدى إمكانية التزامك بسداد أقساط القروض وبطاقات الائتمان في مواعيدها المحددة</string>
+    <string name="read_more_desc_three">أن التقرير الائتماني يتضمن معلومات عن السنوات الخمس الماضية. لسهولة مراجعة التقرير  الخاص بك, يرجى الاطلاع على الفهرس التعريفي.</string>
+    <string name="for_more_info"> للمزيد</string>
+    <string name="did_you_know">هل تعلم؟</string>
+    <string name="your_request_is_being_processed">يتم حاليا معالجة طلبك.
+سيكون التقرير / التقييم الائتماني  الخاص بك جاهزا قريبا.</string>
+    <string name="pdf_copy_sent">سيتم إرسال نسخة PDF من التقرير و الفاتورة إلى عنوان البريد الإلكتروني الخاص بك</string>
+    <string name="transaction_completed">قد
+ تمت عملية الشراء.
+يرجى التحقق من لوحة التحكم / البريد الإلكتروني لعرض تقريرك
+</string>
+    <string name="continue_without_scanning">المتابعة من دون مسح </string>
+    <string name="txt_nationality">الجنسية</string>
+    <string name="passport_number_hint">رقم جواز السفر(يساعدنا على إيجاد المعلومات بشكل أسرع)</string>
+    <string name="send_message">ارسال الرسالة</string>
+    <string name="txt_passport_number">رقم جواز السفر</string>
+    <string name="add_card_description">تم حفظ بيانات بطاقتك وفق معايير الامتثال لأمن البيانات PCI DSS . يمكنك تحديث / حذف بيانات بطاقتك في أي وقت من خلال قائمة الإعدادات..</string>
+    <string name="contact_us_desc">يسعدنا تلقي ملاحظاتكم واقتراحاتكم، قم بتعبئة التفاصيل وسيرد عليكم فريقنا قريبا.</string>
+    <string name="choose_categories">اختر الفئة</string>
+    <string name="back_press_warning">يرجى الضغط على عودة مرة أخرى للخروج</string>
+    <string name="proceed_to_round_two_desc">عذرا، لم يتم تدقيق معلوماتك. نرجو الإجابة عن أسئلة إضافية للتعريف</string>
+
+    <string name="intro_one_title">Easy Registration</string>
+    <string name="intro_one_desc">Easliy Scan your Emirates ID</string>
+    <string name="intro_two_title">Choose Your Product</string>
+    <string name="intro_two_desc">Choose Credit Score or Credit \n Report with Score</string>
+    <string name="intro_three_title">Purchase and Share \n Your Report</string>
+    <string name="intro_three_desc">Add recipients, complete your \n purchase and receive your report \n instantly</string>
+    <string name="intro_four_title">View Your Dashboard \n and Purchase History</string>
+    <string name="intro_four_desc">View your latest Credit \n Score,previously purchased \n reports</string>
+    <string name="intro_prod_desc">A three-digit number that predicts how likely you are to make your loan and credit card payments on time</string>
+    <string name="intro_prod_price">Price AED 84</string>
+    <string name="intro_product_title">Get your first Credit Score</string>
+    <string name="ssl_error">خطأ في شهادة SSL.</string>
+    <string name="ssl_is_untrusted">الشهادة غير موثوق بها.</string>
+    <string name="ssl_is_expired">انتهت صلاحية الشهادة.</string>
+    <string name="invalid_hostname">اسم مضيف غير صالح للشهادة.</string>
+    <string name="invalid_certificate">الشهادة غير صالحة.</string>
+    <string name="continue_anyway"> هل تريد المتابعة على أية حال؟</string>
+    <string name="contact_us_regi_desc">يسعدنا تلقي ملاحظاتكم و اقتراحاتكم.</string>
+    <string name="contact_center">مـركز الاتصال </string>
+    <string name="contact_center_number">800-Bureau (800 287 328)</string>
+    <string name="fullName_validation">Field must have minimum two words</string>
+    <string name="emirate_validation">No alphabetical or special character allowed</string>
+    <string name="gender_validation">Gender can not be blank</string>
+    <string name="nationality_validation">Nationality field can not be blank</string>
+    <string name="dob_validation">Please select date of birth</string>
+    <string name="existing_user">تسجيل الدخول لمستخدم حالي</string>
+    <string name="new_user">انشاء حساب لمستخدم جديد</string>
+    <string name="receipient_desc_one">يمكنك إضافة ما لا يزيد عن 5 جهات  إضافية</string>
+    <string name="receipient_desc_two">سيتم إرسال نسخة من تقريرك الى الجهات المحددة بملف  ب.د.ف من بريد إلكتروني معتمد من شركة الاتحاد للمعلومات الاتمانية</string>
+    <string name="document_title">أدخل كلمة السر للإطلاع على التقرير. كلمة السر هي:</string>
+    <string name="document_desc_one">اول 4 أحرف من اسمك الكامل بالانكليزية (بأحرف صغيرة lowercase)</string>
+    <string name="document_desc_two">تاريخ الميلاد بالانكليزية (DDMMYYYY)</string>
+    <string name="help_us_for_passport">يساعدنا على إيجاد المعلومات بشكل أسرع</string>
+    <string name="passport_number">رقم جواز السفر</string>
+    <string name="passport_number_optional_bracket">رقم جواز السفر (اختياري)</string>
+    <string name="password_title">يجب أن تتكون كلمة السر من</string>
+    <string name="password_validation_one">8 أحرف</string>
+    <string name="password_validation_two">حرف كبير</string>
+    <string name="password_validation_three">حرف صغير</string>
+    <string name="password_validation_four">حرف خاص *([@#$%^&amp;+=])</string>
+    <string name="dob_invalid_error"> تاريخ الميلاد و رقم الهوية الإماراتية غير متطابق</string>
+    <string name="password_validation_five">رقم واحد على الأقل</string>
+    <string name="share_with_other_receipients">قم بارسال التقرير الى جهات أخرى</string>
+    <string name="second_emirate_id_error">الرجاء إدخال قيمة بين 1900 و 2100</string>
+    <string name="enter_three_digit_cvv">أدخل  رمز التحقق الخاص بالبطاقة والمكون من ثلاثة ارقام</string>
+    <string name="card_authentication">التحقق من البطاقة</string>
+    <string name="cvv_back_of_card">رمز التحقق الخاص  - ثلاثة  أرقام مسجلة خلف البطاقة  (XXX)</string>
+    <string name="add_card_amount_deduction_description">يتم قيد 1درهم اماراتي على بطاقتك من أجل الرجوع إليه عند تأكيد إضافة بطاقة دفع جديدة على التطبيق. هذا المبلغ هو فقط تفويض مسبق ولا يتم خصمه فعليا وإنما يتم إلغاؤه تلقائيا خلال أسبوعين.</string>
+    <string name="payment_progress">يتم تنفيذ عملية الدفع، يرجى الإستمرار لحين إتمام العملية. </string>
+    <string name="add_passport_dob_desc">يرجى تزويد المعلومات التالية لاستكمال الطلب</string>
+    <string name="uae_pass_error">Couldn\'t fetch data from UAE Pass</string>
+    <string name="date_of_birth_new">تاريخ الميلاد</string>
+    <string name="help_us_for_passport_new">لاستخراج البيانات بشكل اسرع</string>
+    <string name="txt_submit_new">التالي</string>
+    <string name="txt_cancel_new">الغاء</string>
+    <string name="sign_in_uae_pass">تسجيل الدخول بالهوية الرقمية</string>
+    <string name="sop1_user_restricted">عذرا، لم نتمكن من التحقق من بياناتك. يرجى التوجه إلى أحد أكشاك الهوية الرقمية لإكمال عملية التسجيل و إعادة المحاولة بعد ذلك.</string>
+    <string name="user_cancelled_authentication">قام المستخدم بإلغاء تسجيل الدخول</string>
+    <string name="sop1_desc_first">حسابك غير معرف، الرجاء زيارة أقرب  <u><font color='#1058E0'> منفذ خدمة</font></u></string>
+    <string name="sop1_desc_second">للمزيد من المعلومات، يرجى االتصال على  <u><font color='#1058E0'>\n 800-Bureau (800 287 328)</font></u></string>
+    <string name="sign_up_uae_pass">إنشاء حساب بالهوية الرقمية
+</string>
+    <string name="age_is_not_18_yrs">يجب أن يكون العمر أكبر من 18 سنة</string>
+    <string name="score_not_available">لا يمكن احتساب التقييم الائتماني الخاص بك لأسباب مختلفة، لمعرفة المزيد ، يرجى الاتصال بمركز الاتصال 800-BUREAU (800-287328). يرجى ملاحظة أن شركة الاتحاد للمعلومات الائتمانية لن تفرض عليك رسومًا مقابل هذه المعاملة.</string>
+    <string name="credit_report_with_score_price">84.0</string>
+    <string name="add_credit_report_with_score_for_only">Add Credit Report with Score for AED 73.5 only</string>
+    <string name="credit_score_price_new">10.5</string>
+</resources>

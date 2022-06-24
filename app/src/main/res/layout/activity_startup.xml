@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <RelativeLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/swChangeLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/tvEnglish"
+                style="@style/SmallFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_2"
+                android:background="@drawable/ic_lang_english"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/language_english"
+                android:textColor="@color/language_color" />
+
+            <LinearLayout
+                android:id="@+id/tvArabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_2"
+                android:background="@drawable/ic_lang_arabic"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SmallFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/language_arabic"
+                    android:textColor="@color/language_color"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAecbLogo"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/aecb_icon" />
+
+        <ImageView
+            style="@style/MediumFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivAecbLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:src="@drawable/arabic_text"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTouchId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/thumb" />
+
+            <TextView
+                style="@style/MediumFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:text="@string/login_with_touch_id"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/btnLoginWithUAEPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:visibility="gone"
+                android:background="@drawable/uaepass_bg">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/ivLoginUAEEN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2ssp"
+                        android:padding="@dimen/_3sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_uaepass_logo" />
+
+                    <TextView
+                        style="@style/SmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/sign_in_uae_pass"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/ivLoginUAEAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2ssp"
+                        android:padding="@dimen/_3sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_uaepass_logo" />
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/SmallFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/bg_blue_button"
+                android:text="@string/existing_user"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                style="@style/SmallFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/new_user"
+                android:textColor="@color/border_color"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

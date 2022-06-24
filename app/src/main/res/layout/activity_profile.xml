@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:rotation="@integer/rtl"
+                app:srcCompat="@drawable/ic_back_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_topcurv_white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/ToolbarTitleFontBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/profile_text" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLoutProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="@string/hint_title_full_name"
+                    android:layoutDirection="locale"
+                    android:textDirection="locale"
+                    android:theme="@style/TextLabel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtProfileName"
+                        style="@style/SmallFont.TextAlineStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:focusable="false"
+                        android:inputType="textCapCharacters"
+                        android:layoutDirection="locale"
+                        android:maxLength="120"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color"
+                        android:textDirection="locale" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputLoutProfileEmirateNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="@string/hint_emirates_id_number"
+                    android:theme="@style/TextLabel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtProfileEmirateNo"
+                        style="@style/SmallFont.TextAlineStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:inputType="number"
+                        android:maxLength="18"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/VerySmallFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/gender"
+                    android:textColor="@color/text_color" />
+
+                <RelativeLayout
+                    android:id="@+id/routProfileGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.aecb.presentation.customspinner.MaterialSpinner
+                        android:id="@+id/spinnerProfileGender"
+                        style="@style/SmallFont.TextAlineStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        app:ms_background_color="@color/transparent"
+                        app:ms_dropdown_height="wrap_content"
+                        app:ms_dropdown_max_height="@dimen/_160sdp"
+                        app:ms_hide_arrow="true"
+                        app:ms_hint="@string/txt_gender"
+                        app:ms_hint_color="@color/color_edittext_hint"
+                        app:ms_padding_bottom="@dimen/_8sdp"
+                        app:ms_padding_top="@dimen/_2sdp"
+                        app:ms_popup_drawable="@drawable/ms__drawable"
+                        app:ms_text_color="@color/contract_text_color"
+                        app:ms_text_select_color="@color/contract_text_color" />
+
+                    <ImageView
+                        android:id="@+id/imageProfileDropDownPaymentMethod"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@mipmap/ic_down_gray" />
+
+                    <View
+                        android:id="@+id/viewLineFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/spinnerProfileGender"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:background="@color/gray_light" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.aecb.presentation.commontitleview.CustomInputText
+                        android:id="@+id/tvProfileNationality"
+                        style="@style/SmallFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        app:enabled="false"
+                        app:focusable="false"
+                        app:hint="@string/txt_nationality"
+                        app:maxLength="18"
+                        app:titleText="@string/nationality_optional" />
+
+                    <TextView
+                        android:id="@+id/tvEditNationality"
+                        style="@style/VerySmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_37sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="@string/txt_edit"
+                        android:textColor="@color/text_color" />
+                </RelativeLayout>
+
+                <com.aecb.presentation.commontitleview.CustomInputText
+                    android:id="@+id/inputIdDateOfBirth"
+                    style="@style/SmallFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusForward="@+id/edtPassport"
+                    android:singleLine="true"
+                    android:textDirection="ltr"
+                    app:enabled="false"
+                    app:focusable="false"
+                    app:hideUnderLine="false"
+                    app:hint="@string/hint_date_of_birth"
+                    app:maxLength="18"
+                    app:titleText="@string/date_of_birth" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@color/gray_light" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/txtInputLoutProfilePassport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:hint="@string/passport_number_optional"
+                        android:layoutDirection="locale"
+                        android:textDirection="locale"
+                        android:theme="@style/TextLabel">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtProfilePassport"
+                            style="@style/SmallFont.TextAlineStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:focusable="false"
+                            android:inputType="number"
+                            android:layoutDirection="locale"
+                            android:maxLength="18"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textDirection="locale" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvEditPassportNo"
+                        style="@style/VerySmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_26sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="@string/txt_edit"
+                        android:textColor="@color/text_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/txtInputLoutProfileMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:hint="@string/txt_mobile_number"
+                        android:layoutDirection="locale"
+                        android:textDirection="locale"
+                        android:theme="@style/TextLabel">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtProfileMobile"
+                            style="@style/SmallFont.TextAlineStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="number"
+                            android:maxLength="18"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textDirection="ltr" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvEditMobileNo"
+                        style="@style/VerySmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="@string/txt_edit"
+                        android:textColor="@color/text_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_40sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/txtInputLoutProfileEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:hint="@string/email_address"
+                        android:layoutDirection="locale"
+                        android:textDirection="locale"
+                        android:theme="@style/TextLabel">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtProfileEmail"
+                            style="@style/SmallFont.TextAlineStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:inputType="number"
+                            android:layoutDirection="locale"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textDirection="locale" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvEditEmail"
+                        style="@style/VerySmallFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="@string/txt_edit"
+                        android:textColor="@color/text_color" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

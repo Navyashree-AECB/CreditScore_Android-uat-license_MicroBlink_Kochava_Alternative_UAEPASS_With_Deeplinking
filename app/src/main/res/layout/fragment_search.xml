@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center">
+
+            <RelativeLayout
+                android:id="@+id/routHearder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/bg_round_corner"
+                android:elevation="@dimen/_8sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmirates"
+                    style="@style/SmallFont.TextAlineStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_toStartOf="@+id/imageCancelSearch"
+                    android:background="@color/transparent"
+                    android:hint="@string/search_your_text_here"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:theme="@style/TextLabel" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageCancelSearch"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_4sdp"
+                    app:srcCompat="@drawable/ic_cancel_search" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/routView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_above="@+id/rvEmiratesData"
+                android:background="@color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEmiratesData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/routHearder"
+                android:background="@color/white"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:scrollbars="none"
+                android:visibility="visible"
+                app:layout_anchor="@id/routView" />
+        </RelativeLayout>
+    </FrameLayout>
+</layout>

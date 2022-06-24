@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_topcurv_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llCvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/LargeFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/card_authentication"
+                android:textColor="@color/step_progress_unfilled_color"
+                android:textSize="@dimen/sp_24"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/card_back_img" />
+
+            <TextView
+                style="@style/SmallFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:gravity="center"
+                android:text="@string/cvv_back_of_card"
+                android:textColor="@color/step_progress_unfilled_color" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputLoutCVV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:hint="@string/enter_three_digit_cvv"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtCVV"
+                    style="@style/SmallFont.TextAlineStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@drawable/hint_selector"
+                    android:textDirection="ltr" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/add_card_amount_deduction_description" />
+
+        <Button
+            android:id="@+id/btnProceed"
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/disable_button"
+            android:enabled="false"
+            android:text="@string/txt_proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+</layout>

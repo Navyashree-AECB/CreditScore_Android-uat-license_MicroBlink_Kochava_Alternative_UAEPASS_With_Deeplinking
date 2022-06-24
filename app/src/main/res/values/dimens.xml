@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_0_5">0.5dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+
+    <dimen name="top_action_bar_padding_horizontal">8dp</dimen>
+    <dimen name="top_action_bar_height">64dp</dimen>
+    <dimen name="top_action_button_padding">12dp</dimen>
+    <dimen name="search_progress_bar_size">48dp</dimen>
+    <dimen name="bottom_prompt_chip_text_size">14sp</dimen>
+    <dimen name="bottom_prompt_chip_margin_bottom">28dp</dimen>
+    <dimen name="bottom_prompt_chip_corner_radius">8dp</dimen>
+    <dimen name="bounding_box_stroke_width">1dp</dimen>
+    <dimen name="bounding_box_confirmed_stroke_width">2dp</dimen>
+    <dimen name="bounding_box_corner_radius">12dp</dimen>
+    <dimen name="object_reticle_ripple_stroke_width">4dp</dimen>
+    <dimen name="object_reticle_ripple_size_offset">24dp</dimen>
+    <dimen name="object_reticle_outer_ring_fill_radius">22dp</dimen>
+    <dimen name="object_reticle_outer_ring_stroke_radius">24dp</dimen>
+    <dimen name="object_reticle_outer_ring_stroke_width">4dp</dimen>
+    <dimen name="object_reticle_inner_ring_stroke_radius">14dp</dimen>
+    <dimen name="object_reticle_inner_ring_stroke_width">2dp</dimen>
+    <dimen name="object_dot_radius">@dimen/object_reticle_inner_ring_stroke_radius</dimen>
+    <dimen name="static_image_dot_radius_selected">14dp</dimen>
+    <dimen name="static_image_dot_radius_unselected">10dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_220">220dp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+
+    <dimen name="space_navigation_height">72dp</dimen>
+    <dimen name="main_content_height">50dp</dimen>
+    <dimen name="space_centre_button_default_size">56dp</dimen>
+    <dimen name="space_centre_button_margin">6dp</dimen>
+    <dimen name="centre_content_width">80dp</dimen>
+    <dimen name="space_item_icon_default_size">18dp</dimen>
+    <dimen name="space_item_icon_only_size">25dp</dimen>
+    <dimen name="space_item_text_default_size">14sp</dimen>
+    <dimen name="badge_left_margin">5dp</dimen>
+    <dimen name="view_bottom_margin">50dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="view_vertical_margin">8dp</dimen>
+    <dimen name="padding_top_bar">8dp</dimen>
+    <dimen name="diemen_password">-60dp</dimen>
+
+</resources>

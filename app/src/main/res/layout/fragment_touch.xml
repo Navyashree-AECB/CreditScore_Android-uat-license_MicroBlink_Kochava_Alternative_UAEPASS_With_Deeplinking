@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/bg_topcurv_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_30sdp">
+
+        <TextView
+            android:id="@+id/tvDesc"
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/please_enter_your_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputLoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:hint="@string/enter_new_password"
+            android:theme="@style/TextLabel"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                style="@style/SmallFont.TextAlineStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingTop="@dimen/_4sdp"
+                android:singleLine="true"
+                android:textColor="@color/text_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/MediumFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_round_corner_blue"
+            android:gravity="center"
+            android:text="@string/enable_touch_id"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_white_button_border_color" />
+
+        <Button
+            android:id="@+id/btnNo"
+            style="@style/SmallFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/txt_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_white_button_border_color" />
+    </LinearLayout>
+</layout>

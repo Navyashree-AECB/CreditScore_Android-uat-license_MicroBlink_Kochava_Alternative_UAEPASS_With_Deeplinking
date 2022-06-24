@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/bg_topcurv_white">
+
+        <com.aecb.presentation.spacenavigation.SpaceNavigationView
+            android:id="@+id/spaceNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_topcurv_white"
+            app:active_centre_button_icon_color="@color/active_icon_bottom_color"
+            app:active_item_color="@color/inactive_icon_bottom_color"
+            app:centre_button_color="@color/white"
+            app:centre_button_icon="@drawable/ic_cancel_orange"
+            app:inactive_centre_button_icon_color="@color/border_color"
+            app:inactive_item_color="@color/inactive_icon_bottom_color"
+            app:space_background_color="@color/white"
+            app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+            app:space_item_icon_size="@dimen/space_item_icon_default_size"
+            app:space_item_text_size="@dimen/space_item_text_default_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spaceNavigationView"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_20" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

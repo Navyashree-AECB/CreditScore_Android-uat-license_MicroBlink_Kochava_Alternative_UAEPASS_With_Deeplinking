@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aecb.ui.purchasejourney.addcard.view.AddCardActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.aecb.presentation.customviews.ToolbarView
+                    android:id="@+id/toolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_topcurv_white">
+
+                    <LinearLayout
+                        android:id="@+id/mainContentOFCardList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/btnContinue"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCardListTitle"
+                            style="@style/ToolbarTitleFontBlackBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:text="@string/txt_add_card"  />
+
+                        <TextView
+                            style="@style/SmallFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:text="@string/add_card_desc_for_verify" />
+
+
+                        <TextView
+                            style="@style/SmallFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:text="@string/please_enter_the_exact_verification_amount" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtInputLoutAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:hint="@string/hint_amount"
+                            android:theme="@style/TextLabel">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtAmount"
+                                style="@style/SmallFont.TextAlineStart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:maxLength="4"
+                                android:textDirection="ltr"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@drawable/hint_selector" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnContinue"
+                        style="@style/SmallFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:background="@drawable/disable_button"
+                        android:enabled="false"
+                        android:text="@string/txt_confirm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <data></data>
+</layout>
